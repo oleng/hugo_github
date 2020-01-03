@@ -5,7 +5,7 @@ theme = [ "lithiumx" ]
 googleAnalytics = ""
 disqusShortname = ""
 disableKinds = ["section", "404"]
-tags = ["dev", "python", "ux", "writing", "learning", "postproduction","data"]
+tags = [ "dev", "python", "ux", "writing", "learning", "postproduction","data" ]
 enableEmoji = true
 
 [permalinks]
@@ -16,7 +16,7 @@ enableEmoji = true
     name = "about"
     url = "/about"
 [[menu.main]]
-    name = "github"
+    name = "code"
     url = "https://github.com/oleng"
 # [[menu.main]]
 #     name = "twitter"
