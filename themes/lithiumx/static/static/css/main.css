@@ -114,6 +114,10 @@ pre, code {
   border-radius: 3px;
 }
 
+blockquote code, .highlight pre code {
+  background-color: unset;
+}
+
 sup {
   margin: 0;
   padding: 0 0.2em 0 0;
