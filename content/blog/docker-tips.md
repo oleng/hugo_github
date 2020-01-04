@@ -7,11 +7,19 @@ draft: false
 
 Some useful tips for docker
 
-1. Create shortcut to free up space by deleting dangling images. On macOS use `alias` in `~/.bash_profile` (I use `~/.bashrc` for aliases, see my .dev/dotfiles repo).    
+1. Create shortcuts to free up space. On macOS use `alias` in `~/.bash_profile` (I use `~/.bashrc` for aliases, see my .dev/dotfiles repo). Alias is auto expanded by bash shell.    
 
     ```bash
-    # remove dangling docker images
-    alias docker-prune="docker rmi $(docker images --filter dangling=true)"
+    # remove just dangling docker images
+    alias docker-dangling-images="docker rmi $(docker images --filter dangling=true)"
+    
+    # remove every stopped containers
+    alias docker-stopped-containers="docker rm $(docker ps -a -q -f status=exited)"
+    
+    # remove every stopped containers, also
+    # all networks not used by at least one container, 
+    # all dangling images & dangling build cache
+    dockerprune="docker system prune"
     ```
 
 2. Useful to modify Docker Hyperkit VM's transparent_hugepages setting in case of redis complaining (macOS Mojave 10.14.x)    
