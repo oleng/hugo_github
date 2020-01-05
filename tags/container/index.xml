@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>container on oleng</title>
+    <link>https://oleng.github.io/tags/container/</link>
+    <description>Recent content in container on oleng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jan 2020 09:05:44 +0000</lastBuildDate>
+    
+	<atom:link href="https://oleng.github.io/tags/container/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker tips</title>
+      <link>https://oleng.github.io/2020/01/04/docker-tips/</link>
+      <pubDate>Sat, 04 Jan 2020 09:05:44 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2020/01/04/docker-tips/</guid>
+      <description>Some useful tips for docker
+  Make hortcuts of useful commands (with flags) for freeing up space is one time effort compared to remembering which command Docker provides. Use alias on macOS and put them in ~/.bash_profile so they&#39;re loaded in your terminal (I use ~/.bashrc for aliases holder, which needs to be sourced unlike .bash_profile, see my .dev/dotfiles repo for more info). Alias is auto completed in bash.</description>
+    </item>
+    
+  </channel>
+</rss>
