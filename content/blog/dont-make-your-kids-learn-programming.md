@@ -15,7 +15,7 @@ I too don't know anything about guiding or teaching kids. But there are two sugg
 
 2. The other one is to start from [Scratch site](https://scratch.mit.edu/parents/), it's a learning program for kids developed by MIT. They know a lot about computer science & teaching it. 
 
-My opinion on young kids learning about programming is that since they have much more time to learn the fundamentals, not rushing them to produce anything & focus more on exploring by playing is going to be so much more beneficial, they'll have more natural inclination to learn by themselves & be more creative. 
+My opinion on young kids learning about programming is that since they have much more time to learn the fundamentals, not rushing them to produce and to guide them focus more on exploring by playing should be so much more beneficial; they'll have more natural inclination to learn by themselves & be more creative. 
 
 A quick note on programming school for kids:
 
