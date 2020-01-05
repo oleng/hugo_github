@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/about.md
   label: about
-  match: "**/*"
 - type: heading
   label: header
 - type: directory
@@ -28,7 +27,7 @@ file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.59.1
+  - HUGO_VERSION=0.62.0
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
