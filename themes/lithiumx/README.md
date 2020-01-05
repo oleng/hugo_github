@@ -1,3 +1,5 @@
+_uses modified Lithium theme_
+
 [//]: # (original readme for Lithium)
 
 # Hugo Lithium
