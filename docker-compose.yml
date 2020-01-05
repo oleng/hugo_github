@@ -2,7 +2,7 @@ version: '3'
 services:
 
     server:
-        image: klakegg/hugo:0.62.0-ext-ubuntu
+        image: klakegg/hugo:0.62.1-ext-alpine
         command: server --verbose --verboseLog --gc -t lithiumx
         volumes:
             - ./:/src
