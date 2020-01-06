@@ -7,7 +7,7 @@ draft: false
 
 Some useful tips for docker
 
-1. Make hortcuts of useful commands (with flags) for freeing up space is one time effort compared to remembering which command Docker provides. Use `alias` on macOS and put them in `~/.bash_profile` so they're loaded in your terminal (I use `~/.bashrc` for aliases holder, which needs to be sourced unlike `.bash_profile`, see my [.dev/dotfiles](https://github.com/oleng/.dev/tree/master/dotfiles) repo for more info). Alias is auto completed in bash.    
+1. Making shortcuts for useful commands (with flags) to free up space is one time effort compared to remembering which command Docker provides. Use `alias` on macOS and put them in `~/.bash_profile` so they're loaded in your terminal (I use `~/.bashrc` for aliases holder, which needs to be sourced unlike `.bash_profile`, see my [.dev/dotfiles](https://github.com/oleng/.dev/tree/master/dotfiles) repo for more info). Alias is auto completed in bash.    
 
     ```bash
     # remove just dangling images
