@@ -30,13 +30,13 @@ Rule of thumbs on improving online security (authentication, more security than 
     - too many others
 3. Do's & don'ts:     
     - **Do** use password manager with strong cryptography (encryption) default (at least sha256) to generate different password for every online services. 
-    - Mnemonic paraphrase/sentence like `Stronger sophisticated yoyos institution taichi Master aerobic novices` is much harder to crack than `m%y$p^a*s?s#W0rD`. See [xkcd](https://www.xkcd.com/936/). Longer is also better. 
+    - Mnemonic paraphrase/sentence like `Stranger sophisticated hobos institution taichi Master aerobic novices` is much harder to crack than `m%y$p^a*s?s#W0rD`. See related [explain xkcd wiki](https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength). Longer is better. 
     - **Don't** use LastPass password manager, it has been bought recently by distrusted company, LogMeIn.
     - On that note: pick open source if possible, [BitWarden](https://help.bitwarden.com/) is recommended for willingness to be externally audited (which means outsiders can expose vulnerabilities and can lead to faster fix time period), also option on self-hosting server installation.
     - **Do** understand what Multi-Factor Authentication (MFA) is [^1].
     - **Do** enable Two-Factor Authentication (2FA or U2F[^2]) for everything, including your password manager.
     - **Don't** make SMS or phone number as main 2FA factor, SMS is insecure [^3], SIM card is clone-able. They're less secure compared to 2FA Time-based One-time Password (TOTP[^4]) due to lack of time constraint & flexibility. With 2FA you're not tied to a phone number or even mobile device, attacker must regain both access and generate the code in short time. TOTP is still vulnerable to social engineering attack. Another plus is giving away phone number on the internet isn't needed anymore.    
-    - **Do** use 2FA application at least, U2F hardware[^5] (usually in the form of USB dongle) is preferable because of additional protection measures to harden embedded cryptoprocessor's security[^6], such as against physical tampering. U2F hardwares also don't store account details.
+    - **Do** use 2FA application at least, U2F hardware[^5] (usually in the form of USB dongle) is preferable because of additional protection measures to harden embedded cryptoprocessor's security[^6], such as against physical tampering. U2F hardwares also don't store account details, which means if someone steals it they can't gain access to any online accounts that device had used to authenticate with, unlike 2FA apps.
     - [Authy](https://authy.com/) is better than Google Authenticator app because with the latter you're locked to a single device.
     - Make sure you find out beforehand what to do (preventing exploit & regaining access) if you lose your device that contains your 2FA app.
     - Eventually password as authentication method on the web will be replaced and made obsolete.
