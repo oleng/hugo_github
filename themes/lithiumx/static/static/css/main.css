@@ -1,0 +1,527 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Libre Franklin', serif;
+  line-height: 1.55em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+/*
+p {
+  padding: 0.3em 0 0 0;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: SFMono-Regular, monospace, Menlo;
+  margin: 2em auto 1.3em auto;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+
+h4 {
+  position: relative;
+  font-size: 1.2em;
+  font-family: Cobaisi, serif;
+  font-weight: 500;
+  font-style: italic;
+  kerning: 1.3em;
+  padding: 0.5em, 1em, 1em 1em;
+  text-align: right;
+  color: #555;
+}
+
+h4::before {
+  content: "“";
+  font-size: 2em;
+  font-weight: 700;
+  color: #ccc;
+  margin: 1em 0.66em 1em 0em;
+}
+
+h4::after {
+  content: "”";
+  font-size: 2em;
+  font-weight: 700;
+  color: #ccc;
+  position: relative;
+  top: 0.8em;
+  margin: 1em 0em 1.3em 0.66em;
+}
+
+h5 {
+  margin: auto;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+a {
+  outline: none;
+}
+
+b, strong {
+  font-weight: 600;
+  color: #222;
+}
+
+pre {
+  margin: 1.5em auto;
+  padding: 1em 1.3em;
+  display: block;
+  overflow: auto;
+  background-color: #f6f6f6;
+  border: 1px solid #eaeaea;
+}
+
+code {
+  margin: 0.2em;
+  padding: 0 0.3em;
+  font-size: 0.875em;
+  background-color: #f9fefe;
+}
+
+pre, code {
+  color: #222;
+  font-family: SFMono-Regular, monospace, Menlo;
+}
+
+.highlight pre {
+  padding: 1.2em;
+  border-radius: 3px;
+}
+
+blockquote code, .highlight pre code {
+  background-color: unset;
+}
+
+sup {
+  margin: 0;
+  padding: 0 0.2em 0 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #99dfff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 3px 25px 2px #fcfcfc;
+}
+
+ul {
+  margin: 1em auto 1.5em auto;
+  padding: 0 0 0 1em;
+}
+
+ol {
+  margin: 1em auto 1.5em auto;
+  padding: 0 0 0 0.8em;
+}
+
+li {
+  margin: 0 0.6em;
+  padding: 0 0 0 0.3em;
+}
+/*
+li::marker {
+  margin-left: -1.3em;
+  padding-right: 2em;
+}*/
+
+blockquote {
+  margin: 2em auto;
+  padding: 1em 1.8em;
+  background-color: #fcfcfc;
+}
+
+.wrapper {
+  overflow: auto;
+  position: relative;
+}
+
+.header {
+  padding: 1em 0em 0.3em 0em;
+  position: relative;
+}
+
+.nav {
+  min-width: 320px;
+  padding: 0 1em;
+  margin: 1em auto 0 auto;
+  font-family: SFMono-Regular, monospace, Menlo;
+  text-align: center;
+  /*border: 1px solid #eaeaea;*/
+}
+
+.nav-logo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+  color: #444;
+  text-align: left;
+  /*border: 1px solid #eaeaea;*/
+  transition: transform 150ms ease-out;
+}
+
+.nav-logo:hover
+.nav-links a:focus {
+  color: #000;
+}
+
+.nav-logo img {
+  display: block;
+  max-height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+/*
+ul.nav-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  direction: column;
+}
+*/
+.nav-links li {
+  display: inline-block;
+  margin: 0 auto;
+  /*text-align: right;*/
+}
+
+.nav-links li:first-child {
+  margin-left: 2em;
+}
+
+.nav-links li:last-child {
+  margin-right: 2em;
+}
+
+.nav-links a {
+  color: #696969;
+  text-decoration: none;
+  /*transition: color 150ms ease;*/
+  font-size: 0.75em;
+  text-align: right;
+
+}
+
+.nav-links a:focus,
+.nav-links a:hover {
+  color: #000;
+}
+
+.content {
+  max-width: 680px;
+  margin: 3.6em auto 5em auto;
+  padding: 0 2em;
+  /*
+  font-size: 16px;
+  line-height: 1.7;
+  */
+  color: #333;
+}
+
+.article-title {
+  margin: 1.8em 0 auto 0;
+}
+
+.article-date {
+  font-size: 0.75em;
+  font-weight: 300;
+  font-family: SFMono-Regular, monospace, Menlo;
+  color: #666;
+}
+
+.article-duration {
+  margin-top: 12px;
+  float: right;
+  font-size: 0.75em;
+  font-family: SFMono-Regular, monospace, Menlo;
+  padding: 1px 1em;
+  font-weight: bold;
+  border-radius: 3px;
+  background: #e5e5e5;
+  color: #fefefe;
+}
+
+.article-tags {
+  color: #ccc;
+  font-size: 1em;
+  font-family: SFMono-Regular, monospace, Menlo;
+  font-weight: 300;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.article-tags li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.article-tags a {
+  text-decoration: none;
+  font-size: 0.75em;
+  color: #696969;
+}
+
+.article-tags li::after {
+  content: ",";
+}
+
+.article-tags li:first-child::before {
+  content: "🔖  ";
+  margin-left: 2em;
+  padding-right: 0.5em;
+  font-style: italic;
+}
+
+.article-tags li:last-child::after {
+  display: none;
+}
+
+.article-tags a:focus,
+.article-tags a:hover {
+  color: #000;
+}
+
+/*
+.article-content p {
+  margin: 1em 0;
+}*/
+
+
+.article-content a {
+  text-decoration: underline;
+  color: inherit;
+  background: transparent;
+  transition: background 150ms ease;
+}
+
+.article-content a:hover,
+.article-content a:focus {
+  background: #fffbb9;
+}
+
+.article-content li::marker {
+  color: #696969;
+}
+
+.article-content hr {
+  margin: 14x auto;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+  background: #e5e5e5;
+}
+/*
+.highlight {
+  position: relative;
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+.highlight pre {
+  padding: 10px;
+}*/
+
+
+.archive {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5em;
+  text-align: center;
+  /*color: #111;*/
+}
+
+.archive-title {
+  font-size: 3em;
+  font-family: -apple-system,
+              BlinkMacSystemFont,
+              "Segoe UI",
+              Roboto,
+              Oxygen,
+              Ubuntu,
+              Cantarell,
+              "Fira Sans",
+              "Droid Sans",
+              "Helvetica Neue",
+              sans-serif,
+              "Apple Color Emoji",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol";
+  display: block;
+  margin-top: 2em;
+  color: #aaa;
+}
+
+.archive-item {
+  margin: 1em 0 15px;
+  padding: 0;
+}
+
+.archive-item-date {
+  color: #aaa;
+  font-size: 1em;
+  padding: 5px 0;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.archive-item-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: SFMono-Regular, monospace, Menlo;
+  font-weight: bold;
+  color: #222;
+  padding: 5px 0;
+}
+
+.archive-item-link:hover {
+  border-bottom-color: #444;
+  text-decoration: underline;
+}
+
+.footer {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1em 1em 0.7em 1em;
+  text-align: center;
+  font-family: SFMono-Regular, monospace, Menlo;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+  font-size: 0.8em;
+}
+
+.footer-links li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 150ms ease;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #444;
+}
+
+.footer-links li::before {
+  content: '/';
+  position: relative;
+  left: -2px;
+}
+
+.footer-links li:first-child::before {
+  display: none;
+}
+.footer-links-kudos img {
+  position: relative;
+  top: 6px;
+  margin-left: 2px;
+}
+
+@media (min-width: 600px) {
+    .header {
+      padding: 1em 0 0.3em 0;
+    }
+
+    .nav-logo {
+      padding: 0;
+      margin: -13px 0 0 0;
+    }
+
+    .nav-logo img {
+      max-height: 10px;
+    }
+
+    .nav-links {
+      font-size: 1em;
+    }
+
+    .nav-links li {
+      margin: 0 0 0 1em;
+    }
+
+    .content {
+      margin: 3.6em auto 5em auto;
+    }
+
+    /*.highlight {
+      font-size: 16px;
+      margin: 40px -20px;
+    }*/
+
+    .archive {
+      text-align: left;
+    }
+
+    .archive-title {
+      font-size: 2em;
+      font-weight: 600;
+    }
+
+    .archive-item-date {
+      font-size: 1em;
+      text-align: right;
+      float: right;
+    }
+
+    .article-title {
+      font-size: 1.3em;
+    }
+
+    .article-duration {
+      font-size: 0.8em;
+    }
+
+    .footer-links {
+      font-size: .85em;
+    }
+}

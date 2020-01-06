@@ -1,0 +1,8 @@
+<nav class="nav">
+  <ul class="nav-links">
+    <li class="nav-logo"><a href="{{ .Site.BaseURL }}">> blog</a></li>
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</nav>

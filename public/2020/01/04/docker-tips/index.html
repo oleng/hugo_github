@@ -62,7 +62,7 @@
       <p>Some useful tips for docker</p>
 <ol>
 <li>
-<p>Make hortcuts of useful commands (with flags) for freeing up space is one time effort compared to remembering which command Docker provides. Use <code>alias</code> on macOS and put them in <code>~/.bash_profile</code> so they're loaded in your terminal (I use <code>~/.bashrc</code> for aliases holder, which needs to be sourced unlike <code>.bash_profile</code>, see my .dev/dotfiles repo for more info). Alias is auto completed in bash.</p>
+<p>Make hortcuts of useful commands (with flags) for freeing up space is one time effort compared to remembering which command Docker provides. Use <code>alias</code> on macOS and put them in <code>~/.bash_profile</code> so they're loaded in your terminal (I use <code>~/.bashrc</code> for aliases holder, which needs to be sourced unlike <code>.bash_profile</code>, see my <a href="https://github.com/oleng/.dev/tree/master/dotfiles">.dev/dotfiles</a> repo for more info). Alias is auto completed in bash.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># remove just dangling images</span>
 <span style="color:#111">alias</span> docker-dangling-images<span style="color:#f92672">=</span><span style="color:#d88200">&#34;</span><span style="color:#d88200">docker rmi </span><span style="color:#00a8c8">$(</span>docker images --filter <span style="color:#111">dangling</span><span style="color:#f92672">=</span><span style="color:#111">true</span><span style="color:#00a8c8">)</span><span style="color:#d88200">&#34;</span>
    
