@@ -1,2 +1,1 @@
-# oleng.github.io
-github pages using hugo
+Theme is a modified version of [Lithium](https://github.com/jrutheiser/hugo-lithium-theme)
