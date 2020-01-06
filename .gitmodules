@@ -1,4 +1,1 @@
-[submodule "public-sub"]
-	path = public
-	url = git@github.com:oleng/oleng.github.io.git
-	branch = master
+
