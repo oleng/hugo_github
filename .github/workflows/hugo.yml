@@ -3,15 +3,14 @@ name: Hugo
 on:
   push:
     branches:
-    - master
+    - hugo
 
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
-      # with:
-      #   submodules: true
+
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -26,5 +25,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v2
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./public
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: .
