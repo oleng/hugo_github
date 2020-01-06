@@ -18,7 +18,7 @@
       
       <guid>https://oleng.github.io/2020/01/04/docker-tips/</guid>
       <description>Some useful tips for docker
-  Make hortcuts of useful commands (with flags) for freeing up space is one time effort compared to remembering which command Docker provides. Use alias on macOS and put them in ~/.bash_profile so they&#39;re loaded in your terminal (I use ~/.bashrc for aliases holder, which needs to be sourced unlike .bash_profile, see my .dev/dotfiles repo for more info). Alias is auto completed in bash.</description>
+  Making shortcuts for useful commands (with flags) to free up space is one time effort compared to remembering which command Docker provides. Use alias on macOS and put them in ~/.bash_profile so they&#39;re loaded in your terminal (I use ~/.bashrc for aliases holder, which needs to be sourced unlike .bash_profile, see my .dev/dotfiles repo for more info). Alias is auto completed in bash.</description>
     </item>
     
     <item>
