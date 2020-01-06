@@ -9,6 +9,7 @@ body {
   font-size: 1em;
   font-family: 'Libre Franklin', serif;
   line-height: 1.55em;
+  font-weight: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
