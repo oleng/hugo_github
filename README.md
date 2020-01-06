@@ -1,2 +1,2 @@
-# hugo_github
-hugo for github pages
+# oleng.github.io
+github pages using hugo
