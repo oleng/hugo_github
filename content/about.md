@@ -25,9 +25,13 @@ I used to be a person who build facility for visual post-production companies in
 
 - **Finalising based on type of services and amount of people in the entire team**: _What specific parts of post-production the company caters, and how many people work on each of these parts_?     
 
-    There are several stages in post-production, mainly story editing, color correction, finishing, and mastering. In visual post-production, sound is involved in most of the stages but not as much as in audio post-production company, this allows the production team to worked in separate if necessary. Story editing stage usually only requires modest hardware requirements compared to the other later stages because its main purpose is basically creating the story from draft to final version. But in smaller companies there's also a trend of combining the editing stage with the other stage, like compositing & finishing. Color correction or grading, as well as finishing stage of post-production form the bulk in hardwares & software requirements. Finishing can consists of smaller components like motion graphic, compositing, VFX, 3D VFX, etc, and in the case of movie production, color grading. Mastering, depending on what kind of format, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
+    There are several stages in post-production, mainly story editing, color correction, finishing, and mastering. In visual post-production, sound is involved in most of the stages but not as much as in audio post-production company, this allows the production team to worked in separate if necessary.    
+    Story editing stage usually only requires modest hardware requirements compared to the others in later stages because its main purpose is basically finalising the story from draft to final version.    
+    Color correction or grading, as well as finishing stage of post-production form the bulk in hardwares & software requirements.      
+    Finishing can consists of many components like motion graphic, compositing, VFX, 3D VFX, etc, and in the case of movie production, color grading.         
+    Mastering, depending on what kind of format, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
          
-    Workflows, structure and pipeline are entirely depending on these parts. Centralized storage server(s) often will be needed when dealing with more than 3 workstations. 
+    Workflows, structures and pipelines are entirely depending on these parts. Centralized storage server(s) often will be needed when dealing with more than 3 workstations. 
     
 If you're interested in reaching me for post-production consulting or other work opportunities, write me at <tjioechandra.official@gmail.com> or drop a message at [linkedin](https://www.linkedin.com/in/tjioe-oleng-chandra/).
  
