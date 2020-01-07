@@ -28,7 +28,7 @@ I used to be a person who build facility for visual post-production companies in
     There are several stages in post-production, mainly story editing, color correction, finishing, and mastering. In visual post-production, sound is involved in most of the stages but not as much as in audio post-production company, this allows the production team to worked in separate if necessary.    
     Story editing stage usually only requires modest hardware requirements compared to the others in later stages because its main purpose is basically finalising the story from draft to final version.    
     Color correction or grading, as well as finishing stage of post-production form the bulk in hardwares & software requirements.      
-    Finishing can consists of many components like motion graphic, compositing, VFX, 3D VFX, etc, and in the case of movie production, color grading.         
+    Finishing consists of many components like motion graphic, compositing, VFX, 3D VFX, etc, and in the case of movie production, color grading.         
     Mastering, depending on what kind of format, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
          
     Workflows, structures and pipelines are entirely depending on these parts. Centralized storage server(s) often will be needed when dealing with more than 3 workstations. 
