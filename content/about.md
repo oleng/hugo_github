@@ -6,6 +6,7 @@ draft: false
 
 > ##### `$ whoami` 
 > I used to be a Digital Imaging Technician (DIT) for a motion picture production company around 2008, then became a Post-Production engineer slash Post-Production supervisor. Now I'm looking for work opportunities in software engineering fields, particularly in DevOps and Data Engineering.    
+> 
 > Tools: Python, Bash, SQLite, Redis, PostgreSQL, Docker, macOS, Ubuntu   
 > To do list: Go, Rust, Kubernetes, Kafka, Graph databases, Hashi Vault, Prefetch, Argo  
 
