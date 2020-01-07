@@ -17,7 +17,7 @@ I used to be a person who build facility for visual post-production companies in
     The answer to this question determines the kind of system a facility needs.    
     As a general rule of thumb if a facility needs to facilitate the top two kinds of the production types [^note], then we'll be talking about medium to large facility. Technical specifications including but not limited to: 
     - storing at least 6 months worth of data (safe to say 40-50TB is the least amount of storage capacities for 3-8 people)
-    - internal network capable of serving real-time those video (_emphasize in visual because audio is much lighter_) data to workstations
+    - internal network capable of serving real-time those video (_emphasis in visual because audio is much lighter_) data to workstations
     - multiple specific hardwares & softwares for handling those workstations loads for finishing to media format(s) the project requires, usually in multiple versions. 
 
     There are other specification details involved in the working environments needed to be done properly as well to make sure the end results will be matching industry standards expectation. 
