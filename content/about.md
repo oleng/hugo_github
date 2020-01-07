@@ -31,7 +31,7 @@ I used to be a person who build facility for visual post-production companies in
     Finishing consists of many components like motion graphic, compositing, VFX, 3D VFX, etc, and in the case of movie production, color grading.         
     Mastering, depending on what kind of format, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
          
-    Workflows, structures and pipelines are entirely dependant on these parts. Centralized storage server(s) often will be needed when dealing with more than 3 workstations. 
+    Workflows, structures and pipelines are entirely dependant on these parts. Centralized storage server(s) will often be needed when dealing with more than 3 workstations. 
     
 If you're interested in reaching me for post-production consulting or other work opportunities, write me at <tjioechandra.official@gmail.com> or drop a message at [linkedin](https://www.linkedin.com/in/tjioe-oleng-chandra/).
  
