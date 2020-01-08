@@ -5,10 +5,18 @@ draft: false
 ---
 
 > ##### `$ whoami` 
-> I used to be a Digital Imaging Technician (DIT) for a motion picture production company around 2008, then became a Post-Production engineer slash Post-Production supervisor. Now I'm looking for work opportunities in software engineering fields, particularly in DevOps and Data Engineering.    
+> I was a Digital Imaging Technician (DIT) for a motion picture production company around 2008, then became a Post-Production engineer slash Post-Production supervisor. 
+> Now I'm looking for work opportunities in software engineering fields, particularly in **DevOps** and **Data Engineering**.    
 > 
-> Tools: Python, Bash, SQLite, Redis, PostgreSQL, Docker, macOS, Ubuntu   
-> To do list: Go, Rust, Kubernetes, Kafka, Graph databases, Hashi Vault, Prefetch, Argo  
+> Tools
+> : _Python, Bash, SQLite, Redis, PostgreSQL, Docker, macOS, Ubuntu_      
+>
+> To do
+> : _Go, Rust, Kubernetes, Kafka, Graph databases, Hashi Vault, Prefetch, Argo_  
+> 
+> If you're interested in reaching me for work opportunities:    
+> [ ![emailme](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABC0lEQVRIx+3Uu0oDQRgF4C8i0cdQUCwUbCzUh7AQBFsLy/gEgtj4ADGlLyA2lmKllbWgjVVUjMHC2iwhazPFEpLZzQUs3ANTzH85Z4bzz1CiRIn/g8qQ+Hwkl4cUP3ki26ihGhpGPXSCOh5ihR+BfJL1nneTdNpWzAxIHqA1AXk7cIiJtLCHmzEEbkPvZ17hF06wglN0C3jQwxmWcRw4ckcwwTWWsIPXiEAbu1jEJTpFfM0SPGMT67jru1UX99jAFh77eguLpPjGEVbRwEtYjRCrhZp0mEjREU5whYtMTw+HwehqbIRHeScpmngK+zUsRL6fyp8/xrcpCDSzm9kBBfvBzLkxP8gOzrPBX2pNZi4bjaDaAAAAAElFTkSuQmCC)](tjioechandra.official@gmail.com) ⠀<tjioechandra.official@gmail.com>    
+> [![Linkedin](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAQXRFWHRDb21tZW50AENSRUFUT1I6IGdkLWpwZWcgdjEuMCAodXNpbmcgSUpHIEpQRUcgdjYyKSwgcXVhbGl0eSA9IDkwCrBFWJMAAAIwSURBVDjL1dU/iBVXFMfxz7y3Khu8YNYEzWgTxQR1IaBFQASFgFiIkhCIKBYRC0tRLAXBpBYsUqSwScAmBBuLQApRCIpYhcjGBCwMRyEqyl3FP7s7ae6DcfJ291l64DB/7pzvzLnnd87wtlk1ykN1Xfcxhl4rZg6zmImI5o3AdV0vw0ocwh5swTtl+R9cxQ+4EREPRgLXdT2BIziGDxZJ6ld8i98i4iX054F+iG9wEqmk3czjFdZhBx6nlKZyzjP9IdBxnMbh1our4k3rvO3wLibxV875dr8D7eEgTmFJCfobX2MD1swDHdgE3k8pXXsNnFIaw3msbZpmtqqqHr6MiF9SSg/w1QgiWoffu+C9OFqkNVtVVR/jKaU/SiE/WQQ6N9iysc7CTixr7essduOzsjXPi8wSXiBjHGuxtOgcPu11wJs6132ciYj3cBxT+Bj7sDUiJiNiPX7qxK3qglcMSa/fOvYiYg638EVd1/vK2kU8aQd1wXmRtm+Kcj7Hdzhe1/Vy3MX0QuDbI1R9DKuLppWaPCv1GNijLvgKXo0An2uBm5bmB3ajC76IO517zZDrZsh6G3ypq+NBy+4qGobplNIEtmMjnpa5sBEz5eu3YluR3nWcq4bMiuX4HvtHndctu4cTEXHhf0Mo5/wypTRVRL+hFHih6TbI8j7O4kLO+cXQsZlz/jeldK1o96My3KsF/GaZiD9GxPQof5BUuvFAaffNrYZ5WIA/43JE/NmO/Q9BlqNNOdfmZwAAAABJRU5ErkJggg==)](https://www.linkedin.com/in/tjioe-oleng-chandra) ⠀[linkedin](https://www.linkedin.com/in/tjioe-oleng-chandra/) 
 
 I used to be a person who build facility for visual post-production companies in Jakarta. I've **designed**, **budgeted**, **purchased**, **built** and **maintained** a few of them. In general this involves:
 
@@ -32,8 +40,7 @@ I used to be a person who build facility for visual post-production companies in
     Mastering, depending on what kind of format, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
          
     Workflows, structures and pipelines are entirely dependent on these parts. Centralized storage server(s) will often be needed when dealing with more than 3 workstations. 
-    
-If you're interested in reaching me for post-production consulting or other work opportunities, write me at <tjioechandra.official@gmail.com> or drop a message at [linkedin](https://www.linkedin.com/in/tjioe-oleng-chandra/).
+
  
  
  
