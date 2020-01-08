@@ -121,11 +121,10 @@ blockquote code, .highlight pre code {
 
 sup {
   margin: 0;
-  padding: 0 0.2em 0 0;
+  padding: 0em 0.3em 0 0.1em;
   font-size: 0.8em;
-  font-weight: bold;
-  color: #99dfff;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -358,7 +357,13 @@ ul.nav-links {
 .highlight pre {
   padding: 10px;
 }*/
-
+1
+a.footnote-ref {
+  /* font-weight: bold; */
+  color: #000;
+  background: transparent;
+  transition: background 150ms ease;
+}
 
 .archive {
   margin: 0;
