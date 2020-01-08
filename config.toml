@@ -5,7 +5,7 @@ theme = [ "lithiumx" ]
 googleAnalytics = "UA-155567382-1"
 disqusShortname = ""
 disableKinds = ["section", "404"]
-tags = [ "dev", "python", "ux", "writing", "learning", "postproduction","data" ]
+tags = [ "development", "python", "ux", "postproduction","data" ]
 enableEmoji = true
 
 [permalinks]
