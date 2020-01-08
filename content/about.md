@@ -5,7 +5,7 @@ draft: false
 ---
 
 > ##### `$ whoami` 
-> I was a Digital Imaging Technician (DIT) for a motion picture production company around 2008, then became a Post-Production engineer slash Post-Production supervisor. 
+> I was a Digital Imaging Technician (DIT) for a motion picture production company, became a Post-Production engineer slash Post-Production supervisor since end of 2009. 
 > Now I'm looking for work opportunities in software engineering fields, particularly in **DevOps** and **Data Engineering**.    
 > 
 > Tools
