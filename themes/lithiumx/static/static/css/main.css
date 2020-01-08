@@ -418,6 +418,10 @@ ul.nav-links {
   text-decoration: underline;
 }
 
+.footnotes {
+  margin-top: 2.4em;
+}
+
 .footer {
   max-width: 80%;
   margin: 0 auto;
