@@ -1,7 +1,7 @@
 ---
 title: "Docker tips"
 date: 2020-01-04T09:05:44Z
-tags: [ "development", "container" ]
+tags: [ "development", "containers" ]
 draft: false
 ---
 
