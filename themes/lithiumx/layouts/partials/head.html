@@ -1,6 +1,5 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ hugo.Generator }}
 
 {{ if .IsHome }}
 <title>{{ .Title }}</title>
@@ -12,6 +11,7 @@
 {{ end }}
 {{ with .Site.Params.favicon }}
   <link href='{{ . | absURL }}' rel='icon' type='image/x-icon'/>
+  <link href='{{ . | absURL }}' rel='shortcut icon' type='image/x-icon'/>
 {{ end }}
 
 {{ if .IsHome }}
