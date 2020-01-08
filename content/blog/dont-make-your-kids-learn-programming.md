@@ -1,7 +1,7 @@
 ---
 title: "Don't make your kids learn programming"
 date: 2019-12-28T16:23:40Z
-tags: [ 'opinion' ]
+tags: [ 'thought','opinion' ]
 draft: false
 ---
 
