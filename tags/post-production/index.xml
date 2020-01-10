@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>post-production on oleng</title>
+    <link>https://oleng.github.io/tags/post-production/</link>
+    <description>Recent content in post-production on oleng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2019 19:52:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://oleng.github.io/tags/post-production/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Post-production facility considerations</title>
+      <link>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</link>
+      <pubDate>Thu, 26 Dec 2019 19:52:15 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</guid>
+      <description>Key points when considering to build a post-production facility:
+  Designing system for the entire facility: What is the medium &amp;amp; viewing target that company provides services for?
+The answer to this question determines the kind of system a facility needs. As a general rule of thumb if a facility needs to facilitate the top two kinds of the production types 1, then we&#39;ll be talking about medium to large facility.</description>
+    </item>
+    
+  </channel>
+</rss>
