@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.62.1" />
 
 
 <title>Docker tips . oleng</title>
 <meta property="og:title" content="Docker tips - oleng">
+<meta name="twitter:creator" content="@deadvoid">
 
 
-  <link href='https://oleng.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
+  <link href='https://oleng.github.io/favicon.png' rel='apple-touch-icon' />
+  <link href='https://oleng.github.io/favicon.png' rel='shortcut icon' type='image/x-icon'/>
 
 
 
@@ -19,9 +20,8 @@
 
 
 
-<link rel="icon" href="https://oleng.github.io/static/images/favicon.ico" type="image/x-icon"/>
 <link rel="stylesheet" href="https://oleng.github.io/static/css/main.css" media="all">
-<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -54,7 +54,7 @@
     
     <li><a href="https://oleng.github.io/tags/development">development</a></li>
     
-    <li><a href="https://oleng.github.io/tags/container">container</a></li>
+    <li><a href="https://oleng.github.io/tags/containers">containers</a></li>
     
     </ul>
     
@@ -62,7 +62,7 @@
       <p>Some useful tips for docker</p>
 <ol>
 <li>
-<p>Make hortcuts of useful commands (with flags) for freeing up space is one time effort compared to remembering which command Docker provides. Use <code>alias</code> on macOS and put them in <code>~/.bash_profile</code> so they're loaded in your terminal (I use <code>~/.bashrc</code> for aliases holder, which needs to be sourced unlike <code>.bash_profile</code>, see my .dev/dotfiles repo for more info). Alias is auto completed in bash.</p>
+<p>Making shortcuts for useful commands (with flags) to free up space is one time effort compared to remembering which command Docker provides. Use <code>alias</code> on macOS and put them in <code>~/.bash_profile</code> so they're loaded in your terminal (I use <code>~/.bashrc</code> for aliases holder, which needs to be sourced unlike <code>.bash_profile</code>, see my <a href="https://github.com/oleng/.dev/tree/master/dotfiles">.dev/dotfiles</a> repo for more info). Alias is auto completed in bash.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># remove just dangling images</span>
 <span style="color:#111">alias</span> docker-dangling-images<span style="color:#f92672">=</span><span style="color:#d88200">&#34;</span><span style="color:#d88200">docker rmi </span><span style="color:#00a8c8">$(</span>docker images --filter <span style="color:#111">dangling</span><span style="color:#f92672">=</span><span style="color:#111">true</span><span style="color:#00a8c8">)</span><span style="color:#d88200">&#34;</span>
    
@@ -113,6 +113,19 @@
     </div>
 
     
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-155567382-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
   </body>
 </html>
 

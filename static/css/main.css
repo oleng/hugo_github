@@ -9,6 +9,7 @@ body {
   font-size: 1em;
   font-family: 'Libre Franklin', serif;
   line-height: 1.55em;
+  font-weight: 360;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -120,11 +121,10 @@ blockquote code, .highlight pre code {
 
 sup {
   margin: 0;
-  padding: 0 0.2em 0 0;
+  padding: 0em 0.3em 0 0.1em;
   font-size: 0.8em;
-  font-weight: bold;
-  color: #99dfff;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -357,7 +357,13 @@ ul.nav-links {
 .highlight pre {
   padding: 10px;
 }*/
-
+1
+a.footnote-ref {
+  /* font-weight: bold; */
+  color: #000;
+  background: transparent;
+  transition: background 150ms ease;
+}
 
 .archive {
   margin: 0;
@@ -415,6 +421,10 @@ ul.nav-links {
 .archive-item-link:hover {
   border-bottom-color: #444;
   text-decoration: underline;
+}
+
+.footnotes {
+  margin-top: 2.4em;
 }
 
 .footer {

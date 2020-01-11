@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://oleng.github.io/tags/container/</loc>
+    <loc>https://oleng.github.io/tags/containers/</loc>
     <lastmod>2020-01-04T09:05:44+00:00</lastmod>
   </url>
   
@@ -53,7 +53,22 @@
   </url>
   
   <url>
+    <loc>https://oleng.github.io/tags/thought/</loc>
+    <lastmod>2019-12-28T16:23:40+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://oleng.github.io/about/</loc>
+    <lastmod>2019-12-26T19:52:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oleng.github.io/tags/post-production/</loc>
+    <lastmod>2019-12-26T19:52:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</loc>
     <lastmod>2019-12-26T19:52:15+00:00</lastmod>
   </url>
   

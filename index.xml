@@ -18,7 +18,7 @@
       
       <guid>https://oleng.github.io/2020/01/04/docker-tips/</guid>
       <description>Some useful tips for docker
-  Make hortcuts of useful commands (with flags) for freeing up space is one time effort compared to remembering which command Docker provides. Use alias on macOS and put them in ~/.bash_profile so they&#39;re loaded in your terminal (I use ~/.bashrc for aliases holder, which needs to be sourced unlike .bash_profile, see my .dev/dotfiles repo for more info). Alias is auto completed in bash.</description>
+  Making shortcuts for useful commands (with flags) to free up space is one time effort compared to remembering which command Docker provides. Use alias on macOS and put them in ~/.bash_profile so they&#39;re loaded in your terminal (I use ~/.bashrc for aliases holder, which needs to be sourced unlike .bash_profile, see my .dev/dotfiles repo for more info). Alias is auto completed in bash.</description>
     </item>
     
     <item>
@@ -50,8 +50,18 @@ I too don&#39;t know anything about guiding or teaching kids. But there are two 
       <pubDate>Thu, 26 Dec 2019 19:52:15 +0000</pubDate>
       
       <guid>https://oleng.github.io/about/</guid>
-      <description>😁
-[ intentionally left blank ]</description>
+      <description>$ whoami I was a Digital Imaging Technician (DIT) for a motion picture production company, became a Post-Production engineer slash Post-Production supervisor since end of 2009. I&#39;ve designed, budgeted, processed purchases, as well as built and maintained a few visual post-production facility companies in Jakarta. Read a brief explanation about it here. I was also directly involved in several Indonesian movies, and most of the companies I worked with were working on TV commercials on daily basis.</description>
+    </item>
+    
+    <item>
+      <title>Post-production facility considerations</title>
+      <link>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</link>
+      <pubDate>Thu, 26 Dec 2019 19:52:15 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</guid>
+      <description>Key points when considering to build a post-production facility:
+  Designing system for the entire facility: What is the medium &amp;amp; viewing target that company provides services for?
+The answer to this question determines the kind of system a facility needs. As a general rule of thumb if a facility needs to facilitate the top two kinds of the production types 1, then we&#39;ll be talking about medium to large facility.</description>
     </item>
     
     <item>
