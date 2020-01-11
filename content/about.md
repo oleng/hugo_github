@@ -17,7 +17,7 @@ Contact me if you're interested in reaching me for work opportunities :
 
 
 > Tools
-> : _Python, Bash, SQLite, Redis, PostgreSQL, Docker, macOS, Ubuntu_      
+> : _Python, CLI/bash, HTML/CSS, SQLite, Redis, PostgreSQL, Docker, macOS, Ubuntu_      
 >
 > To do
 > : _Go, Rust, Kubernetes, Kafka, Graph databases, Hashi Vault, Prefetch, Argo_  
