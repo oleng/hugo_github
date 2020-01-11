@@ -8,11 +8,12 @@
 {{ else }}
 <title>{{ .Title }} . {{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta name="twitter:site" content="@deadvoid">
 <meta name="twitter:creator" content="@deadvoid">
 {{ end }}
 {{ with .Site.Params.favicon }}
-  <link href='{{ . | absURL }}' rel='apple-touch-icon' />
-  <link href='{{ . | absURL }}' rel='shortcut icon' type='image/x-icon'/>
+  <link href='{{ . | absURL }}' rel='apple-touch-icon'>
+  <link href='{{ . | absURL }}' rel='shortcut icon'>
 {{ end }}
 
 {{ if .IsHome }}
