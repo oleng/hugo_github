@@ -29,16 +29,16 @@ enableEmoji = true
     description = "intersections, subcontexts, hubris"
 
     # path to the favicon, under "static"
-    favicon = "favicon.ico"
+    favicon = "favicon.png"
 
-    [params.logo]
-        url = "logo.png"
-        width = 50
-        height = 50
-        alt = "logoish"
+    # [params.logo]
+    #     url = "logo.png"
+    #     width = 50
+    #     height = 50
+    #     alt = "logoish"
 
     [params.icon]
-        url = "favicon.ico"
+        url = "favicon.png"
 
 [markup]
     defaultMarkdownHandler = "goldmark"
