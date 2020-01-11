@@ -1,6 +1,7 @@
 ---
 title: "about"
 date: 2019-12-26T19:52:15Z
+description: "about me"
 draft: false
 ---
 
@@ -20,6 +21,6 @@ Contact me if you're interested in reaching me for work opportunities :
 >
 > To do
 > : _Go, Rust, Graph databases, Kubernetes, Kafka, Hashi Vault, Prefetch, Argo_  
-> 
 
-^The pages here are generated from Markdown files, version controlled with git, and each commits automatically triggered continuous deployment in GitHub. Last commit
+
+{{< rawhtml >}}<sup style="font-size: 0.75em; line-height: 0.8em; padding: 0;">The pages here are generated from Markdown files, version controlled with git, and each commits automatically triggered continuous deployment in GitHub.</sup>{{< /rawhtml >}}
