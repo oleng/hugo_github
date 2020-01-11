@@ -8,6 +8,7 @@
 {{ else }}
 <title>{{ .Title }} . {{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta name="twitter:creator" content="@deadvoid">
 {{ end }}
 {{ with .Site.Params.favicon }}
   <link href='{{ . | absURL }}' rel='apple-touch-icon' />
