@@ -7,6 +7,7 @@ disqusShortname = ""
 disableKinds = ["section", "404"]
 tags = [ "development", "python", "ux", "postproduction","data" ]
 enableEmoji = true
+enableInlineShortcodes = true
 
 [permalinks]
     blog = "/:year/:month/:day/:title/"
@@ -20,8 +21,7 @@ enableEmoji = true
     url = "https://github.com/oleng"
 # [[menu.main]]
 #     name = "twitter"
-#     url = "https://mobile.twitter.com/deadvoid"
-
+#     url = "https://mobile.twitter.com/"
 
 [params]
     mainSections = ["blog"]
@@ -63,27 +63,53 @@ enableEmoji = true
             guessSyntax = false
             hl_Lines = ""
             lineNoStart = 1
-            lineNos = false
+            lineNos = true
             lineNumbersInTable = true
             noClasses = true
             style = "monokailight"
             tabWidth = 4
-            [markup.tableOfContents]
+        [markup.tableOfContents]
             endLevel = 3
             ordered = false
             startLevel = 2
-    [markup.blackFriday]
-        angledQuotes = false
-        footnoteAnchorPrefix = ""
-        footnoteReturnLinkContents = ""
-        fractions = true
-        hrefTargetBlank = false
-        latexDashes = true
-        nofollowLinks = false
-        noreferrerLinks = false
-        plainIDAnchors = true
-        skipHTML = false
-        smartDashes = true
-        smartypants = true
-        smartypantsQuotesNBSP = false
-        taskLists = true
+    # [markup.blackFriday]
+    #     angledQuotes = false
+    #     footnoteAnchorPrefix = ""
+    #     footnoteReturnLinkContents = ""
+    #     fractions = true
+    #     hrefTargetBlank = false
+    #     latexDashes = true
+    #     nofollowLinks = false
+    #     noreferrerLinks = false
+    #     plainIDAnchors = true
+    #     skipHTML = false
+    #     smartDashes = true
+    #     smartypants = true
+    #     smartypantsQuotesNBSP = false
+    #     taskLists = true
+
+[privacy]
+    [privacy.disqus]
+        disable = true
+    [privacy.googleAnalytics]
+        disable = false
+        anonymizeIP = false
+        respectDoNotTrack= true
+        useSessionStorage = true
+    [privacy.instagram]
+        disable = false
+        simple = true
+    [privacy.twitter]
+        disable = false
+        enableDNT = false
+        simple = true
+    [privacy.vimeo]
+        disable = false
+        simple = true
+    [privacy.youtube]
+        disable = false
+        privacyEnhanced = true
+
+[services]
+  [services.twitter]
+    disableInlineCSS = true
