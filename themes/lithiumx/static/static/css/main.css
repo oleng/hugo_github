@@ -39,31 +39,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system,
-              system-ui, sans-serif, -apple-system-ui-serif, ui-serif, serif;
+  font-family: 'Crimson Text',
+                'Garamond',
+                -apple-system-ui-serif,
+                ui-serif,
+                serif;
   font-kerning: normal;
   line-height: 1.15em;
+  letter-spacing: normal;
   /* margin: 2em auto 1.3em auto; */
   color: rgba(0,0,0,.76);
 }
 
-/* h1 {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 1.6em;
-}
-
-h3 {
-  font-size: 1.4em;
-} */
-
-
 h4 {
   position: relative;
-  font-family: -apple-system-ui-serif, ui-serif, serif;
   font-size: 1.55em;
   font-style: italic;
   padding: 0.5em, 1em, 1em 1em;
@@ -91,7 +80,7 @@ h4::after {
 
 h5 {
   margin: 1.25em auto auto auto;
-  font-size: 1.15em;
+  font-size: 1.2em;
   font-weight: 700;
 }
 
@@ -109,14 +98,13 @@ pre {
   /* padding: 1em 1.3em; */
   display: block;
   overflow: auto;
-  background-color: rgba(0,0,0,.03);
-  /* background-color: #f6f6f6; */
-  border: 1px solid #eaeaea;
-  /* white-space: pre-wrap; */       /* css-3 */
-  /* white-space: -moz-pre-wrap; */  /* Mozilla, since 1999 */
-  /* white-space: -pre-wrap; */      /* Opera 4-6 */
-  /* white-space: -o-pre-wrap; */    /* Opera 7 */
-  /* word-wrap: break-word; */       /* Internet Explorer 5.5+ */
+  background-color: rgba(0,0,0,.03);  /* old was background-color: #f6f6f6; */
+  /* border: 1px solid #eaeaea; */
+  /* white-space: pre-wrap; */        /* css-3 */
+  /* white-space: -moz-pre-wrap; */   /* Mozilla, since 1999 */
+  /* white-space: -pre-wrap; */       /* Opera 4-6 */
+  /* white-space: -o-pre-wrap; */     /* Opera 7 */
+  /* word-wrap: break-word; */        /* Internet Explorer 5.5+ */
 }
 
 code {
@@ -397,20 +385,11 @@ a.footnote-ref {
 }
 
 .archive-title {
-  font-family: -apple-system,
-              BlinkMacSystemFont,
-              "Helvetica Neue",
-              "Segoe UI",
-              Roboto,
-              Oxygen,
-              Ubuntu,
-              Cantarell,
-              "Fira Sans",
-              "Droid Sans",
-              "Segoe UI Emoji",
-              "Segoe UI Symbol",
-              sans-serif;
-  font-size: 3em;
+  font-family: 'Crimson Text',
+                'Garamond',
+                -apple-system-ui-serif,
+                ui-serif,
+                serif;
   font-weight: bolder;
   display: block;
   margin: 2em auto 0.8em -0.8em;
@@ -522,6 +501,7 @@ a.footnote-ref {
 .footer-links li:first-child::before {
   display: none;
 }
+
 .footer-links-kudos img {
   position: relative;
   top: 6px;
@@ -553,7 +533,6 @@ a.footnote-ref {
       font-size: 2em;
     }
 
-    /* .archive .archive-title, */
     .archive .archive-item-link {
       font-size: 1.5em;
     }
@@ -589,11 +568,6 @@ a.footnote-ref {
       margin: 3.6em auto 5em auto;
     }
 
-    /*.highlight {
-      font-size: 16px;
-      margin: 40px -20px;
-    }
-*/
     .article-title {
       font-size: 2.5em;
     }
