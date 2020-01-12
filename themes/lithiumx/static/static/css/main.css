@@ -1,3 +1,8 @@
+/*
+TODO: resolve organisation & consistency details between desktop & mobile resolution
+See https://www.w3.org/TR/css-fonts-4/#valdef-font-family-ui-monospace and
+others like ui-serif & ui-sans-serif
+*/
 html,
 body {
   margin: 0;
@@ -24,14 +29,11 @@ body {
   line-height: 1.6em;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" on;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
 }
-/*
-See https://www.w3.org/TR/css-fonts-4/#valdef-font-family-ui-monospace and
-others like ui-serif & ui-sans-serif
-}*/
 
 h1,
 h2,
@@ -61,7 +63,7 @@ h4 {
 }
 
 h4::before {
-  content: "“";
+  content: " “ ";
   font-size: 2em;
   font-weight: 700;
   color: #ccc;
@@ -69,7 +71,7 @@ h4::before {
 }
 
 h4::after {
-  content: "”";
+  content: " ” ";
   font-size: 2em;
   font-weight: 700;
   color: #ccc;
