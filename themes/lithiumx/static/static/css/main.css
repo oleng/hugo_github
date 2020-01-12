@@ -410,7 +410,6 @@ a.footnote-ref {
 .archive-item {
   margin: 0.5em auto;
   padding: 0;
-  font-size: 1.1em;
 }
 
 .archive-item-date {
@@ -430,7 +429,7 @@ a.footnote-ref {
 .archive-item-link {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-family: 'EB Garamond',
               -apple-system-ui-serif,
               ui-serif,
