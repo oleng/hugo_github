@@ -21,7 +21,8 @@ body {
               "Segoe UI Emoji",
               "Segoe UI Symbol",
               sans-serif;
-  line-height: 1.55em;
+  line-height: 1.6em;
+  vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,32 +39,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'EB Garamond', -apple-system,
-              system-ui, sans-serif, -apple-system-ui-serif, ui-serif, serif;
+  font-family: 'Crimson Text',
+                'Garamond',
+                -apple-system-ui-serif,
+                ui-serif,
+                serif;
   font-kerning: normal;
   line-height: 1.15em;
+  letter-spacing: normal;
   /* margin: 2em auto 1.3em auto; */
   color: rgba(0,0,0,.76);
 }
 
-/* h1 {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 1.6em;
-}
-
-h3 {
-  font-size: 1.4em;
-} */
-
-
 h4 {
   position: relative;
-  font-family: 'EB Garamond', -apple-system-ui-serif, ui-serif, serif;
-  font-size: 1.5em;
+  font-size: 1.55em;
   font-style: italic;
   padding: 0.5em, 1em, 1em 1em;
   text-align: right;
@@ -90,9 +80,8 @@ h4::after {
 
 h5 {
   margin: 1.25em auto auto auto;
-  font-size: 1.05em;
+  font-size: 1.2em;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 a {
@@ -105,24 +94,27 @@ b, strong {
 }
 
 pre {
-  margin: 1.5em auto;
-  padding: 1em 1.3em;
+  /* margin: 1.5em auto; */
+  /* padding: 1em 1.3em; */
   display: block;
   overflow: auto;
-  background-color: rgba(0,0,0,.03);
-  /* background-color: #f6f6f6; */
-  border: 1px solid #eaeaea;
+  background-color: rgba(0,0,0,.03);  /* old was background-color: #f6f6f6; */
+  /* border: 1px solid #eaeaea; */
+  /* white-space: pre-wrap; */        /* css-3 */
+  /* white-space: -moz-pre-wrap; */   /* Mozilla, since 1999 */
+  /* white-space: -pre-wrap; */       /* Opera 4-6 */
+  /* white-space: -o-pre-wrap; */     /* Opera 7 */
+  /* word-wrap: break-word; */        /* Internet Explorer 5.5+ */
 }
 
 code {
-  margin: 0.2em;
-  padding: 0 0.3em;
+  /* margin: 0.2em; */
+  /* padding: 0 0.3em; */
   font-size: 0.875em;
   background-color: #f9fefe;
 }
 
 pre, code {
-  color: #222;
   font-family: ui-monospace, monospace;
 }
 
@@ -137,8 +129,9 @@ blockquote code, .highlight pre code {
 
 sup {
   margin: 0;
-  padding: 0em 0.3em 0 0.1em;
+  padding: 0 0.3em 0 0.1em;
   font-size: 0.8em;
+  line-height: 0.5em;
 }
 
 img {
@@ -251,7 +244,7 @@ ul.nav-links {
 }
 
 .nav-links a {
-  color: #696969;
+  color: rgba(0,0,0,.6);
   text-decoration: none;
   /*transition: color 150ms ease;*/
   font-size: 0.75em;
@@ -270,15 +263,13 @@ ul.nav-links {
 
 .article-date {
   font-size: 0.75em;
-  font-weight: 400;
-  font-family: ui-monospace, monospace;
-  /* color: #666; */
+/*   text-transform: uppercase; */
 }
 
 .article-duration {
   margin-top: 12px;
   float: right;
-  font-size: 0.75em;
+  font-size: 1em;
   font-family: ui-monospace, monospace;
   padding: 1px 1em;
   font-weight: bold;
@@ -307,18 +298,25 @@ ul.nav-links {
 .article-tags a {
   text-decoration: none;
   font-size: 0.75em;
-  color: #696969;
+  color: rgba(0,0,0,.6);
 }
 
 .article-tags li::after {
   content: ",";
+  color: rgba(0,0,0,.75);
 }
 
 .article-tags li:first-child::before {
-  content: "🔖  ";
-  margin-left: 1.5em;
-  padding-right: 0.25em;
-  font-style: italic;
+  content: "⠀ ";
+  width: 2em;
+  margin-left: 1.2em;
+  padding-right: 0.24em;
+  background-image: url('/static/img/tag.png');
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  background-clip: border-box;
+  background-color: transparent;
+
 }
 
 .article-tags li:last-child::after {
@@ -349,7 +347,7 @@ ul.nav-links {
 }
 
 .article-content li::marker {
-  color: #696969;
+  color: rgba(0,0,0,.6);
 }
 
 .article-content hr {
@@ -387,6 +385,24 @@ a.footnote-ref {
 }
 
 .archive-title {
+  font-family: 'Crimson Text',
+                'Garamond',
+                -apple-system-ui-serif,
+                ui-serif,
+                serif;
+  font-weight: bolder;
+  display: block;
+  margin: 2em auto 0.8em -0.8em;
+  color: rgba(0,0,0,.25);
+}
+
+.archive-item {
+  margin: 0.65em auto 0 auto;
+  padding: 0;
+  display: block;
+}
+
+.archive-item-date {
   font-family: -apple-system,
               BlinkMacSystemFont,
               "Helvetica Neue",
@@ -400,29 +416,13 @@ a.footnote-ref {
               "Segoe UI Emoji",
               "Segoe UI Symbol",
               sans-serif;
-  font-size: 3em;
-  font-weight: bold;
-  display: block;
-  margin: 2em auto 0.8em -0.8em;
-  color: rgba(0,0,0,.25);
-}
-
-.archive-item {
-  margin: 0.5em auto;
-  padding: 0;
-}
-
-.archive-item-date {
-  font-family: 'EB Garamond',
-              -apple-system-ui-serif,
-              ui-serif,
-              serif;
-  font-size: 1.28em;
+  font-size: 1.2em;
   font-style: oblique;
-  font-weight: 600;
   padding: 5px 0;
-  margin: auto 0.5em;
-  display: inline-block;
+  margin: auto 0.5em auto 0;
+  display: block;
+  /* text-align: left;
+  float: left; */
   color: rgba(0,0,0,.25);
 }
 
@@ -430,13 +430,22 @@ a.footnote-ref {
   display: inline-block;
   text-decoration: none;
   font-size: 1.4em;
-  font-family: 'EB Garamond',
-              -apple-system-ui-serif,
-              ui-serif,
-              serif;
-  font-weight: 600;
+  font-family: -apple-system,
+              BlinkMacSystemFont,
+              "Helvetica Neue",
+              "Segoe UI",
+              Roboto,
+              Oxygen,
+              Ubuntu,
+              Cantarell,
+              "Fira Sans",
+              "Droid Sans",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol",
+              sans-serif;
+  font-weight: bold;
   color: rgba(0,0,0,.76);
-  padding: 5px 0;
+  padding: 5px 0 0 0;
 }
 
 .archive-item-link:hover {
@@ -492,12 +501,47 @@ a.footnote-ref {
 .footer-links li:first-child::before {
   display: none;
 }
+
 .footer-links-kudos img {
   position: relative;
   top: 6px;
   margin-left: 2px;
 }
 
+@media screen {
+    h5,
+    .article-title,
+    .archive-item-link {
+      font-family: 'Crimson Text';
+    }
+
+    h5 {
+      font-style: italic;
+      font-size: 1.275em;
+    }
+    .article-date,
+    .article-duration,
+    .article-tags,
+    .archive-title,
+    .archive-item-date  {
+      font-family: 'Raleway';
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .archive-item-link {
+      font-size: 2em;
+    }
+
+    .archive .archive-item-link {
+      font-size: 1.5em;
+    }
+
+    .archive .archive-item-date {
+      font-size: 1em;
+    }
+
+}
 @media (min-width: 600px) {
     .header {
       padding: 1em 0 0.3em 0;
@@ -524,14 +568,8 @@ a.footnote-ref {
       margin: 3.6em auto 5em auto;
     }
 
-    /*.highlight {
-      font-size: 16px;
-      margin: 40px -20px;
-    }*/
-
     .article-title {
-      font-size: 2.4em;
-      font-weight: 500;
+      font-size: 2.5em;
     }
 
     .article-duration {
@@ -539,7 +577,7 @@ a.footnote-ref {
     }
 
     .footer-links {
-      font-size: .85em;
+      font-size: 0.85em;
     }
 
     .archive {
@@ -554,7 +592,5 @@ a.footnote-ref {
     .archive-item-date {
       font-size: 1.28em;
       font-style: normal;
-      text-align: right;
-      float: right;
     }
 }
