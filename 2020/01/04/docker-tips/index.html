@@ -64,21 +64,7 @@
 <ol>
 <li>
 <p>Making shortcuts for useful commands (with flags) to free up space is one time effort compared to remembering which command Docker provides. Use <code>alias</code> on macOS and put them in <code>~/.bash_profile</code> so they're loaded in your terminal (I use <code>~/.bashrc</code> for aliases holder, which needs to be sourced unlike <code>.bash_profile</code>, see my <a href="https://github.com/oleng/.dev/tree/master/dotfiles">.dev/dotfiles</a> repo for more info). Alias is auto completed in bash.</p>
-<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># remove just dangling images</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># remove just dangling images</span>
 <span style="color:#111">alias</span> docker-dangling-images<span style="color:#f92672">=</span><span style="color:#d88200">&#34;</span><span style="color:#d88200">docker rmi </span><span style="color:#00a8c8">$(</span>docker images --filter <span style="color:#111">dangling</span><span style="color:#f92672">=</span><span style="color:#111">true</span><span style="color:#00a8c8">)</span><span style="color:#d88200">&#34;</span>
    
 <span style="color:#75715e"># remove every stopped containers</span>
@@ -88,9 +74,7 @@
 <span style="color:#75715e"># all networks not used by at least one container,</span> 
 <span style="color:#75715e"># all dangling images &amp; dangling build cache</span>
 <span style="color:#111">alias</span> <span style="color:#111">dockerprune</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;docker system prune&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
+</code></pre></div></li>
 <li>
 <p>Useful to modify Docker Hyperkit VM's transparent_hugepages setting in case of redis complaining (macOS Mojave 10.14.x)</p>
 <blockquote>
@@ -102,25 +86,13 @@
 <dd><a href="https://stackoverflow.com/questions/39739560/how-to-access-the-vm-created-by-dockers-hyperkit">https://stackoverflow.com/questions/39739560/how-to-access-the-vm-created-by-dockers-hyperkit</a>)</dd>
 <dd><a href="https://kerneltalks.com/services/what-is-huge-pages-in-linux/">https://kerneltalks.com/services/what-is-huge-pages-in-linux/</a></dd>
 </dl>
-<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
 
 <span style="color:#111">echo</span> never &gt; /sys/kernel/mm/transparent_hugepage/enabled
 <span style="color:#111">echo</span> never &gt; /sys/kernel/mm/transparent_hugepage/defrag
    
 <span style="color:#75715e"># exit: Ctrl-A-K then y</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
+</code></pre></div></li>
 </ol>
 
     </div>
