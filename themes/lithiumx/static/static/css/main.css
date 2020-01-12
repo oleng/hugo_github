@@ -410,6 +410,7 @@ a.footnote-ref {
 .archive-item {
   margin: 0.5em auto;
   padding: 0;
+  font-size: 1.1em;
 }
 
 .archive-item-date {
