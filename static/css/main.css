@@ -28,8 +28,8 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 /*
-p {
-  padding: 0.3em 0 0 0;
+See https://www.w3.org/TR/css-fonts-4/#valdef-font-family-ui-monospace and
+others like ui-serif & ui-sans-serif
 }*/
 
 h1,
