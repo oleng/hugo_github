@@ -10,18 +10,18 @@ Key points when considering to build a post-production facility:
 - **Designing system for the entire facility**: _What is the medium & viewing target that company provides services for_?     
     
     The answer to this question determines the kind of system a facility needs.    
-    As a general rule of thumb if a facility needs to facilitate the top two kinds of the production types [^note], then we'll be talking about medium to large facility. Technical specifications including but not limited to: 
+    As a general rule of thumb if a facility needs to facilitate the top two kinds [^note] of the production types , then we'll be talking about medium to large facility. Technical specifications including but not limited to: 
     - storing at least 6 months worth of data (safe to say 40-50TB is the least amount of storage capacities for 3-8 people)
     - internal network capable of serving those real-time video (_emphasis in visual because audio is much lighter_) data to workstations
     - multiple specific hardwares & softwares for handling those workstations loads for finishing to media format(s) the project requires, usually in multiple versions. 
 
-    There are other specification details involved in the working environments needed to be done properly as well to make sure the end results will be matching industry standards expectation. 
+    There are other specification details involved in the working environments that needs to be done properly as well to make sure the end results will be matching industry standards expectation. 
 
 - **Finalising based on type of services and amount of people in the entire team**: _What specific parts of post-production the company caters, and how many people work on each of these parts_?     
 
     There are several stages in post-production, mainly story editing, color correction, finishing, and mastering. In visual post-production, sound is involved in most of the stages but not as much as in audio post-production company, this allows the production team to worked in separate if necessary.    
     Story editing stage usually only requires modest hardware requirements compared to the others in later stages because its main purpose is basically finalising the story from draft to final version. So at this stage there's no real need to work directly with the original footage data, most of the time the strategies for selecting & cutting footages involves proxy files or smaller transcoded files.    
-    Color correction or grading, as well as finishing stage of post-production form the bulk in hardwares & software requirements[^bandwidth] because of the file size, bandwidth and processing power needed to process those files.      
+    Color correction or grading, as well as finishing stage of post-production form the bulk in hardwares & software requirements [^bandwidth] because of the file size, bandwidth and processing power needed to process those files.      
     Finishing consists of many components like motion graphic, compositing, VFX, 3D VFX, etc, and in the case of movie production, color grading.         
     Mastering, depending on what kind of formats, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
          
