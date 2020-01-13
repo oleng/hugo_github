@@ -12,7 +12,7 @@ Key points when considering to build a post-production facility:
     The answer to this question determines the kind of system a facility needs.    
     As a general rule of thumb if a facility needs to facilitate the top two kinds of the production types [^note], then we'll be talking about medium to large facility. Technical specifications including but not limited to: 
     - storing at least 6 months worth of data (safe to say 40-50TB is the least amount of storage capacities for 3-8 people)
-    - internal network capable of serving real-time those video (_emphasis in visual because audio is much lighter_) data to workstations
+    - internal network capable of serving those real-time video (_emphasis in visual because audio is much lighter_) data to workstations
     - multiple specific hardwares & softwares for handling those workstations loads for finishing to media format(s) the project requires, usually in multiple versions. 
 
     There are other specification details involved in the working environments needed to be done properly as well to make sure the end results will be matching industry standards expectation. 
@@ -20,8 +20,8 @@ Key points when considering to build a post-production facility:
 - **Finalising based on type of services and amount of people in the entire team**: _What specific parts of post-production the company caters, and how many people work on each of these parts_?     
 
     There are several stages in post-production, mainly story editing, color correction, finishing, and mastering. In visual post-production, sound is involved in most of the stages but not as much as in audio post-production company, this allows the production team to worked in separate if necessary.    
-    Story editing stage usually only requires modest hardware requirements compared to the others in later stages because its main purpose is basically finalising the story from draft to final version.    
-    Color correction or grading, as well as finishing stage of post-production form the bulk in hardwares & software requirements.      
+    Story editing stage usually only requires modest hardware requirements compared to the others in later stages because its main purpose is basically finalising the story from draft to final version. And so at this stage there's real no need to work directly with the original footage data, most of the time the strategies for selecting & cutting footages involves proxy files or smaller transcoded files.    
+    Color correction or grading, as well as finishing stage of post-production form the bulk in hardwares & software requirements[^bandwidth] because of the file size, bandwidth and processing power needed to process those files.      
     Finishing consists of many components like motion graphic, compositing, VFX, 3D VFX, etc, and in the case of movie production, color grading.         
     Mastering, depending on what kind of formats, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
          
@@ -37,3 +37,7 @@ Key points when considering to build a post-production facility:
     - **_TV based production_**: (HD)TV based production that produces advertisements/commercials, or other motion picture such as straight to home movie like HBO or medium such as BluRay, they need to adhere to well established broadcasting standards in order to be accepted by broadcasting station systems and home viewing systems. Usually the main component of technical problems in this production is involving time constraint.
     
     - **_Online video_**: Either Vimeo, Youtube or other online video platforms, this type of production is essentially almost the same as TV based production, only lacking in stricter (technical) requirements due to the wild west nature of internet especially when the context is consumer's side. Highest quality can be achieved by following the majority of standard practices followed in film or TV based production, which happens to be the requirement standard picked by major online distributors like iTunes and (especially) Netflix. 
+
+[^bandwidth]: Bandwidth requirements for digital cinema RAW cameras          
+    - R3D : https://www.red.com/recording-time   
+    - ARRIRAW : https://tools.arri.com/fileadmin/adapps/afdc/AFDC.html
