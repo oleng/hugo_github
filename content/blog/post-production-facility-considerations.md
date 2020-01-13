@@ -38,6 +38,7 @@ Key points when considering to build a post-production facility:
     
     - **_Online video_**: Either Vimeo, Youtube or other online video platforms, this type of production is essentially almost the same as TV based production, only lacking in stricter (technical) requirements due to the wild west nature of internet especially when the context is consumer's side. Highest quality can be achieved by following the majority of standard practices followed in film or TV based production, which happens to be the requirement standard picked by major online distributors like iTunes and (especially) Netflix. 
 
-[^bandwidth]: Bandwidth requirements for digital cinema RAW cameras          
+[^bandwidth]: **Technical references**      
+    A few bandwidth requirements for common RAW files in digital cinema cameras          
     - R3D : https://www.red.com/recording-time   
     - ARRIRAW : https://tools.arri.com/fileadmin/adapps/afdc/AFDC.html
