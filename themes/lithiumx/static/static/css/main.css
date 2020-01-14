@@ -1,7 +1,7 @@
 /*
 TODO: resolve organisation & consistency details between desktop & mobile resolution
-See https://www.w3.org/TR/css-fonts-4/#valdef-font-family-ui-monospace and
-others like ui-serif & ui-sans-serif
+See https://www.w3.org/TR/css-fonts-4/#ui-sans-serif-def and others like
+system-ui-serif & system-ui-monospace in https://github.com/w3c/csswg-drafts/issues/4107
 */
 html,
 body {
@@ -12,8 +12,9 @@ body {
 
 body {
   font-size: 1em;
-  font-family: -apple-system,
-              system-ui,
+  font-family: system-ui,
+              ui-sans-serif,
+              -apple-system,
               BlinkMacSystemFont,
               "Helvetica Neue",
               "Segoe UI",
@@ -43,8 +44,9 @@ h5,
 h6 {
   font-family: 'Crimson Text',
                 'Garamond',
-                -apple-system-ui-serif,
+                system-ui-serif,
                 ui-serif,
+                -apple-system-ui-serif,
                 serif;
   font-kerning: normal;
   line-height: 1.15em;
@@ -117,7 +119,7 @@ code {
 }
 
 pre, code {
-  font-family: ui-monospace, monospace;
+  font-family: ui-monospace, system-ui-monospace, monospace;
 }
 
 .highlight pre {
@@ -189,7 +191,7 @@ blockquote {
   min-width: 320px;
   padding: 0 1em;
   margin: 1em auto 0 auto;
-  font-family: ui-monospace, monospace;
+  font-family: ui-monospace, system-ui-monospace, monospace;
   text-align: center;
   /*border: 1px solid #eaeaea;*/
 }
@@ -272,7 +274,7 @@ ul.nav-links {
   margin-top: 12px;
   float: right;
   font-size: 1em;
-  font-family: ui-monospace, monospace;
+  font-family: ui-monospace, system-ui-monospace, monospace;
   padding: 1px 1em;
   font-weight: bold;
   border-radius: 3px;
@@ -283,7 +285,7 @@ ul.nav-links {
 .article-tags {
   color: #ccc;
   font-size: 1em;
-  font-family: ui-monospace, monospace;
+  font-family: ui-monospace, system-ui-monospace, monospace;
   font-weight: 300;
   list-style: none;
   padding: 5px 0;
@@ -390,8 +392,9 @@ a.footnote-ref {
 .archive-title {
   font-family: 'Crimson Text',
                 'Garamond',
-                -apple-system-ui-serif,
+                system-ui-serif,
                 ui-serif,
+                -apple-system-ui-serif,
                 serif;
   font-weight: bolder;
   display: block;
@@ -406,7 +409,9 @@ a.footnote-ref {
 }
 
 .archive-item-date {
-  font-family: -apple-system,
+  font-family: system-ui,
+              ui-sans-serif,
+              -apple-system,
               BlinkMacSystemFont,
               "Helvetica Neue",
               "Segoe UI",
@@ -433,7 +438,9 @@ a.footnote-ref {
   display: inline-block;
   text-decoration: none;
   font-size: 1.4em;
-  font-family: -apple-system,
+  font-family: system-ui,
+              ui-sans-serif,
+              -apple-system,
               BlinkMacSystemFont,
               "Helvetica Neue",
               "Segoe UI",
@@ -465,7 +472,7 @@ a.footnote-ref {
   margin: 0 auto;
   padding: 1em 1em 0.7em 1em;
   text-align: center;
-  font-family: ui-monospace, monospace;
+  font-family: ui-monospace, system-ui-monospace, monospace;
 }
 
 .footer-links {
