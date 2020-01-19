@@ -15,7 +15,6 @@
   <link href='{{ . | absURL }}' rel='apple-touch-icon'>
   <link href='{{ . | absURL }}' rel='shortcut icon'>
 {{ end }}
-
 {{ if .IsHome }}
 <meta property="description" content="{{ .Site.Params.description }}">
 {{ else }}
@@ -23,15 +22,20 @@
   <meta property="description" content="{{ .Description }}">
   {{ end }}
 {{ end }}
-
 {{ if .Keywords }}
 <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
 {{ end }}
-
 {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
-
 <link rel="stylesheet" href="{{ .Site.BaseURL }}static/css/main.css" media="all">
-
 <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600,600i|Raleway:400&display=swap" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155567382-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-155567382-1');
+</script>
+
