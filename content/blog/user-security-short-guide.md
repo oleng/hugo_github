@@ -13,10 +13,10 @@ draft: false
 Rule of thumbs on improving online security (authentication, more security than privacy) for common users:    
 
 1. Insecure practices from web service side:    
-    - password only, no 2FA.
+    - require password only for authentication, no 2FA.
     - sending password in plain text over email/non-encrypted channels.
     - plain HTTP or invalid certificate for HTTPS
-    - password + SMS OTP
+    - SMS OTP
     - non-removable/deletable user profile (combined with other practices)
     - storing user name & passwords in database instead of salted hashes, as well as salt reuse/recycle.
     - using weak cryptographic algorithm.
