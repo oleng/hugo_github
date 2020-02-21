@@ -15,7 +15,7 @@ I was also directly involved in several Indonesian movie titles, such as:
 - [Langit Ke-7](https://www.imdb.com/title/tt7601390/) (2012)     
 - [The Raid 2: Berandal](https://www.imdb.com/title/tt2265171/) (2014)
 
-Now I'm looking for work opportunities in software engineering fields, particularly in **DevOps** and **Data Engineering**.    
+Now I'm looking for work opportunities in software engineering fields, particularly in **DataOps** and **Data Engineering**.    
 
 Contact me if you're interested in reaching me for work opportunities :    
 {{< contacts >}}
