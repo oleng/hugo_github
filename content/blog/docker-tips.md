@@ -39,3 +39,26 @@ Some useful tips for docker
     
     # exit: Ctrl-A-K then y
     ```
+3. Docker build (or docker-compose build) tips:
+
+    - Use multi stage build for faster build
+    - Clean up build artifacts & caches on the same command line layer, each `RUN` line adds an immutable layer.
+
+4. Docker-compose:
+
+    - use `$$` (double-dollar sign) when using an existing environment variable to escape/prevent docker-compose interpolating a value.     
+    Example for path defined with `$PGDATA` environment variable in official postgresql image:     
+    
+    ```
+    db:
+        image: postgres:9.6
+        volumes:
+            - ./postgres:$$PGDATA
+    ```        
+    
+    `${VAR}` (with curly bracket inside double quotation mark) or `$VAR` syntax works for shell syntax variable, but docker-compose (depending on which file format version) expecting `${VAR}` value from `.env` file (exact name `.env` needed, otherwise ignored) when evaluating `docker-compose.yml`, and issues a warning if `.env` file is not supplied/found:    
+    
+    ```
+    WARNING: The PGDATA variable is not set. Defaulting to a blank string.
+    ```
+    Read more in [the docs](https://docs.docker.com/compose/compose-file/#variable-substitution), and be sure to check on which corresponding version you're using.
