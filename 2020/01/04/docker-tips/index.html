@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">1 min read</span>
+    <span class="article-duration">2 min read</span>
     <h1 class="article-title">Docker tips</h1>
     <span class="article-date">Jan 04, 2020</span>
     
@@ -100,6 +100,27 @@
    
 <span style="color:#75715e"># exit: Ctrl-A-K then y</span>
 </code></pre></div></li>
+<li>
+<p>Docker build (or docker-compose build) tips:</p>
+<ul>
+<li>Use multi stage build for faster build</li>
+<li>Clean up build artifacts &amp; caches on the same command line layer, each <code>RUN</code> line adds an immutable layer.</li>
+</ul>
+</li>
+<li>
+<p>Docker-compose:</p>
+<ul>
+<li>use <code>$$</code> (double-dollar sign) when using an existing environment variable to escape/prevent docker-compose interpolating a value.  <br>
+Example for path defined with <code>$PGDATA</code> environment variable in official postgresql image:</li>
+</ul>
+<pre><code>db:
+    image: postgres:9.6
+    volumes:
+        - ./postgres:$$PGDATA
+</code></pre><p><code>${VAR}</code> (with curly bracket inside double quotation mark) or <code>$VAR</code> syntax works for shell syntax variable, but docker-compose (depending on which file format version) expecting <code>${VAR}</code> value from <code>.env</code> file (exact name <code>.env</code> needed, otherwise ignored) when evaluating <code>docker-compose.yml</code>, and issues a warning if <code>.env</code> file is not supplied/found:</p>
+<pre><code>WARNING: The PGDATA variable is not set. Defaulting to a blank string.
+</code></pre><p>Read more in <a href="https://docs.docker.com/compose/compose-file/#variable-substitution">the docs</a>, and be sure to check on which corresponding version you're using.</p>
+</li>
 </ol>
 
     </div>
