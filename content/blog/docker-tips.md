@@ -56,7 +56,7 @@ Some useful tips for docker
             - ./postgres:$$PGDATA
     ```        
     
-    `"${VAR}"` (with curly bracket inside double quotation mark) or `"$VAR"` syntax works for shell syntax variable, but docker-compose (depending on which file format version) expecting `"${VAR}"` value from `.env` file (exact name `.env` needed, otherwise ignored) when evaluating `docker-compose.yml`, and issues a warning if `.env` file is not supplied/found:    
+    `"${VAR}"` (with curly bracket inside double quotation mark) or `"$VAR"` syntax works for shell variable, but docker-compose (depending on which file format version) expecting `"${VAR}"` value from `.env` file (exact name `.env` needed, otherwise ignored) when evaluating `docker-compose.yml`, and [issues a warning](https://github.com/docker/compose/blob/d412a1e47fcbf58674a54247f021a2d63627018d/compose/config/environment.py#L48) if `.env` file is not supplied/found:    
     
     ```
     WARNING: The PGDATA variable is not set. Defaulting to a blank string.
