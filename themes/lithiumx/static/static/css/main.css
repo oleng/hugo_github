@@ -522,7 +522,12 @@ a.footnote-ref {
     h5,
     .article-title,
     .archive-item-link {
-      font-family: 'Crimson Text';
+      font-family: 'Crimson Text',
+                    'Garamond',
+                    system-ui-serif,
+                    ui-serif,
+                    -apple-system-ui-serif,
+                    serif;
     }
 
     h5 {
@@ -534,13 +539,16 @@ a.footnote-ref {
     .article-tags,
     .archive-title,
     .archive-item-date  {
-      font-family: 'Raleway';
+      font-family: 'Raleway', ui-monospace, system-ui-monospace, monospace;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
     .article-duration {
       margin-top: 0px;
+      float: right;
+      padding: 1px 1em;
+      border-radius: 3px;
       font-size: 0.67em;
       font-weight: normal;
       background-color: rgba(0,0,0, .05);
