@@ -25,7 +25,7 @@ Key points when considering to build a post-production facility:
     Finishing consists of many components like motion graphic, compositing, VFX, 3D VFX, etc, and in the case of movie production, color grading and subtitling or closed captioning.         
     Mastering, depending on what kind of formats, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
          
-Workflows, structures and pipelines are entirely dependent on these answers. 
+Workflows, structures, and pipelines are entirely dependent on these answers. 
     
 > Please note that _data lineage_ and _integrity_ are **crucial** in every stages. From the time the shoot started until deliverables has been delivered and backed up, every relevant data and metadata _should be present and preserved_. Centralized storage server(s) will mostly be needed when dealing with more than 3 workstations. 
 
