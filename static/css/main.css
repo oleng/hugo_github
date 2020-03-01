@@ -539,6 +539,14 @@ a.footnote-ref {
       text-transform: uppercase;
     }
 
+    .article-duration {
+      margin-top: 0px;
+      font-size: 0.67em;
+      font-weight: normal;
+      background-color: rgba(0,0,0, .05);
+      color: rgba(0,0,0, .72);
+    }
+
     .archive-item-link {
       font-size: 2em;
     }
