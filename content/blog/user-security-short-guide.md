@@ -63,7 +63,7 @@ SMS based phishing & swapping SIM cards.
 https://nakedsecurity.sophos.com/2018/12/21/more-phishing-attacks-on-yahoo-and-gmail-sms-2fa-authentication/ [^7]
 
 
-It's worth reminding that social engineering is extremely popular because it's easier to deceive a human than hacking a system or network, meaning your security depends a lot more on your security awareness than threats that comes from complicated technical attack. And that the worst possible result for individuals isn't just losing some amount of money, but ones from [identity theft](https://en.wikipedia.org/wiki/Identity_theft).
+It's worth reminding that **social engineering** is extremely popular because it's easier to deceive a human than hacking a system or network, meaning your security depends a lot more on your security awareness than threats that comes from complicated technical attack. And that the worst possible result for individuals isn't just losing some amount of money, but ones from [identity theft](https://en.wikipedia.org/wiki/Identity_theft).
 
 
 

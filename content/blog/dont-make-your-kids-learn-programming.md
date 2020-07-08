@@ -19,4 +19,4 @@ My opinion on young kids learning about programming is that since they have much
 
 A quick note on programming school for kids:
 
-Learning with other kids in some programming school can be good, but I'm not sure if it's _that_ necessary nor _how_ good. There's always a risk (mostly hidden) element in any courses: shaping & pushing the students to be a certain type of worker instead giving the broadest & deepest foundation.
+Learning with other kids in some programming school can be good, but I'm not sure _how necessary_ nor _how good_ it is. There's always a risk (mostly hidden) element in any courses: shaping & pushing the students to be a certain type of worker instead giving the broadest & deepest foundation.

@@ -18,3 +18,5 @@ Okay, but why? Because:
 - I found my introspection & communication skills degraded so writing exercise is needed.
 - A user friendly, centralized storage for your own always-on **logs** has always been a major pain point in my experience.
 
+Anyway, hi there.
+
