@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on oleng</title>
+    <link>https://oleng.github.io/1/01/01/blog/</link>
+    <description>Recent content in Blog on oleng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://oleng.github.io/1/01/01/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
