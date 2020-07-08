@@ -5,7 +5,6 @@ theme = [ "lithiumx" ]
 googleAnalytics = "UA-155567382-1"
 disqusShortname = ""
 disableKinds = ["section", "404"]
-tags = [ "development", "python", "ux", "postproduction","data" ]
 enableEmoji = true
 enableInlineShortcodes = true
 
@@ -23,22 +22,24 @@ enableInlineShortcodes = true
 #     name = "twitter"
 #     url = "https://mobile.twitter.com/"
 
+
+[taxonomies]
+    tags = [ "development", "python", "containers", "postproduction", "security", "best-practice", "media", "ux", "thought", "opinion" ]
+
+
 [params]
     mainSections = ["blog"]
-
     description = "intersections, subcontexts, hubris"
-
     # path to the favicon, under "static"
     favicon = "favicon.png"
-
     # [params.logo]
     #     url = "logo.png"
     #     width = 50
     #     height = 50
     #     alt = "logoish"
-
     [params.icon]
         url = "favicon.png"
+
 
 [markup]
     defaultMarkdownHandler = "goldmark"
@@ -88,6 +89,7 @@ enableInlineShortcodes = true
     #     smartypantsQuotesNBSP = false
     #     taskLists = true
 
+
 [privacy]
     [privacy.disqus]
         disable = true
@@ -110,6 +112,8 @@ enableInlineShortcodes = true
         disable = false
         privacyEnhanced = true
 
+
 [services]
   [services.twitter]
     disableInlineCSS = true
+
