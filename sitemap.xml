@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://oleng.github.io/2020/01/04/docker-tips/</loc>
+    <lastmod>2020-01-04T09:05:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oleng.github.io/</loc>
+    <lastmod>2020-01-04T09:05:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oleng.github.io/2020/01/01/user-security-short-guide/</loc>
+    <lastmod>2020-01-01T12:02:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oleng.github.io/2019/12/28/dont-make-your-kids-learn-programming/</loc>
+    <lastmod>2019-12-28T16:23:40+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://oleng.github.io/about/</loc>
     <lastmod>2019-12-26T19:52:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://oleng.github.io/</loc>
+    <loc>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</loc>
     <lastmod>2019-12-26T19:52:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://oleng.github.io/1/01/01/blog/</loc>
+    <loc>https://oleng.github.io/2019/12/24/why-blogging/</loc>
+    <lastmod>2019-12-24T16:28:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oleng.github.io/index.html</loc>
   </url>
   
 </urlset>
