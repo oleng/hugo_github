@@ -28,9 +28,18 @@ jobs:
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
 
-  check:
-    needs: deploy
-    steps:
-      - name: check test
-        run: echo ${{ needs.deploy.env }} && echo ${{ needs.deploy.outputs }}
+    - name: Check gh-pages env
+      run: |
+        echo ${{ GITHUB_JOB }}
+        echo ${{ GITHUB_REF }}
+        echo ${{ GITHUB_SHA }}
+        echo ${{ GITHUB_REPOSITORY }}
+        echo ${{ GITHUB_REPOSITORY_OWNER }}
+        echo ${{ GITHUB_RUN_ID }}
+        echo ${{ GITHUB_RUN_NUMBER }}
+        echo ${{ GITHUB_ACTOR }}
+        echo ${{ GITHUB_WORKFLOW }}
+        echo ${{ GITHUB_HEAD_REF }}
+        echo ${{ GITHUB_BASE_REF }}
+        echo ${{ GITHUB_EVENT_NAME }}
 
