@@ -27,3 +27,10 @@ jobs:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
+
+  check:
+    needs: deploy
+    steps:
+      - name: check test
+        run: echo ${{ needs.deploy.env }} && echo ${{ needs.deploy.outputs }}
+
