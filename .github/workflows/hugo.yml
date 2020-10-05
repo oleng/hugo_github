@@ -9,7 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v2
+
+    - name: Checkout
+      uses: actions/checkout@v2
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -27,16 +29,20 @@ jobs:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
+      # changed on v.3+: will be part of env: keep_files: true
+      with:
+        keepFiles: true
 
-    - name: Switch to master
+    - name: Get master
       if: success()
       run: |
-        echo "$PUBLISH_BRANCH"
-        git checkout "$PUBLISH_BRANCH"
+        echo "${{ deploy.env.PUBLISH_BRANCH }}"
+        git checkout "${{ deploy.env.PUBLISH_BRANCH }}"
         echo "${{ github.ref }}"
         echo "${{ github.sha }}"
         echo "${{ github.repository }}"
-        # echo "${{ toJson(github) }}"
+        echo $PWD
+
 
     # # Send `repository_dispatch` event to `/repos/deadvoid/deadvoid.github.io/dispatches` hook endpoint to trigger build mirror workflow
     # - name: Dispatch event
