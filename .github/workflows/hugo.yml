@@ -40,10 +40,11 @@ jobs:
     - name: Get master
       if: success()
       run: |
-        echo $PWD
-        echo $GITHUB_WORKSPACE
-        ls -al . ..
-        printenv
+        mv .git ../.git
+        cd ..
+        rm -rf oleng.github.io
+        git checkout "$PUBLISH_BRANCH"
+        ls -la
 
       # git checkout "${{ jobs.deploy.steps.deployment.env.PUBLISH_BRANCH }}"
 
