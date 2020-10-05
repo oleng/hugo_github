@@ -39,11 +39,12 @@ jobs:
       if: success()
       run: |
         echo $PWD
-        echo "${{ github.ref }}"
-        echo "${{ github.sha }}"
-        echo "${{ github.repository }}"
-        echo 'steps:' "${{ toJson(steps) }}"
-        echo 'job context:' "${{ toJson(job) }}"
+        ls -al
+      # echo "${{ github.ref }}"
+      # echo "${{ github.sha }}"
+      # echo "${{ github.repository }}"
+        echo 'env:' "${{ toJson(env) }}"
+
       # git checkout "${{ jobs.deploy.steps.deployment.env.PUBLISH_BRANCH }}"
 
 
