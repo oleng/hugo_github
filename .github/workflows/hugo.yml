@@ -12,6 +12,8 @@ jobs:
       ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       PUBLISH_BRANCH: master
       PUBLISH_DIR: ./public
+      token: ${{ secrets.EXT_REPO_PAT }}
+      mirror: deadvoid/deadvoid.github.io
 
     steps:
     - name: Setup Hugo
@@ -45,6 +47,8 @@ jobs:
         rm -rf oleng.github.io
         git checkout "$PUBLISH_BRANCH"
         ls -la
+        echo "${{ github.repository }}"
+        echo "${{ github.ref }}"
 
       # git checkout "${{ jobs.deploy.steps.deployment.env.PUBLISH_BRANCH }}"
 
@@ -56,6 +60,6 @@ jobs:
     #   uses: peter-evans/repository-dispatch@v1
     #   with:
     #     token: ${{ secrets.EXT_REPO_PAT }}
-    #     repository: deadvoid/deadvoid.github.io
+    #     mirror: deadvoid/deadvoid.github.io
     #     event-type: build-mirror
-    #     client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "repository": "${{ github.repository }} "}'
+    #     client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "": "${{ github.repository }} "}'
