@@ -27,7 +27,7 @@ jobs:
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
 
-    # Send `repository_dispatch` event to `/repos/deadvoid/deadvoid.github.io/dispatches` endpoint to trigger mirror workflow
+    # Send `repository_dispatch` event to `/repos/deadvoid/deadvoid.github.io/dispatches` hook endpoint to trigger build mirror workflow
     - name: Dispatch event
       if: success()
       uses: peter-evans/repository-dispatch@v1
@@ -35,4 +35,4 @@ jobs:
         token: ${{ secrets.EXT_REPO_PAT }}
         repository: deadvoid/deadvoid.github.io
         event-type: build-mirror
-        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "repository": "${{ github.repository }} "}'
