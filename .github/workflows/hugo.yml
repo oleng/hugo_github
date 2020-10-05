@@ -31,8 +31,8 @@ jobs:
     - name: Switch to master
       if: success()
       run: |
-        echo $PUBLISH_BRANCH
-        git checkout $PUBLISH_BRANCH
+        echo "$PUBLISH_BRANCH"
+        git checkout "$PUBLISH_BRANCH"
         echo "${{ github.ref }}"
         echo "${{ github.sha }}"
         echo "${{ github.repository }}"
