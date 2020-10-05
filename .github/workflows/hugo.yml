@@ -33,7 +33,7 @@ jobs:
       id: deployment
       uses: peaceiris/actions-gh-pages@v2
 
-      # changed on v.3+: will be part of env: keep_files: true
+      # changed on < v.3, will be part of env: `keep_files: true`
       with:
         keepFiles: true
 
