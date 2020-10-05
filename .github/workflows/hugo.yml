@@ -1,4 +1,4 @@
-name: Hugo
+name: Hugo Workflow (build, deploy & mirror)
 
 on:
   push:
@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
-
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -28,18 +27,12 @@ jobs:
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
 
-    - name: Check gh-pages env
-      run: |
-        echo $GITHUB_JOB
-        echo $GITHUB_REF
-        echo $GITHUB_SHA
-        echo $GITHUB_REPOSITORY
-        echo $GITHUB_REPOSITORY_OWNER
-        echo $GITHUB_RUN_ID
-        echo $GITHUB_RUN_NUMBER
-        echo $GITHUB_ACTOR
-        echo $GITHUB_WORKFLOW
-        echo $GITHUB_HEAD_REF
-        echo $GITHUB_BASE_REF
-        echo $GITHUB_EVENT_NAME
-
+    # Send `repository_dispatch` event to `/repos/deadvoid/deadvoid.github.io/dispatches` endpoint to trigger mirror workflow
+    - name: Dispatch event
+      if: success()
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        token: ${{ secrets.EXT_REPO_PAT }}
+        repository: deadvoid/deadvoid.github.io
+        event-type: build-mirror
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
