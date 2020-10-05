@@ -42,7 +42,7 @@ jobs:
     - name: Get master
       if: success()
       run: |
-        git checkout "${{ jobs.env.PUBLISH_BRANCH }}"
+        git checkout "${{ env.PUBLISH_BRANCH }}"
         ls -la
         echo "${{ github.repository }}"
         echo "${{ github.ref }}"
