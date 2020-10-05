@@ -9,7 +9,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     env:
-      TARGET_BRANCH: ${{ steps.deployment.env.PUBLISH_BRANCH }}
+      TARGET_BRANCH: ${{ build-deploy.steps.deployment.env.PUBLISH_BRANCH }}
 
     steps:
     - name: Setup Hugo
