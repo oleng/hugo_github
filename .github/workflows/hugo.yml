@@ -12,7 +12,6 @@ jobs:
       ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       PUBLISH_BRANCH: master
       PUBLISH_DIR: ./public
-      token: ${{ secrets.EXT_REPO_PAT }}
 
     steps:
     - name: Setup Hugo
@@ -43,6 +42,7 @@ jobs:
       if: success()
       uses: peter-evans/repository-dispatch@v1
       with:
+        token: ${{ secrets.EXT_REPO_PAT }}
         repository: deadvoid/deadvoid.github.io
         event-type: build-mirror
         client-payload: '{"origin": "${{ github.repository }}", "branch": "${{ env.PUBLISH_BRANCH }}"}'
