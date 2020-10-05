@@ -36,7 +36,7 @@ jobs:
         echo "${{ github.ref }}"
         echo "${{ github.sha }}"
         echo "${{ github.repository }}"
-        echo "${{ toJson(github) }}"
+        # echo "${{ toJson(github) }}"
 
     # # Send `repository_dispatch` event to `/repos/deadvoid/deadvoid.github.io/dispatches` hook endpoint to trigger build mirror workflow
     # - name: Dispatch event
