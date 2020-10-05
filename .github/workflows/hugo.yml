@@ -39,8 +39,8 @@ jobs:
       if: success()
       run: |
         echo $PWD
-        ls -al
-        echo 'env:' "${{ toJson(env) }}"
+        ls -al ..
+        echo 'deployment:' "${{ toJson(steps.deployment.env) }}"
 
       # git checkout "${{ jobs.deploy.steps.deployment.env.PUBLISH_BRANCH }}"
 
