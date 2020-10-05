@@ -13,7 +13,6 @@ jobs:
       PUBLISH_BRANCH: master
       PUBLISH_DIR: ./public
       token: ${{ secrets.EXT_REPO_PAT }}
-      mirror: deadvoid/deadvoid.github.io
 
     steps:
     - name: Setup Hugo
@@ -39,24 +38,11 @@ jobs:
       with:
         keepFiles: true
 
-    - name: Get master
+    # Send `repository_dispatch` event to `/repos/deadvoid/deadvoid.github.io/dispatches` hook endpoint to trigger build mirror workflow
+    - name: Post repository_dispatch event
       if: success()
-      run: |
-        git checkout "${{ env.PUBLISH_BRANCH }}"
-        ls -la
-        echo "${{ github.repository }}"
-        echo "${{ github.ref }}"
-
-      # git checkout "${{ jobs.deploy.steps.deployment.env.PUBLISH_BRANCH }}"
-
-
-
-    # # Send `repository_dispatch` event to `/repos/deadvoid/deadvoid.github.io/dispatches` hook endpoint to trigger build mirror workflow
-    # - name: Dispatch event
-    #   if: success()
-    #   uses: peter-evans/repository-dispatch@v1
-    #   with:
-    #     token: ${{ secrets.EXT_REPO_PAT }}
-    #     mirror: deadvoid/deadvoid.github.io
-    #     event-type: build-mirror
-    #     client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "": "${{ github.repository }} "}'
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        repository: deadvoid/deadvoid.github.io
+        event-type: build-mirror
+        client-payload: '{"origin": "${{ github.repository }}", "branch": "${{ env.PUBLISH_BRANCH }}"}'
