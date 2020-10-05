@@ -45,4 +45,4 @@ jobs:
         token: ${{ secrets.EXT_REPO_PAT }}
         repository: deadvoid/deadvoid.github.io
         event-type: build-mirror
-        client-payload: '{"origin": "${{ github.repository }}", "branch": "${{ env.PUBLISH_BRANCH }}"}'
+        client-payload: '{"repository": "${{ github.repository }}", "branch": "${{ env.PUBLISH_BRANCH }}"}'
