@@ -42,10 +42,7 @@ jobs:
     - name: Get master
       if: success()
       run: |
-        mv .git ../.git
-        cd ..
-        rm -rf oleng.github.io
-        git checkout "$PUBLISH_BRANCH"
+        git checkout "${{ jobs.env.PUBLISH_BRANCH }}"
         ls -la
         echo "${{ github.repository }}"
         echo "${{ github.ref }}"
