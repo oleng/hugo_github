@@ -36,3 +36,4 @@ jobs:
         repository: deadvoid/deadvoid.github.io
         event-type: build-mirror
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+
