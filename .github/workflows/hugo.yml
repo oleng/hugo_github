@@ -20,15 +20,17 @@ jobs:
         extended: true
 
     - name: Build
+      id: buildhugo
       run: hugo -v
 
-    - name: Deploy
-      id: deploy
+    - name: Deploy using peaceiris actions-gh-pages
+      id: deployment
       uses: peaceiris/actions-gh-pages@v2
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
+
       # changed on v.3+: will be part of env: keep_files: true
       with:
         keepFiles: true
@@ -36,12 +38,14 @@ jobs:
     - name: Get master
       if: success()
       run: |
-        echo "${{ deploy.env.PUBLISH_BRANCH }}"
-        git checkout "${{ deploy.env.PUBLISH_BRANCH }}"
+        echo $PWD
         echo "${{ github.ref }}"
         echo "${{ github.sha }}"
         echo "${{ github.repository }}"
-        echo $PWD
+        echo 'steps:' "${{ toJson(steps) }}"
+        echo 'job context:' "${{ toJson(job) }}"
+      # git checkout "${{ jobs.deploy.steps.deployment.env.PUBLISH_BRANCH }}"
+
 
 
     # # Send `repository_dispatch` event to `/repos/deadvoid/deadvoid.github.io/dispatches` hook endpoint to trigger build mirror workflow
