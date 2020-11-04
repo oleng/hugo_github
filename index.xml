@@ -6,10 +6,21 @@
     <description>Recent content on oleng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jan 2020 09:05:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 11:28:02 +0000</lastBuildDate>
     
 	<atom:link href="https://oleng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This is my tenet</title>
+      <link>https://oleng.github.io/2020/11/04/this-is-my-tenet/</link>
+      <pubDate>Wed, 04 Nov 2020 11:28:02 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2020/11/04/this-is-my-tenet/</guid>
+      <description>I have only come to realise this in recent years, but it has become one of the biggest enlightment of my life.
+ We are all creature of story. Every single one of us is storyweaver and storyteller, we live in and for stories.
+ All of us need story more than anything else, aside from physical needs like sustenance and protection from natural elements. We fight and live because we have hopes, and hopes are born from stories we tell ourselves.</description>
+    </item>
     
     <item>
       <title>Docker tips</title>
