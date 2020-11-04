@@ -1,6 +1,6 @@
 ---
 title: "This is my tenet"   
-date: 2020-11-04T21:28:02Z    
+date: 2020-11-04T21:22:02Z    
 draft: false    
 tags: [ "thought", "opinion" ]     
 ---
