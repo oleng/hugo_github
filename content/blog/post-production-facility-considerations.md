@@ -1,7 +1,7 @@
 ---
-title: "Post-production facility considerations"
+title: 'Post-production facility considerations'
 date: 2019-12-26T19:52:15Z
-tags: [ 'post-production']
+tags: [ 'post-production' ]
 draft: false
 ---
 
