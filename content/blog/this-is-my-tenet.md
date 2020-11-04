@@ -1,6 +1,6 @@
 ---
 title: "This is my tenet"   
-date: 2020-11-04T21:22:02Z    
+date: 2020-11-04T21:28:02Z    
 draft: false    
 tags: [ "thought", "opinion" ]     
 ---
@@ -19,4 +19,5 @@ _Every single one of them are stories_.
 
 What I also came to realise is when we don't understand our nature as creature of story, we don't really understand how truthful we are to our story, and how true we are to the story we tell. That in a way is very scary. My biggest hope is we don't get lost in untrue story, and we all seek truth in our stories.
 
-And so, this is my revelation. My tenet is to seek truth in stories, to keep myself true to the story I live for, and tell truth in the ones I tell.
+And so, this is my revelation.     
+My tenet is to seek truth in stories, to keep myself true to the story I live for, and tell truth in the ones I tell.
