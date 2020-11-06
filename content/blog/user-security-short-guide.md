@@ -10,6 +10,18 @@ draft: false
 > I am not a professional security, do not trust easily. AFAIK as of today these are valid, re-evaluation in the future is necessary.
 > Critiques, inputs and questions are welcome.
 
+##### TL;DR & take aways:   
+- Use password manager, recommended: Bitwarden, 1Password, avoid LastPass! 
+- Activate MFA **everywhere**, use Yubikey if possible, if not use Authy to avoid getting locked in by a single device.
+- SMS is not secure!
+- Avoid giving away sensitive informations.
+- Develop security awareness and make a habit of secure practices.
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Okay, so here it is...
+
+
 Rule of thumbs on improving online security (authentication, more security than privacy) for common users:
 
 1. Insecure practices from web service side:
