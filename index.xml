@@ -6,10 +6,19 @@
     <description>Recent content on oleng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2020 11:28:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2020 16:23:40 +0000</lastBuildDate>
     
 	<atom:link href="https://oleng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google&#39;s official API client libraries explained</title>
+      <link>https://oleng.github.io/2020/11/09/googles-official-api-client-libraries-explained/</link>
+      <pubDate>Mon, 09 Nov 2020 16:23:40 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2020/11/09/googles-official-api-client-libraries-explained/</guid>
+      <description>The goal of this short explanation is to attempt to maintain a placeholder for self reminder, creating a central bookmark on important (relevant) links that reflect their most current state on library for service, as they have somewhat complex to navigate sites for official libraries. In the past I&amp;rsquo;ve encountered period of limbo, around 2017 to early 2019, where few of their client library were stuck in a state of deprecation without clear direction on what that means for users.</description>
+    </item>
     
     <item>
       <title>This is my tenet</title>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155567382-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-155567382-1');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Google&#39;s official API client libraries explained . oleng</title>
+<meta property="og:title" content="Google&#39;s official API client libraries explained - oleng">
+<meta name="twitter:site" content="@deadvoid">
+<meta name="twitter:creator" content="@deadvoid">
+
+
+  <link href='https://oleng.github.io/favicon.png' rel='apple-touch-icon'>
+  <link href='https://oleng.github.io/favicon.png' rel='shortcut icon'>
+
+
+  
+
+
+<link rel="stylesheet" href="https://oleng.github.io/static/css/main.css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:600,600i|Raleway:400&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <ul class="nav-links">
+    <li class="nav-logo"><a href="https://oleng.github.io/">> blog</a></li>
+    
+    <li><a href="/about">about</a></li>
+    
+    <li><a href="https://github.com/oleng">code</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    <h1 class="article-title">Google&#39;s official API client libraries explained</h1>
+    <span class="article-date">Nov 09, 2020</span>
+    
+    
+    <ul class="article-tags">
+    
+    <li><a href="https://oleng.github.io/tags/development">development</a></li>
+    
+    <li><a href="https://oleng.github.io/tags/python">python</a></li>
+    
+    </ul>
+    
+    <div class="article-content">
+      <p>The goal of this short explanation is to attempt to maintain a placeholder for
+self reminder, creating a central bookmark on important (relevant) links that
+reflect their most current state on library for service, as they have somewhat
+complex to navigate sites for official libraries. In the past I&rsquo;ve encountered
+period of limbo, around 2017 to early 2019, where few of their client library
+were stuck in a state of deprecation without clear direction on what that means for users.
+This sounds like it was not a big deal except I found this out when I needed OAuth library,
+which cost me days of sorting out confusing, conflicting informations given
+in their developer guides and the library package documentation site.</p>
+<p>They&rsquo;re also infamous for killing services or changing brands, and it seems to me
+they only started to make an effort for streamlined, unified libraries &amp; documentations
+in recent few years (at least for Python libraries), as there are still some old
+tutorials &amp; guides that are not updated yet, which can mislead users.</p>
+<p>Figuring out their ins &amp; out haven&rsquo;t been fun, I found re-learning is even less fun.
+So I&rsquo;m brain dumping it here since I immensely dislike having to browse &amp; read
+massive enterprise pages full of vague lingos to figure out vague Java method procedure
+they use.</p>
+<p>At the risk of oversimplifying their product line (I&rsquo;m totally fine with that),
+basically they have two suites for two levels of users/client, Google Cloud and G Suite.</p>
+<p>Google Cloud is a product suite for their Cloud services, few has free tier
+offering, but most are geared for enterprise billing customers.
+Their product page is <a href="https://cloud.google.com/,">https://cloud.google.com/,</a> and their web based management UI is
+located at <a href="https://console.cloud.google.com/">https://console.cloud.google.com/</a></p>
+<p>On lower tier they have Google Workspace (formerly G Suite), it&rsquo;s a paid product suite
+for small-medium offices, but most are available for free with better limits than Cloud ones.
+The official page is at <a href="https://workspace.google.com">https://workspace.google.com</a>, with web based UI management in
+<a href="https://admin.google.com">https://admin.google.com</a></p>
+<p>Most support API access from their client library, but for basic users a.k.a non
+paying clients, seems like there&rsquo;s no way to have a central codeless admin dashboard
+to orchestrate or administrate, so they have to go through individual documentation
+for each library.</p>
+<p>Complete list to their products for developers can be found in
+<a href="https://developers.google.com/products/develop">https://developers.google.com/products/develop</a></p>
+<p>    </p>
+<p>Below are the relevant Python libraries.</p>
+<h4 id="google-auth-python-library">Google Auth Python library</h4>
+<p>I&rsquo;m not a fan of sending out API keys embedded in url requests like from <code>curl</code> or any other
+methods, so OAuth is essential for avoiding that as well as future proofing identification
+procedure for any API activities.</p>
+<p>URLs:</p>
+<p>Repository
+<a href="https://github.com/googleapis/google-auth-library-python">https://github.com/googleapis/google-auth-library-python</a>
+Documentation
+<a href="https://googleapis.dev/python/google-auth/latest">https://googleapis.dev/python/google-auth/latest</a></p>
+<p>Note:
+Support async</p>
+<h4 id="google-api-python-library-for-google-suite">Google API Python library for Google Suite</h4>
+<p>URLs:</p>
+<p>Repository
+<a href="https://github.com/googleapis/google-api-python-client">https://github.com/googleapis/google-api-python-client</a>
+Documentation
+<a href="https://googleapis.github.io/google-api-python-client">https://googleapis.github.io/google-api-python-client</a></p>
+<h4 id="google-cloud-client-libraries">Google Cloud Client libraries</h4>
+<p>See this page for complete list &amp; API reference:
+<a href="https://cloud.google.com/python/docs/reference">https://cloud.google.com/python/docs/reference</a>
+Starting point for all google cloud API libraries
+<a href="https://github.com/googleapis/google-cloud-python">https://github.com/googleapis/google-cloud-python</a></p>
+<p>URLs:</p>
+<ul>
+<li>
+<p>BigQuery Python library</p>
+<p>Repository
+<a href="https://github.com/googleapis/python-bigquery">https://github.com/googleapis/python-bigquery</a>
+Documentation
+<a href="https://googleapis.dev/python/bigquery/latest">https://googleapis.dev/python/bigquery/latest</a></p>
+</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">made with Hugo</a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-155567382-1', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </body>
+</html>
+
