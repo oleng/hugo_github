@@ -119,6 +119,10 @@ Note:
 
 ##### Google Cloud Client libraries
 
+**Attention**: _Any description about product limits or pricing in here is severely oversimplified_.    
+
+As with any enterprise cloud platforms, everything related to pricing and billing will _not_ be obvious, in _short_ list, or _easy to explain_ without sample case scenario or long descriptions. _Any excess usage will be charged_.     
+Read the quotas and pricing pages before usage.
 
 Complete list & API endpoint reference:     
   https://cloud.google.com/python/docs/reference       
@@ -127,18 +131,19 @@ Starting point for all google cloud API libraries:
 
 
 1. **BigQuery**     
-  BigQuery has free tier quota and rate limit of 10GB active data storage and 1TB of queries processing per month, but as with any enterprise cloud services these are not the complete descriptions, any excess usage will be charged. See https://cloud.google.com/bigquery/quotas for quota and rate limits details, and https://cloud.google.com/bigquery/pricing for breakdowns on pricing and billing     
+      BigQuery has free tier quota and rate limit of 10GB active data storage and 1TB of queries processing per month. See https://cloud.google.com/bigquery/quotas for quota and rate limits details, and https://cloud.google.com/bigquery/pricing for breakdowns on pricing and billing     
   
-  REST API reference:
-   https://cloud.google.com/bigquery/docs/reference/rest
+    REST API reference:
+    https://cloud.google.com/bigquery/docs/reference/rest
   
-  Package to install:
-  - `google-cloud-bigquery` - see https://pypi.org/project/google-cloud-bigquery/ for latest version.     
-  - (optional for distributed tracing) `google-cloud-bigquery[opentelemetry]`,  `opentelemetry-exporter-google-cloud`. See https://opentelemetry-python.readthedocs.io/ for OpenTelemetry documentation.
+    Package to install:
+    - `google-cloud-bigquery` - see https://pypi.org/project/google-cloud-bigquery/ for latest version.     
+    - (optional for distributed tracing) `google-cloud-bigquery[opentelemetry]`,  `opentelemetry-exporter-google-cloud`. See https://opentelemetry-python.readthedocs.io/ for OpenTelemetry documentation.
 
-  URLs:    
-  _Repository_      
-  https://github.com/googleapis/python-bigquery        
-  _Documentation_       
-  https://googleapis.dev/python/bigquery/latest
+    URLs:    
+    _Repository_      
+    https://github.com/googleapis/python-bigquery        
+    _Documentation_       
+    https://googleapis.dev/python/bigquery/latest
 
+2. 
