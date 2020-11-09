@@ -1,13 +1,12 @@
 ---
-title: "Google's official API client libraries explained"
-date: 2020-11-09T16:23:40Z
-tags: [ 'development','python' ]
-draft: false
+title: "Google's official API client libraries explained"      
+date: 2020-11-09T16:23:40Z     
+tags: [ 'development','python' ]       
+draft: false    
 ---
 
-The goal of this short explanation is to attempt to maintain a placeholder for
-self reminder, creating a central bookmark on important (relevant) links that
-reflect their most current state on library for services, as they have somewhat
+The purpose of this short explanation is an attempt to maintain a self reminder in the form of central bookmark on important (relevant) links that
+reflects their most current state on Python library for Google services, as they have somewhat
 complex to navigate sites for official libraries. Not as unusable as Microsoft or several other dinosaur companies, but enough to waste non trivial amount of time.      In the past I've encountered
 period of limbo, around 2017 to early 2019, where few of their client library
 were stuck in a state of deprecation without clear direction on what that means for users.         
@@ -63,12 +62,12 @@ It's the same dashboard for cloud services administration, only with limited fea
 
 ![Google APIs dashboard](https://oleng.github.io/static/img/googleapis_dashboard.png) ![Google Cloud Platform dashboard](https://oleng.github.io/static/img/googlecloudplatform_dashboard.png) 
 
- AFAIK there's no attempt to explain the real difference between the two, other than the obvious conclusion that one discerns after the fact of learning that there are two dashboards, and the titled Cloud Platform is for enterprise customers. It's probably clear and normal to some people but I find it not very user friendly to have different entry points without any clear patterns or context, it's a little disorienting.
+ AFAIK there's no attempt to explain the real difference between the two, other than the obvious conclusion that one discerns after the fact of learning that there are two dashboards, and the titled Cloud Platform is for enterprise customers. It's probably clear and normal to some people but I find it not very user friendly to have different entry points without any clear patterns or context, it's a little disorienting. I can access them both as lowly normal user, so why not just consolidate them in one place.
 
 Packages:    
   
-- `google-auth` see https://pypi.org/project/google-auth for latest version.      
-- `google-auth-oauthlib` see https://pypi.org/project/google-auth-oauthlib for latest version.
+- `google-auth` - see https://pypi.org/project/google-auth for latest version.      
+- `google-auth-oauthlib` - see https://pypi.org/project/google-auth-oauthlib for latest version.
 
 URLs:
 
