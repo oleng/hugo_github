@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">4 min read</span>
+    <span class="article-duration">5 min read</span>
     <h1 class="article-title">User security: short guide</h1>
     <span class="article-date">Jan 01, 2020</span>
     
@@ -70,16 +70,18 @@
       <blockquote>
 <h5 id="disclaimers">Disclaimers:</h5>
 <p><strong>This is not a comprehensive list</strong>. Complete security practice includes everything from user actions, hardwares, network, softwares, attack theories &amp; methods, time frame period &amp;etc, in other word <em>NOT</em> short or simple.
-I am not a professional security, do not trust easily. AFAIK as of today these are valid, re-evaluation in the future is necessary.
+I am not a professional security, do not trust my words or anyone easily. AFAIK as of today these are valid, re-evaluation in the future is necessary.
 Critiques, inputs and questions are welcome.</p>
 </blockquote>
 <h5 id="tldr--take-aways">TL;DR &amp; take aways:</h5>
 <ul>
-<li>Use password manager, recommended: Bitwarden, 1Password, avoid LastPass!</li>
-<li>Activate MFA <strong>everywhere</strong>, use Yubikey if possible, if not use Authy to avoid getting locked in by a single device.</li>
+<li>If you&rsquo;re need to cover the basics, please read this compilation of basic guidelines <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> first.</li>
+<li>Use password manager, active popular open source softwares with strong enncryption methods are better. My recommendation: Bitwarden, 1Password, avoid LastPass!</li>
+<li>Activate MFA <strong>everywhere</strong>, use Yubikey if possible, otherwise use Authy to avoid getting locked in by a single device.</li>
 <li>SMS is not secure!</li>
 <li>Avoid giving away sensitive informations.</li>
-<li>Develop security awareness and make a habit of secure practices.</li>
+<li>Use Adblock softwares.</li>
+<li>Develop security awareness, <a href="https://ssd.eff.org/en/glossary/threat-model">threat model</a>, and make a habit of secure practices.</li>
 </ul>
 <p>    </p>
 <p>Okay, so here it is&hellip;</p>
@@ -120,7 +122,8 @@ Critiques, inputs and questions are welcome.</p>
 <li><a href="https://authy.com/">Authy</a> is better than Google Authenticator app because with the latter you&rsquo;re locked to a single device.</li>
 <li>Make sure you find out beforehand what to do (preventing exploit &amp; regaining access) if you lose your device that contains your 2FA app.</li>
 <li>Eventually password as authentication method on the web will be replaced and made obsolete.</li>
-<li><strong>Do</strong> develop security best practices, assess your devices &amp; services. Research is key.</li>
+<li><strong>Do</strong> use ad blocking software or its browser add-on. Currently the best you can use is uBlock Origin and I also personally use uMatrix add-on to have further fine-grained control on which addresses to block or temporarily unblock. uBlock Origin is available for Chrome, Safari, Firefox and Opera browsers. Read more about uBlock Origin in their open source <a href="https://github.com/gorhill/uBlock/wiki">code repository&rsquo;s wiki</a></li>
+<li><strong>Do</strong> develop security best practices, also periodically re-evaluate and re-assess your devices &amp; services. Research is key.</li>
 </ul>
 </li>
 </ol>
@@ -138,12 +141,16 @@ Critiques, inputs and questions are welcome.</p>
 <a href="https://twitter.com/feyzheng/status/1211341794325061632?s=20">https://twitter.com/feyzheng/status/1211341794325061632?s=20</a></p>
 <p>SMS based phishing &amp; swapping SIM cards.
 <a href="https://nakedsecurity.sophos.com/2018/12/21/more-phishing-attacks-on-yahoo-and-gmail-sms-2fa-authentication/">https://nakedsecurity.sophos.com/2018/12/21/more-phishing-attacks-on-yahoo-and-gmail-sms-2fa-authentication/</a> <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<blockquote>
 <p>It&rsquo;s worth reminding that <strong>social engineering</strong> is extremely popular because it&rsquo;s easier to deceive a human than hacking a system or network, meaning your security depends a lot more on your security awareness than threats that comes from complicated technical attack. And that the worst possible result for individuals isn&rsquo;t just losing some amount of money, but ones from <a href="https://en.wikipedia.org/wiki/Identity_theft">identity theft</a>.</p>
+</blockquote>
+<h5 id="other-reading-material">Other reading material</h5>
+<p>Articles from <a href="https://ssd.eff.org/"><em>Surveillance Self-Defense</em></a> are very valuable guides, it&rsquo;s a digital privacy segment from Electronic Frontier Foundation (EFF). EFF is nonprofit organization focused on defending digital privacy, free speech, and civil liberties.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>The simplified explanation of what factors usually means is each of these: something user <em>knows</em>, something user <em>has</em>, and something user <em>is</em>.  <a href="https://www.yubico.com/what-is-multi-factor-authentication/#av_section_4">https://www.yubico.com/what-is-multi-factor-authentication/#av_section_4</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Guides that cover the <a href="https://ssd.eff.org/module-categories/basics">Basics</a>, starting from <a href="https://ssd.eff.org/en/module/assessing-your-risks">&ldquo;Assessing your risks&rdquo;</a>, to other explanations such as <a href="https://ssd.eff.org/en/module/seven-steps-digital-security">&ldquo;Seven steps to digital security&rdquo;</a>, and <a href="https://ssd.eff.org/en/module/creating-strong-passwords">&ldquo;Creating Strong Passwords&rdquo;</a>. It also contain more practical guides like <a href="https://ssd.eff.org/en/module/how-enable-two-factor-authentication">&ldquo;How to: Enable Two-factor Authentication&rdquo;</a>, and <a href="https://ssd.eff.org/en/module/how-avoid-phishing-attacks">&ldquo;How to: Avoid Phishing Attacks&rdquo;</a>, complete list can be found in <a href="https://ssd.eff.org/en#index">their index page</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>FIDO (<a href="https://fidoalliance.org/overview/"><em>F</em>ast <em>ID</em>entity <em>O</em>nline Alliance</a>) is a consortium that develops authentication standards. FIDO Universal 2nd Factor (U2F) standard, client protocol that currently is widely supported, has been renamed to CTAP1 (Client-to-Authenticator version 1), while the next standard is called <a href="https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html">CTAP2</a>. Together with W3C&rsquo;s <a href="https://www.w3.org/TR/webauthn-1/">WebAuthn specification</a> support, they&rsquo;re known as FIDO2 Project. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
