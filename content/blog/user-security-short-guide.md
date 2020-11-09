@@ -7,15 +7,17 @@ draft: false
 
 > ##### Disclaimers:
 > **This is not a comprehensive list**. Complete security practice includes everything from user actions, hardwares, network, softwares, attack theories & methods, time frame period &etc, in other word _NOT_ short or simple.
-> I am not a professional security, do not trust easily. AFAIK as of today these are valid, re-evaluation in the future is necessary.
+> I am not a professional security, do not trust my words or anyone easily. AFAIK as of today these are valid, re-evaluation in the future is necessary.
 > Critiques, inputs and questions are welcome.
 
 ##### TL;DR & take aways:   
-- Use password manager, recommended: Bitwarden, 1Password, avoid LastPass! 
-- Activate MFA **everywhere**, use Yubikey if possible, if not use Authy to avoid getting locked in by a single device.
+- If you're need to cover the basics, please read this compilation of basic guidelines [^1] first.
+- Use password manager, active popular open source softwares with strong enncryption methods are better. My recommendation: Bitwarden, 1Password, avoid LastPass! 
+- Activate MFA **everywhere**, use Yubikey if possible, otherwise use Authy to avoid getting locked in by a single device.
 - SMS is not secure!
 - Avoid giving away sensitive informations.
-- Develop security awareness and make a habit of secure practices.
+- Use Adblock softwares.
+- Develop security awareness, [threat model](https://ssd.eff.org/en/glossary/threat-model), and make a habit of secure practices.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -52,7 +54,9 @@ Rule of thumbs on improving online security (authentication, more security than 
     - [Authy](https://authy.com/) is better than Google Authenticator app because with the latter you're locked to a single device.
     - Make sure you find out beforehand what to do (preventing exploit & regaining access) if you lose your device that contains your 2FA app.
     - Eventually password as authentication method on the web will be replaced and made obsolete.
-    - **Do** develop security best practices, assess your devices & services. Research is key.
+    - **Do** use ad blocking software or its browser add-on. Currently the best you can use is uBlock Origin and I also personally use uMatrix add-on to have further fine-grained control on which addresses to block or temporarily unblock. uBlock Origin is available for Chrome, Safari, Firefox and Opera browsers. Read more about uBlock Origin in their open source [code repository's wiki](https://github.com/gorhill/uBlock/wiki)
+    - **Do** develop security best practices, also periodically re-evaluate and re-assess your devices & services. Research is key.
+
 
 ##### Common terms
 
@@ -75,11 +79,19 @@ SMS based phishing & swapping SIM cards.
 https://nakedsecurity.sophos.com/2018/12/21/more-phishing-attacks-on-yahoo-and-gmail-sms-2fa-authentication/ [^7]
 
 
-It's worth reminding that **social engineering** is extremely popular because it's easier to deceive a human than hacking a system or network, meaning your security depends a lot more on your security awareness than threats that comes from complicated technical attack. And that the worst possible result for individuals isn't just losing some amount of money, but ones from [identity theft](https://en.wikipedia.org/wiki/Identity_theft).
+> It's worth reminding that **social engineering** is extremely popular because it's easier to deceive a human than hacking a system or network, meaning your security depends a lot more on your security awareness than threats that comes from complicated technical attack. And that the worst possible result for individuals isn't just losing some amount of money, but ones from [identity theft](https://en.wikipedia.org/wiki/Identity_theft).
 
 
+##### Other reading material
+
+Articles from [_Surveillance Self-Defense_](https://ssd.eff.org/) are very valuable guides, it's a digital privacy segment from Electronic Frontier Foundation (EFF). EFF is nonprofit organization focused on defending digital privacy, free speech, and civil liberties.
+
+
+
+[^1]: Guides that cover the [Basics](https://ssd.eff.org/module-categories/basics), starting from ["Assessing your risks"](https://ssd.eff.org/en/module/assessing-your-risks), to other explanations such as ["Seven steps to digital security"](https://ssd.eff.org/en/module/seven-steps-digital-security), and ["Creating Strong Passwords"](https://ssd.eff.org/en/module/creating-strong-passwords). It also contain more practical guides like ["How to: Enable Two-factor Authentication"](https://ssd.eff.org/en/module/how-enable-two-factor-authentication), and ["How to: Avoid Phishing Attacks"](https://ssd.eff.org/en/module/how-avoid-phishing-attacks), complete list can be found in [their index page](https://ssd.eff.org/en#index).
 
 [^1]: The simplified explanation of what factors usually means is each of these: something user _knows_, something user _has_, and something user _is_.  https://www.yubico.com/what-is-multi-factor-authentication/#av_section_4
+
 [^2]: FIDO ([*F*ast *ID*entity *O*nline Alliance](https://fidoalliance.org/overview/)) is a consortium that develops authentication standards. FIDO Universal 2nd Factor (U2F) standard, client protocol that currently is widely supported, has been renamed to CTAP1 (Client-to-Authenticator version 1), while the next standard is called [CTAP2](https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html). Together with W3C's [WebAuthn specification](https://www.w3.org/TR/webauthn-1/) support, they're known as FIDO2 Project.
 
 [^3]: https://pages.nist.gov/800-63-3/sp800-63b.html#81-authenticator-threats
