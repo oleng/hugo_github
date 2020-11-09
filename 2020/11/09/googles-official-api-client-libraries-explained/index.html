@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">4 min read</span>
     <h1 class="article-title">Google&#39;s official API client libraries explained</h1>
     <span class="article-date">Nov 09, 2020</span>
     
@@ -76,10 +76,10 @@ were stuck in a state of deprecation without clear direction on what that means 
 This sounds like it was not a big deal except I found this out when I needed OAuth library,
 which cost me days of sorting out confusing, conflicting informations given
 in their developer guides and the library package documentation site.</p>
-<p>They&rsquo;re also infamous for killing services or changing brands, and it seems to me
+<p>They&rsquo;re also infamous for killing products <em>and</em> changing brands, and it seems to me
 they only started to make an effort for streamlined, unified libraries &amp; documentations
 in recent few years (at least for Python libraries), as there are still some old
-tutorials &amp; guides that are not updated yet, which can mislead users.</p>
+tutorials &amp; guides on their pages that are not updated yet, which can mislead users.</p>
 <p>Figuring out their ins &amp; out haven&rsquo;t been fun, I found re-learning is even less fun.   <br>
 So I&rsquo;m brain dumping it here since I immensely dislike having to browse &amp; read
 massive enterprise pages full of vague lingos just to figure out vague Java method procedures that they&rsquo;re using as backend.</p>
@@ -93,9 +93,10 @@ located at <a href="https://console.cloud.google.com/">https://console.cloud.goo
 for small-medium offices, but most are available for free with better limits than Cloud ones.      <br>
 The official page is at <a href="https://workspace.google.com">https://workspace.google.com</a>, with web based UI management in
 <a href="https://admin.google.com">https://admin.google.com</a></p>
-<p>Most support API access their client library, but for basic users a.k.a non
-paying clients, seems like there&rsquo;s no way to have a central codeless admin dashboard
-to orchestrate or administrate, so they have to go through individual documentation
+<p>Most of the individual product in G Suite supports API access through their client library,
+but for basic users a.k.a non paying clients, seems like there&rsquo;s no way
+to have a central, codeless admin dashboard to orchestrate or administrate,
+so these type of users have to go through individual documentation
 for each library.</p>
 <p>Complete list to their products for developers can be found in
 <a href="https://developers.google.com/products/develop">https://developers.google.com/products/develop</a></p>
@@ -105,6 +106,15 @@ for each library.</p>
 <p>I&rsquo;m not a fan of sending out API keys embedded in url requests like from <code>curl</code> or any other
 methods, so OAuth is essential for avoiding that, as well as future proofing identification
 procedure for any API activities inside any apps.</p>
+<p>It turns out that there&rsquo;s somewhat ambiguous URI for developer console related with authentication API at <a href="https://console.developers.google.com/,">https://console.developers.google.com/,</a> I&rsquo;m sure this detail has escaped me entirely before.  <br>
+It&rsquo;s the same dashboard for cloud services administration, only with limited features and different title (<code>Google APIs</code> instead of <code>Google Cloud Platform</code>).</p>
+<p><img src="/static/img/googleapis_dashboard.png" alt="Google APIs dashboard"> <img src="/static/img/googlecloudplatform_dashboard.png" alt="Google Cloud Platform dashboard"></p>
+<p>AFAIK there&rsquo;s no attempt to explain the real difference between the two, other than the obvious conclusion that one discerns after the fact of learning that there are two dashboards, and the titled Cloud Platform is for enterprise customers. It&rsquo;s probably clear and normal to some people but I find it not very user friendly to have different entry points without any clear patterns or context, it&rsquo;s a little disorienting.</p>
+<p>Packages:</p>
+<ul>
+<li><code>google-auth</code> see <a href="https://pypi.org/project/google-auth">https://pypi.org/project/google-auth</a> for latest version.</li>
+<li><code>google-auth-oauthlib</code> see <a href="https://pypi.org/project/google-auth-oauthlib">https://pypi.org/project/google-auth-oauthlib</a> for latest version.</li>
+</ul>
 <p>URLs:</p>
 <p><em>Repository</em>    <br>
 <a href="https://github.com/googleapis/google-auth-library-python">https://github.com/googleapis/google-auth-library-python</a>   <br>
@@ -112,27 +122,72 @@ procedure for any API activities inside any apps.</p>
 <a href="https://googleapis.dev/python/google-auth/latest">https://googleapis.dev/python/google-auth/latest</a></p>
 <p>Note:   <br>
 Support async</p>
-<h5 id="google-api-python-library-for-google-suite">Google API Python library for Google Suite</h5>
+<h5 id="google-suite-client-libraries">Google Suite client libraries</h5>
+<ol>
+<li>
+<p><strong>Google API Python library</strong></p>
+<p>Honestly I have no fucking idea what exactly this is for/why it exists, I&rsquo;m guessing it&rsquo;s either to be used in conjuction with the real libraries or to serve people who likes directly interacting with API endpoints. The docs homepage only offered this explanation</p>
+<blockquote>
+<p>The Google API Client Library for Python is designed for Python client-application developers. It offers simple, flexible access to many Google APIs.</p>
+</blockquote>
+<p>with these TOC guides</p>
+<blockquote>
+<ul>
+<li>Getting started</li>
+<li>Auth &hellip;</li>
+<li>How to…
+<ul>
+<li>Use Logging</li>
+<li>Upload Media</li>
+<li>Use Mocks <br>
+&hellip;etc</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Packages to install:</p>
+<ul>
+<li><code>google-api-python-client</code> with these dependencies installed
+<ul>
+<li><code>httplib2</code></li>
+<li><code>uritemplate</code></li>
+</ul>
+</li>
+</ul>
 <p>URLs:</p>
 <p><em>Repository</em>  <br>
 <a href="https://github.com/googleapis/google-api-python-client">https://github.com/googleapis/google-api-python-client</a>   <br>
 <em>Documentation</em>   <br>
 <a href="https://googleapis.github.io/google-api-python-client">https://googleapis.github.io/google-api-python-client</a></p>
+</li>
+<li>
+<p><strong>Google Drive</strong></p>
+</li>
+<li>
+<p><strong>Google Sheets</strong></p>
+</li>
+</ol>
 <h5 id="google-cloud-client-libraries">Google Cloud Client libraries</h5>
-<p>See this page for complete list &amp; API reference:  <br>
+<p>Complete list &amp; API endpoint reference:  <br>
 <a href="https://cloud.google.com/python/docs/reference">https://cloud.google.com/python/docs/reference</a>    <br>
 Starting point for all google cloud API libraries:    <br>
 <a href="https://github.com/googleapis/google-cloud-python">https://github.com/googleapis/google-cloud-python</a></p>
-<p>URLs:</p>
+<ol>
+<li><strong>BigQuery</strong>  <br>
+BigQuery has free tier quota and rate limit of 10GB active data storage and 1TB of queries processing per month, but as with any enterprise cloud services these are not the complete descriptions, any excess usage will be charged. See <a href="https://cloud.google.com/bigquery/quotas">https://cloud.google.com/bigquery/quotas</a> for quota and rate limits details, and <a href="https://cloud.google.com/bigquery/pricing">https://cloud.google.com/bigquery/pricing</a> for breakdowns on pricing and billing</li>
+</ol>
+<p>REST API reference:
+<a href="https://cloud.google.com/bigquery/docs/reference/rest">https://cloud.google.com/bigquery/docs/reference/rest</a></p>
+<p>Package to install:</p>
 <ul>
-<li>
-<p>BigQuery Python library</p>
-<p><em>Repository</em>   <br>
+<li><code>google-cloud-bigquery</code> see <a href="https://pypi.org/project/google-cloud-bigquery/">https://pypi.org/project/google-cloud-bigquery/</a> for latest version.</li>
+<li>(optional for distributed tracing) <code>google-cloud-bigquery[opentelemetry]</code>,  <code>opentelemetry-exporter-google-cloud</code>. See <a href="https://opentelemetry-python.readthedocs.io/">https://opentelemetry-python.readthedocs.io/</a> for OpenTelemetry documentation.</li>
+</ul>
+<p>URLs: <br>
+<em>Repository</em>   <br>
 <a href="https://github.com/googleapis/python-bigquery">https://github.com/googleapis/python-bigquery</a>     <br>
 <em>Documentation</em>    <br>
 <a href="https://googleapis.dev/python/bigquery/latest">https://googleapis.dev/python/bigquery/latest</a></p>
-</li>
-</ul>
 
     </div>
   </article>
