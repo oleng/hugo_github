@@ -50,6 +50,8 @@ Complete list to their products for developers can be found in
 
 Below are the relevant Python libraries.
 
+------
+
 ##### Google Auth Python library
 
 I'm not a fan of sending out API keys embedded in url requests like from `curl` or any other
@@ -59,7 +61,7 @@ procedure for any API activities inside any apps.
 It turns out that there's somewhat ambiguous URI for developer console related with authentication API at https://console.developers.google.com/, I'm sure this detail has escaped me entirely before.     
 It's the same dashboard for cloud services administration, only with limited features and different title (`Google APIs` instead of `Google Cloud Platform`).
 
-![Google APIs dashboard](/static/img/googleapis_dashboard.png) ![Google Cloud Platform dashboard](/static/img/googlecloudplatform_dashboard.png) 
+![Google APIs dashboard](https://oleng.github.io/static/img/googleapis_dashboard.png) ![Google Cloud Platform dashboard](https://oleng.github.io/static/img/googlecloudplatform_dashboard.png) 
 
  AFAIK there's no attempt to explain the real difference between the two, other than the obvious conclusion that one discerns after the fact of learning that there are two dashboards, and the titled Cloud Platform is for enterprise customers. It's probably clear and normal to some people but I find it not very user friendly to have different entry points without any clear patterns or context, it's a little disorienting.
 
@@ -78,6 +80,7 @@ _Documentation_
 Note:      
   Support async
   
+------
 
 ##### Google Suite client libraries
 
@@ -113,7 +116,7 @@ Note:
 2. **Google Drive**
 3. **Google Sheets**
 
-
+------
 
 ##### Google Cloud Client libraries
 
@@ -131,7 +134,7 @@ Starting point for all google cloud API libraries:
    https://cloud.google.com/bigquery/docs/reference/rest
   
   Package to install:
-  - `google-cloud-bigquery` see https://pypi.org/project/google-cloud-bigquery/ for latest version.     
+  - `google-cloud-bigquery` - see https://pypi.org/project/google-cloud-bigquery/ for latest version.     
   - (optional for distributed tracing) `google-cloud-bigquery[opentelemetry]`,  `opentelemetry-exporter-google-cloud`. See https://opentelemetry-python.readthedocs.io/ for OpenTelemetry documentation.
 
   URLs:    
