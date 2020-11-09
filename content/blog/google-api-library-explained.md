@@ -119,10 +119,10 @@ Note:
 
 ##### Google Cloud Client libraries
 
-**Attention**: _Any description about product limits or pricing in here is severely oversimplified_.    
+**Attention**: **_Any description about product limits or pricing in here are severely oversimplified_**.    
 
-As with any enterprise cloud platforms, everything related to pricing and billing will _not_ be obvious, in _short_ list, or _easy to explain_ without sample case scenario or long descriptions. _Any excess usage will be charged_.     
-Read the quotas and pricing pages before usage.
+As with any enterprise cloud platforms, everything related to pricing and billing will **_not_** be obvious, in **_short_** list, or **_easy to explain_** without sample case scenario or long descriptions; they are full of gotchas because these are complex infrastructures. **_Any excess usage will be charged_**.     
+**_Read the quotas and pricing pages before usage_**.
 
 Complete list & API endpoint reference:     
   https://cloud.google.com/python/docs/reference       
