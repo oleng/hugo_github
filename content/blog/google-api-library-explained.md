@@ -5,23 +5,33 @@ tags: [ 'development','python' ]
 draft: false    
 ---
 
-The purpose of this short explanation is an attempt to maintain a self reminder in the form of central bookmark on important (relevant) links that
-reflects their most current state on Python library for Google services, as they have somewhat
-complex to navigate sites for official libraries. Not as unusable as Microsoft or several other dinosaur companies, but enough to waste non trivial amount of time.      In the past I've encountered
-period of limbo, around 2017 to early 2019, where few of their client library
-were stuck in a state of deprecation without clear direction on what that means for users.         
-This sounds like it was not a big deal except I found this out when I needed OAuth library,
-which cost me days of sorting out confusing, conflicting informations given
-in their developer guides and the library package documentation site.
+The purpose of this short explanation is an attempt a brain dump, to maintain 
+bookmarks of relevant links that reflects most current state of Google's Python 
+client libraries for their services, as they have somewhat complex to navigate 
+sites for official libraries. Not as unusable as Microsoft or several other 
+dinosaur companies, but enough to waste non trivial amount of time.
 
-They're also infamous for killing products _and_ changing brands, and it seems to me
-they only started to make an effort for streamlined, unified libraries & documentations
-in recent few years (at least for Python libraries), as there are still some old
+This also serves as a rant post, at time with profanities, since I think they 
+didn't care to actually give developers enjoyable experience in client library matters. 
+I've encountered period of limbo, around 2017 to early 2019, where few of 
+their client libraries were stuck in a state of deprecation without clear direction 
+on what that means for users.         
+It might not sounds like a big deal, except I found this out because I needed 
+their [OAuth library](https://oauth2client.readthedocs.io/), a key point into 
+their services. The informations I could found were conflicting each other, 
+there was more than one third party libraries built to fill the gap that OAuth and
+Google created with their lack of clarity and was confusing af at some point because
+links formed circular loop. It cost me days of sorting out informations from guides
+and the documentation sites. I ended up using `requests-oauthlib`.
+
+They're also infamous for killing products _and_ changing brands, and it seems to me 
+they only started to make an effort for streamlined, unified libraries & documentations 
+in recent few years (at least for Python libraries), as there are still some old 
 tutorials & guides on their pages that are not updated yet, which can mislead users.
 
-Figuring out their ins & out haven't been fun, I found re-learning is even less fun.      
-So I'm brain dumping it here since I immensely dislike having to browse & read
-massive enterprise pages full of vague lingos just to figure out vague Java method procedures that they're using as backend.
+Figuring out their ins & out haven't been fun, I found re-learning is even less fun. 
+I immensely dislike having to browse & read pages full of vague lingos just to 
+figure out vague Java method procedures that they're using as backend.
 
 At the risk of oversimplifying their product line (I'm totally fine with that),
 basically they have two suites for two levels of users/client, Google Cloud and G Suite.
@@ -37,10 +47,9 @@ The official page is at https://workspace.google.com, with web based UI manageme
   https://admin.google.com
 
 Most of the individual product in G Suite supports API access through their client library, 
-but for basic users a.k.a non paying clients, seems like there's no way 
-to have a central, codeless admin dashboard to orchestrate or administrate, 
-so these type of users have to go through individual documentation
-for each library.
+but for basic users a.k.a non paying clients, seems like there's no way to have 
+a central, codeless admin dashboard to orchestrate or administrate, so these type of 
+users have to go through individual documentation for each library.
 
 Complete list to their products for developers can be found in
   https://developers.google.com/products/develop
@@ -73,6 +82,9 @@ URLs:
 
 _Repository_       
   https://github.com/googleapis/google-auth-library-python      
+  https://github.com/googleapis/google-auth-library-python-oauthlib     
+  [narrator] : _very user friendly, aren't they?_
+  
 _Documentation_       
   https://googleapis.dev/python/google-auth/latest  
 
@@ -85,7 +97,11 @@ Note:
 
 1. **Google API Python library**
 
-    Honestly I have no fucking idea what exactly this is for/why it exists, I'm guessing it's either to be used in conjuction with the real libraries or to serve people who likes directly interacting with API endpoints. The docs homepage only offered this explanation     
+    Honestly I had no fucking idea what exactly this is for/why it exists, 
+    I was guessing it's either to be used in conjuction with the real libraries or to force
+    people to directly interacting with API endpoints. 
+    
+    The docs homepage only offered this explanation     
 
     > The Google API Client Library for Python is designed for Python client-application developers. It offers simple, flexible access to many Google APIs.
 
@@ -98,6 +114,13 @@ Note:
     >   * Upload Media    
     >   * Use Mocks    
     > ...etc
+    
+    But if you go to Google APIs organization page in Github and search for
+    individual products' Python client library, you won't find it. 
+    So it seemed to me that my second guess is what Google wanted from developers,
+    and from the surface it looked like my suspicion is confirmed by their [sample code used
+    for guides](https://developers.google.com/drive/api/v3/quickstart/python).
+    They have this `discovery` module to somehow `build` services.
     
     Packages to install:     
     - `google-api-python-client` with these dependencies installed
@@ -112,8 +135,35 @@ Note:
     _Documentation_      
       https://googleapis.github.io/google-api-python-client 
 
+      
 2. **Google Drive**
-3. **Google Sheets**
+    
+    From the surface, based on current available guides and code samples the library
+    for Google Suite... I mean Workspace, is unified. But if you're naive enough to 
+    think you can find the library from search engines result you might land on their 
+    old organization page instead https://github.com/googleworkspace/. 
+    It still exists, and there's repository for samples of Python code that uses too. 
+    If you need a Python library for Google Drive, you'll find they made a client 
+    called [`PyDrive`](https://github.com/googleworkspace/PyDrive). 
+    Skim the steps in their README, it seems like it's a much user friendly to interact 
+    with the Drive API. You'll find that while the code was last maintained 2 years ago, 
+    their README is recent, so you jump to the conclusion that it's fine. You'd be mistaken.
+
+    PyDrive's authentication is still using [deprecated oauth2client](https://github.com/googleworkspace/PyDrive/blob/871f7d644dd5df1c6190f7c7eebbab9721ccd4f4/pydrive/auth.py#L4).
+    The same can be found in [their `python-samples` repository](https://github.com/googleworkspace/python-samples/commit/d37d8bb05630061f22cc618d75fa831c78412945#diff-a6aff07e06ccae30cfd0c32f52deda0467f1e31ac2d95f2a6de7c231a08b8d1f).
+    If you read carefully, you'll find in PyDrive's README file they listed a link to a 
+    different repository https://github.com/gsuitedevs/. This other repository name used 
+    to be repository for any G Suite libraries, you can't it anymore if you use Github search.
+    If you do open that link it will redirect to `googleworkspace` PyDrive repository. 
+    This README files was last updated just 24 days ago. Dig deeper and you'll find that
+    their `development` branch has not been updated for 4 years.   
+    
+    You should not take their words on what seems obvious when it comes to their codes, 
+    although I have to admit that situation in 2020 is _better_ than before. 
+    It was just a big clusterfuck and hard to figure out, everything was all over the place.
+    
+    So what should we use? I have no idea at the moment. Same with **Google Sheets**.
+    Most likely I'll use parts of their codes to build my own.
 
 ------
 
