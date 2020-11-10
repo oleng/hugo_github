@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">5 min read</span>
+    <span class="article-duration">7 min read</span>
     <h1 class="article-title">Google&#39;s official API client libraries explained</h1>
     <span class="article-date">Nov 09, 2020</span>
     
@@ -67,21 +67,30 @@
     </ul>
     
     <div class="article-content">
-      <p>The purpose of this short explanation is an attempt to maintain a self reminder in the form of central bookmark on important (relevant) links that
-reflects their most current state on Python library for Google services, as they have somewhat
-complex to navigate sites for official libraries. Not as unusable as Microsoft or several other dinosaur companies, but enough to waste non trivial amount of time.      In the past I&rsquo;ve encountered
-period of limbo, around 2017 to early 2019, where few of their client library
-were stuck in a state of deprecation without clear direction on what that means for users.      <br>
-This sounds like it was not a big deal except I found this out when I needed OAuth library,
-which cost me days of sorting out confusing, conflicting informations given
-in their developer guides and the library package documentation site.</p>
+      <p>The purpose of this short explanation is an attempt a brain dump, to maintain
+bookmarks of relevant links that reflects most current state of Google&rsquo;s Python
+client libraries for their services, as they have somewhat complex to navigate
+sites for official libraries. Not as unusable as Microsoft or several other
+dinosaur companies, but enough to waste non trivial amount of time.</p>
+<p>This also serves as a rant post, at time with profanities, since I think they
+didn&rsquo;t care to actually give developers enjoyable experience in client library matters.
+I&rsquo;ve encountered period of limbo, around 2017 to early 2019, where few of
+their client libraries were stuck in a state of deprecation without clear direction
+on what that means for users.      <br>
+It might not sounds like a big deal, except I found this out because I needed
+their <a href="https://oauth2client.readthedocs.io/">OAuth library</a>, a key point into
+their services. The informations I could found were conflicting each other,
+there was more than one third party libraries built to fill the gap that OAuth and
+Google created with their lack of clarity and was confusing af at some point because
+links formed circular loop. It cost me days of sorting out informations from guides
+and the documentation sites. I ended up using <code>requests-oauthlib</code>.</p>
 <p>They&rsquo;re also infamous for killing products <em>and</em> changing brands, and it seems to me
 they only started to make an effort for streamlined, unified libraries &amp; documentations
 in recent few years (at least for Python libraries), as there are still some old
 tutorials &amp; guides on their pages that are not updated yet, which can mislead users.</p>
-<p>Figuring out their ins &amp; out haven&rsquo;t been fun, I found re-learning is even less fun.   <br>
-So I&rsquo;m brain dumping it here since I immensely dislike having to browse &amp; read
-massive enterprise pages full of vague lingos just to figure out vague Java method procedures that they&rsquo;re using as backend.</p>
+<p>Figuring out their ins &amp; out haven&rsquo;t been fun, I found re-learning is even less fun.
+I immensely dislike having to browse &amp; read pages full of vague lingos just to
+figure out vague Java method procedures that they&rsquo;re using as backend.</p>
 <p>At the risk of oversimplifying their product line (I&rsquo;m totally fine with that),
 basically they have two suites for two levels of users/client, Google Cloud and G Suite.</p>
 <p>Google Cloud is a product suite for their Cloud services, few has free tier
@@ -93,10 +102,9 @@ for small-medium offices, but most are available for free with better limits tha
 The official page is at <a href="https://workspace.google.com">https://workspace.google.com</a>, with web based UI management in
 <a href="https://admin.google.com">https://admin.google.com</a></p>
 <p>Most of the individual product in G Suite supports API access through their client library,
-but for basic users a.k.a non paying clients, seems like there&rsquo;s no way
-to have a central, codeless admin dashboard to orchestrate or administrate,
-so these type of users have to go through individual documentation
-for each library.</p>
+but for basic users a.k.a non paying clients, seems like there&rsquo;s no way to have
+a central, codeless admin dashboard to orchestrate or administrate, so these type of
+users have to go through individual documentation for each library.</p>
 <p>Complete list to their products for developers can be found in
 <a href="https://developers.google.com/products/develop">https://developers.google.com/products/develop</a></p>
 <p>    </p>
@@ -118,7 +126,9 @@ It&rsquo;s the same dashboard for cloud services administration, only with limit
 <p>URLs:</p>
 <p><em>Repository</em>    <br>
 <a href="https://github.com/googleapis/google-auth-library-python">https://github.com/googleapis/google-auth-library-python</a>   <br>
-<em>Documentation</em>    <br>
+<a href="https://github.com/googleapis/google-auth-library-python-oauthlib">https://github.com/googleapis/google-auth-library-python-oauthlib</a>  <br>
+[narrator] : <em>very user friendly, aren&rsquo;t they?</em></p>
+<p><em>Documentation</em>    <br>
 <a href="https://googleapis.dev/python/google-auth/latest">https://googleapis.dev/python/google-auth/latest</a></p>
 <p>Note:   <br>
 Support async</p>
@@ -127,7 +137,10 @@ Support async</p>
 <ol>
 <li>
 <p><strong>Google API Python library</strong></p>
-<p>Honestly I have no fucking idea what exactly this is for/why it exists, I&rsquo;m guessing it&rsquo;s either to be used in conjuction with the real libraries or to serve people who likes directly interacting with API endpoints. The docs homepage only offered this explanation</p>
+<p>Honestly I had no fucking idea what exactly this is for/why it exists,
+I was guessing it&rsquo;s either to be used in conjuction with the real libraries or to force
+people to directly interacting with API endpoints.</p>
+<p>The docs homepage only offered this explanation</p>
 <blockquote>
 <p>The Google API Client Library for Python is designed for Python client-application developers. It offers simple, flexible access to many Google APIs.</p>
 </blockquote>
@@ -146,6 +159,12 @@ Support async</p>
 </li>
 </ul>
 </blockquote>
+<p>But if you go to Google APIs organization page in Github and search for
+individual products&rsquo; Python client library, you won&rsquo;t find it.
+So it seemed to me that my second guess is what Google wanted from developers,
+and from the surface it looked like my suspicion is confirmed by their <a href="https://developers.google.com/drive/api/v3/quickstart/python">sample code used
+for guides</a>.
+They have this <code>discovery</code> module to somehow <code>build</code> services.</p>
 <p>Packages to install:</p>
 <ul>
 <li><code>google-api-python-client</code> with these dependencies installed
@@ -163,9 +182,29 @@ Support async</p>
 </li>
 <li>
 <p><strong>Google Drive</strong></p>
-</li>
-<li>
-<p><strong>Google Sheets</strong></p>
+<p>From the surface, based on current available guides and code samples the library
+for Google Suite&hellip; I mean Workspace, is unified. But if you&rsquo;re naive enough to
+think you can find the library from search engines result you might land on their
+old organization page instead <a href="https://github.com/googleworkspace/">https://github.com/googleworkspace/</a>.
+It still exists, and there&rsquo;s repository for samples of Python code that uses too.
+If you need a Python library for Google Drive, you&rsquo;ll find they made a client
+called <a href="https://github.com/googleworkspace/PyDrive"><code>PyDrive</code></a>.
+Skim the steps in their README, it seems like it&rsquo;s a much user friendly to interact
+with the Drive API. You&rsquo;ll find that while the code was last maintained 2 years ago,
+their README is recent, so you jump to the conclusion that it&rsquo;s fine. You&rsquo;d be mistaken.</p>
+<p>PyDrive&rsquo;s authentication is still using <a href="https://github.com/googleworkspace/PyDrive/blob/871f7d644dd5df1c6190f7c7eebbab9721ccd4f4/pydrive/auth.py#L4">deprecated oauth2client</a>.
+The same can be found in <a href="https://github.com/googleworkspace/python-samples/commit/d37d8bb05630061f22cc618d75fa831c78412945#diff-a6aff07e06ccae30cfd0c32f52deda0467f1e31ac2d95f2a6de7c231a08b8d1f">their <code>python-samples</code> repository</a>.
+If you read carefully, you&rsquo;ll find in PyDrive&rsquo;s README file they listed a link to a
+different repository <a href="https://github.com/gsuitedevs/">https://github.com/gsuitedevs/</a>. This other repository name used
+to be repository for any G Suite libraries, you can&rsquo;t it anymore if you use Github search.
+If you do open that link it will redirect to <code>googleworkspace</code> PyDrive repository.
+This README files was last updated just 24 days ago. Dig deeper and you&rsquo;ll find that
+their <code>development</code> branch has not been updated for 4 years.</p>
+<p>You should not take their words on what seems obvious when it comes to their codes,
+although I have to admit that situation in 2020 is <em>better</em> than before.
+It was just a big clusterfuck and hard to figure out, everything was all over the place.</p>
+<p>So what should we use? I have no idea at the moment. Same with <strong>Google Sheets</strong>.
+Most likely I&rsquo;ll use parts of their codes to build my own.</p>
 </li>
 </ol>
 <hr>
