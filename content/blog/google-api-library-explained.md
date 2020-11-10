@@ -6,8 +6,8 @@ draft: false
 ---
 
 The purpose of this short explanation is an attempt for a brain dump, to maintain 
-bookmarks of relevant links that reflects most current state of Google's Python 
-client libraries for their services, as they have somewhat complex to navigate 
+a central compilation of relevant links that reflects most current state of Google's 
+Python client libraries for their services, as they have somewhat complex to navigate 
 sites for official libraries. Not as unusable as Microsoft or several other 
 dinosaur companies, but enough to waste non trivial amount of time.
 
@@ -33,18 +33,28 @@ they only started to make an effort for streamlined, unified libraries & documen
 in recent few years (at least for Python libraries), as there are still some old 
 tutorials & guides on their pages that are not updated yet, which can mislead users.
 
+_Note 2020/11/11_: Apparently, they do realize they have a problem in providing clear path and
+support for developers to use their client library, I found that they created a page 
+to explain their situation at https://cloud.google.com/apis/docs/client-libraries-explained.   
+In there, they claim that Google Cloud client libraries are the recommended, idiomatic
+clients for accessing their (Cloud) APIs, which may or may not means that non-Cloud 
+products users are basically somewhat fucked because they won't pay as much attention to
+those products client libraries.
+
+
 ##### Overview
 
 At the risk of oversimplifying their product line (I'm totally fine with that),
-basically they have two suites for two levels of users/client, Google Cloud and G Suite.
+basically they have two suites for two levels of users/client, Google Cloud and G Suite 
+(rebranded as Google Workspace now).
 
 Google Cloud is a product suite for their Cloud services, few has free tier
 offering, but most are geared for enterprise billing customers.        
 Their product page is https://cloud.google.com/, and their web based management UI is
 located at https://console.cloud.google.com/
 
-On lower tier they have Google Workspace (formerly G Suite), it's a paid product suite
-for small-medium offices, but most are available for free with better limits than Cloud ones.         
+On lower tier they have Google Workspace, it's also a paid product suite targeted for 
+small-medium offices, but most are available for free with better limits than Cloud ones.         
 The official page is at https://workspace.google.com, with web based UI management in
   https://admin.google.com
 
@@ -55,6 +65,13 @@ users have to go through individual documentation for each library.
 
 Complete list to their products for developers can be found in
   https://developers.google.com/products/develop
+  
+Manage projects in the API Console (more accurately in both Google APIs or 
+Google Cloud Platform consoles/dashboard, they serve the same API management features 
+such as creating credentials, enabling API access, integration with external domain):     
+  https://support.google.com/googleapi#topic=7013279     
+  https://support.google.com/googleapi/answer/7015000?hl=en&ref_topic=7014522     
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -68,8 +85,8 @@ I'm not a fan of sending out API keys embedded in url requests like from `curl` 
 methods, so OAuth is essential for avoiding that, as well as future proofing identification 
 procedure for any API activities inside any apps.
 
-It turns out that there's somewhat ambiguous URI for developer console related with authentication API at https://console.developers.google.com/, I'm sure this detail has escaped me entirely before.     
-It's the same dashboard for cloud services administration, only with limited features and different title (`Google APIs` instead of `Google Cloud Platform`).
+It turns out that there's somewhat ambiguous URI for developer console related with authentication API at [https://console.developers.google.com/](https://console.developers.google.com/), I'm sure this detail has escaped me entirely before.     
+It's the same dashboard for cloud services administration, only with limited features and different title (_Google APIs_ instead of _Google Cloud Platform_).
 
 ![Google APIs dashboard](https://oleng.github.io/static/img/googleapis_dashboard.png) ![Google Cloud Platform dashboard](https://oleng.github.io/static/img/googlecloudplatform_dashboard.png) 
 
@@ -88,7 +105,8 @@ _Repository_
   [narrator] : _very user friendly, aren't they?_
   
 _Documentation_       
-  https://googleapis.dev/python/google-auth/latest  
+  https://googleapis.dev/python/google-auth/latest    
+  https://googleapis.dev/python/google-auth/latest/user-guide.html
 
 Note:      
   Support async
@@ -200,7 +218,28 @@ Starting point for all google cloud API libraries:
     _Documentation_       
     https://googleapis.dev/python/bigquery/latest
 
-2. TBD
+2. **BigQuery Storage**
+    BigQuery Storage API is enabled in all projects in which the BigQuery API is enabled. 
+    But permission needs to be granted for the project and BigQuery table.   
+    
+    This library is API library to read BigQuery table using rpc-based protocol instead of REST API,
+    that will send structured data in a binary serialization format. The current supported format
+    are Apache Avro (preferred) and Arrow. 
+    This API is not for managing BigQuery resources such as datasets, jobs, or tables, only for 
+    table queries. It manages a streming read session for query to a single table that can
+    be split in multiple streams or filtered subset of columns.
+    
+    Storage API reference:    
+    https://cloud.google.com/bigquery/docs/reference/storage
+
+    Package to install:    
+    - `google-cloud-bigquery-storage` 
+
+    URLs:    
+    _Repository_     
+    https://github.com/googleapis/python-bigquery-storage      
+    _Documentation_     
+    https://googleapis.dev/python/bigquerystorage/latest     
 
 
 ##### Irrelevant but potentially misleading Google links for Python API developers/users
