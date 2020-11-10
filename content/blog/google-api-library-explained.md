@@ -142,22 +142,23 @@ Note:
     
     From the surface, based on current available guides and code samples the library
     for Google Suite... I mean Workspace, is unified. But if you're naive enough to 
-    think you can find the library from search engines result you might land on their 
+    think you can find the library from search engines results, you might land on their 
     old organization page instead https://github.com/googleworkspace/. 
-    It still exists, and there's repository for samples of Python code that uses too. 
-    If you need a Python library for Google Drive, you'll find they made a client 
+    It still exists, and there's repository for [samples of Python codes](https://github.com/googleworkspace/python-samples), too.     
+    If you need a Python library for Google Drive, you'll see they made a client 
     called [`PyDrive`](https://github.com/googleworkspace/PyDrive). 
-    Skim the steps in their README, it seems like it's a much user friendly to interact 
-    with the Drive API. You'll find that while the code was last maintained 2 years ago, 
-    their README is recent, so you jump to the conclusion that it's fine. You'd be mistaken.
+    Skim the steps in their README, it seems like it's a user friendly library to interact 
+    with the Drive API. You'll find that while the module code was last maintained 2 years
+    ago, their README is recent, so you jump to the conclusion that it's fine.     
+    You'd be mistaken.
 
     PyDrive's authentication is still using [deprecated oauth2client](https://github.com/googleworkspace/PyDrive/blob/871f7d644dd5df1c6190f7c7eebbab9721ccd4f4/pydrive/auth.py#L4).
-    The same can be found in [their `python-samples` repository](https://github.com/googleworkspace/python-samples/commit/d37d8bb05630061f22cc618d75fa831c78412945#diff-a6aff07e06ccae30cfd0c32f52deda0467f1e31ac2d95f2a6de7c231a08b8d1f).
-    If you read carefully, you'll find in PyDrive's README file they listed a link to a 
+    The same can be found in [their `python-samples` repository](https://github.com/googleworkspace/python-samples/commit/d37d8bb05630061f22cc618d75fa831c78412945#diff-a6aff07e06ccae30cfd0c32f52deda0467f1e31ac2d95f2a6de7c231a08b8d1f).     
+    If you read carefully, you'll find in PyDrive's `README` file they listed a link to a 
     different repository https://github.com/gsuitedevs/. This other repository name used 
     to be repository for any G Suite libraries, you can't it anymore if you use Github search.
     If you do open that link it will redirect to `googleworkspace` PyDrive repository. 
-    This README files was last updated just 24 days ago. Dig deeper and you'll find that
+    This `README` files was last updated just 24 days ago. Dig deeper and you'll find that
     their `development` branch has not been updated for 4 years.   
     
     You should not take their words on what seems obvious when it comes to their codes, 
@@ -173,8 +174,9 @@ Note:
 
 **Attention**: **_Any description about product limits or pricing in here are severely oversimplified_**.    
 
-As with any enterprise cloud platforms, everything related to pricing and billing will **_not_** be obvious, in **_short_** list, or **_easy to explain_** without sample case scenario or long descriptions; they are full of gotchas because these are complex infrastructures. **_Any excess usage will be charged_**.     
-**_Read the quotas and pricing pages before usage_**.
+> As with any enterprise cloud platforms, everything related to pricing and billing will **_not_** be obvious, in **_short_** list, or **_easy to explain_** without sample case scenario or long descriptions; they are full of gotchas because these are complex infrastructures. **_Any excess usage will be charged_**.     
+> 
+> **_Read the quotas and pricing pages before usage_**.
 
 Complete list & API endpoint reference:     
   https://cloud.google.com/python/docs/reference       
@@ -198,4 +200,12 @@ Starting point for all google cloud API libraries:
     _Documentation_       
     https://googleapis.dev/python/bigquery/latest
 
-2. 
+2. TBD
+
+
+##### Irrelevant but potentially misleading Google links for Python API developers/users
+
+
+- https://github.com/google/apis-client-generator - No support for Python here.      
+- https://github.com/googleapis/googleapis - Unless you want to be a contributor to one of their repositories, or make a big application using lots of Google APIs, or Java developer, this is most likely irrelevant to you.     
+- https://github.com/googleapis/google-auth-library-python-httplib2 - This library is intended to help existing users of `oauth2client` migrate to `google-auth`.
