@@ -185,21 +185,22 @@ They have this <code>discovery</code> module to somehow <code>build</code> servi
 <p><strong>Google Drive</strong></p>
 <p>From the surface, based on current available guides and code samples the library
 for Google Suite&hellip; I mean Workspace, is unified. But if you&rsquo;re naive enough to
-think you can find the library from search engines result you might land on their
+think you can find the library from search engines results, you might land on their
 old organization page instead <a href="https://github.com/googleworkspace/">https://github.com/googleworkspace/</a>.
-It still exists, and there&rsquo;s repository for samples of Python code that uses too.
-If you need a Python library for Google Drive, you&rsquo;ll find they made a client
+It still exists, and there&rsquo;s repository for <a href="https://github.com/googleworkspace/python-samples">samples of Python codes</a>, too.  <br>
+If you need a Python library for Google Drive, you&rsquo;ll see they made a client
 called <a href="https://github.com/googleworkspace/PyDrive"><code>PyDrive</code></a>.
-Skim the steps in their README, it seems like it&rsquo;s a much user friendly to interact
-with the Drive API. You&rsquo;ll find that while the code was last maintained 2 years ago,
-their README is recent, so you jump to the conclusion that it&rsquo;s fine. You&rsquo;d be mistaken.</p>
+Skim the steps in their README, it seems like it&rsquo;s a user friendly library to interact
+with the Drive API. You&rsquo;ll find that while the module code was last maintained 2 years
+ago, their README is recent, so you jump to the conclusion that it&rsquo;s fine.  <br>
+You&rsquo;d be mistaken.</p>
 <p>PyDrive&rsquo;s authentication is still using <a href="https://github.com/googleworkspace/PyDrive/blob/871f7d644dd5df1c6190f7c7eebbab9721ccd4f4/pydrive/auth.py#L4">deprecated oauth2client</a>.
-The same can be found in <a href="https://github.com/googleworkspace/python-samples/commit/d37d8bb05630061f22cc618d75fa831c78412945#diff-a6aff07e06ccae30cfd0c32f52deda0467f1e31ac2d95f2a6de7c231a08b8d1f">their <code>python-samples</code> repository</a>.
-If you read carefully, you&rsquo;ll find in PyDrive&rsquo;s README file they listed a link to a
+The same can be found in <a href="https://github.com/googleworkspace/python-samples/commit/d37d8bb05630061f22cc618d75fa831c78412945#diff-a6aff07e06ccae30cfd0c32f52deda0467f1e31ac2d95f2a6de7c231a08b8d1f">their <code>python-samples</code> repository</a>.  <br>
+If you read carefully, you&rsquo;ll find in PyDrive&rsquo;s <code>README</code> file they listed a link to a
 different repository <a href="https://github.com/gsuitedevs/">https://github.com/gsuitedevs/</a>. This other repository name used
 to be repository for any G Suite libraries, you can&rsquo;t it anymore if you use Github search.
 If you do open that link it will redirect to <code>googleworkspace</code> PyDrive repository.
-This README files was last updated just 24 days ago. Dig deeper and you&rsquo;ll find that
+This <code>README</code> files was last updated just 24 days ago. Dig deeper and you&rsquo;ll find that
 their <code>development</code> branch has not been updated for 4 years.</p>
 <p>You should not take their words on what seems obvious when it comes to their codes,
 although I have to admit that situation in 2020 is <em>better</em> than before.
@@ -211,8 +212,10 @@ Most likely I&rsquo;ll use parts of their codes to build my own.</p>
 <hr>
 <h5 id="google-cloud-client-libraries">Google Cloud Client libraries</h5>
 <p><strong>Attention</strong>: <strong><em>Any description about product limits or pricing in here are severely oversimplified</em></strong>.</p>
-<p>As with any enterprise cloud platforms, everything related to pricing and billing will <strong><em>not</em></strong> be obvious, in <strong><em>short</em></strong> list, or <strong><em>easy to explain</em></strong> without sample case scenario or long descriptions; they are full of gotchas because these are complex infrastructures. <strong><em>Any excess usage will be charged</em></strong>.  <br>
-<strong><em>Read the quotas and pricing pages before usage</em></strong>.</p>
+<blockquote>
+<p>As with any enterprise cloud platforms, everything related to pricing and billing will <strong><em>not</em></strong> be obvious, in <strong><em>short</em></strong> list, or <strong><em>easy to explain</em></strong> without sample case scenario or long descriptions; they are full of gotchas because these are complex infrastructures. <strong><em>Any excess usage will be charged</em></strong>.</p>
+<p><strong><em>Read the quotas and pricing pages before usage</em></strong>.</p>
+</blockquote>
 <p>Complete list &amp; API endpoint reference:  <br>
 <a href="https://cloud.google.com/python/docs/reference">https://cloud.google.com/python/docs/reference</a>    <br>
 Starting point for all google cloud API libraries:    <br>
@@ -234,8 +237,16 @@ BigQuery has free tier quota and rate limit of 10GB active data storage and 1TB 
 <em>Documentation</em>    <br>
 <a href="https://googleapis.dev/python/bigquery/latest">https://googleapis.dev/python/bigquery/latest</a></p>
 </li>
-<li></li>
+<li>
+<p>TBD</p>
+</li>
 </ol>
+<h5 id="irrelevant-but-potentially-misleading-google-links-for-python-api-developersusers">Irrelevant but potentially misleading Google links for Python API developers/users</h5>
+<ul>
+<li><a href="https://github.com/google/apis-client-generator">https://github.com/google/apis-client-generator</a> - No support for Python here.</li>
+<li><a href="https://github.com/googleapis/googleapis">https://github.com/googleapis/googleapis</a> - Unless you want to be a contributor to one of their repositories, or make a big application using lots of Google APIs, or Java developer, this is most likely irrelevant to you.</li>
+<li><a href="https://github.com/googleapis/google-auth-library-python-httplib2">https://github.com/googleapis/google-auth-library-python-httplib2</a> - This library is intended to help existing users of <code>oauth2client</code> migrate to <code>google-auth</code>.</li>
+</ul>
 
     </div>
   </article>
