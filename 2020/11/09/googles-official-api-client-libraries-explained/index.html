@@ -98,7 +98,7 @@ In there, they claim that Google Cloud client libraries are the recommended, idi
 clients for accessing their (Cloud) APIs, which may or may not means that non-Cloud
 products users are basically somewhat fucked because they won&rsquo;t pay as much attention to
 those products client libraries.</p>
-<h5 id="overview">Overview</h5>
+<h3 id="overview">Overview</h3>
 <p>At the risk of oversimplifying their product line (I&rsquo;m totally fine with that),
 basically they have two suites for two levels of users/client, Google Cloud and G Suite
 (rebranded as Google Workspace now).</p>
@@ -122,7 +122,7 @@ such as creating credentials, enabling API access, integration with external dom
 <a href="https://support.google.com/googleapi#topic=7013279">https://support.google.com/googleapi#topic=7013279</a>  <br>
 <a href="https://support.google.com/googleapi/answer/7015000?hl=en&amp;ref_topic=7014522">https://support.google.com/googleapi/answer/7015000?hl=en&amp;ref_topic=7014522</a></p>
 <p>    </p>
-<p>Below are the relevant Python libraries.</p>
+<h3 id="python-libraries">Python libraries</h3>
 <hr>
 <h5 id="google-auth-python-library">Google Auth Python library</h5>
 <p>I&rsquo;m not a fan of sending out API keys embedded in url requests like from <code>curl</code> or any other
@@ -252,7 +252,7 @@ BigQuery has free tier quota and rate limit of 10GB active data storage and 1TB 
 <a href="https://googleapis.dev/python/bigquery/latest">https://googleapis.dev/python/bigquery/latest</a></p>
 </li>
 <li>
-<p><strong>BigQuery Storage</strong>
+<p><strong>BigQuery Storage</strong>  <br>
 BigQuery Storage API is enabled in all projects in which the BigQuery API is enabled.
 But permission needs to be granted for the project and BigQuery table.</p>
 <p>This library is API library to read BigQuery table using rpc-based protocol instead of REST API,
@@ -274,7 +274,8 @@ be split in multiple streams or filtered subset of columns.</p>
 <a href="https://googleapis.dev/python/bigquerystorage/latest">https://googleapis.dev/python/bigquerystorage/latest</a></p>
 </li>
 </ol>
-<h5 id="irrelevant-but-potentially-misleading-google-links-for-python-api-developersusers">Irrelevant but potentially misleading Google links for Python API developers/users</h5>
+<hr>
+<h3 id="irrelevant-but-potentially-misleading-links">Irrelevant but potentially misleading links</h3>
 <ul>
 <li><a href="https://github.com/google/apis-client-generator">https://github.com/google/apis-client-generator</a> - No support for Python here.</li>
 <li><a href="https://github.com/googleapis/googleapis">https://github.com/googleapis/googleapis</a> - Unless you want to be a contributor to one of their repositories, or make a big application using lots of Google APIs, or Java developer, this is most likely irrelevant to you.</li>
