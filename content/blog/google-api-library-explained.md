@@ -42,7 +42,7 @@ products users are basically somewhat fucked because they won't pay as much atte
 those products client libraries.
 
 
-##### Overview
+### Overview
 
 At the risk of oversimplifying their product line (I'm totally fine with that),
 basically they have two suites for two levels of users/client, Google Cloud and G Suite 
@@ -75,9 +75,11 @@ such as creating credentials, enabling API access, integration with external dom
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-Below are the relevant Python libraries.
+### Python libraries
+
 
 ------
+
 
 ##### Google Auth Python library
 
@@ -111,7 +113,9 @@ _Documentation_
 Note:      
   Support async
   
+  
 ------
+
 
 ##### Google Suite client libraries
 
@@ -186,7 +190,9 @@ Note:
     So what should we use? I have no idea at the moment. Same with **Google Sheets**.
     Most likely I'll use parts of their codes to build my own.
 
+
 ------
+
 
 ##### Google Cloud Client libraries
 
@@ -218,7 +224,7 @@ Starting point for all google cloud API libraries:
     _Documentation_       
     https://googleapis.dev/python/bigquery/latest
 
-2. **BigQuery Storage**
+2. **BigQuery Storage**     
     BigQuery Storage API is enabled in all projects in which the BigQuery API is enabled. 
     But permission needs to be granted for the project and BigQuery table.   
     
@@ -242,7 +248,10 @@ Starting point for all google cloud API libraries:
     https://googleapis.dev/python/bigquerystorage/latest     
 
 
-##### Irrelevant but potentially misleading Google links for Python API developers/users
+------
+
+
+### Irrelevant but potentially misleading links
 
 
 - https://github.com/google/apis-client-generator - No support for Python here.      
