@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">7 min read</span>
+    <span class="article-duration">8 min read</span>
     <h1 class="article-title">Google&#39;s official API client libraries explained</h1>
     <span class="article-date">Nov 09, 2020</span>
     
@@ -68,8 +68,8 @@
     
     <div class="article-content">
       <p>The purpose of this short explanation is an attempt for a brain dump, to maintain
-bookmarks of relevant links that reflects most current state of Google&rsquo;s Python
-client libraries for their services, as they have somewhat complex to navigate
+a central compilation of relevant links that reflects most current state of Google&rsquo;s
+Python client libraries for their services, as they have somewhat complex to navigate
 sites for official libraries. Not as unusable as Microsoft or several other
 dinosaur companies, but enough to waste non trivial amount of time.</p>
 <p>Figuring out their ins &amp; out haven&rsquo;t been fun, I found re-learning is even less fun.
@@ -91,15 +91,23 @@ and the documentation sites. I ended up using <code>requests-oauthlib</code>.</p
 they only started to make an effort for streamlined, unified libraries &amp; documentations
 in recent few years (at least for Python libraries), as there are still some old
 tutorials &amp; guides on their pages that are not updated yet, which can mislead users.</p>
+<p><em>Note 2020/11/11</em>: Apparently, they do realize they have a problem in providing clear path and
+support for developers to use their client library, I found that they created a page
+to explain their situation at <a href="https://cloud.google.com/apis/docs/client-libraries-explained">https://cloud.google.com/apis/docs/client-libraries-explained</a>.<br>
+In there, they claim that Google Cloud client libraries are the recommended, idiomatic
+clients for accessing their (Cloud) APIs, which may or may not means that non-Cloud
+products users are basically somewhat fucked because they won&rsquo;t pay as much attention to
+those products client libraries.</p>
 <h5 id="overview">Overview</h5>
 <p>At the risk of oversimplifying their product line (I&rsquo;m totally fine with that),
-basically they have two suites for two levels of users/client, Google Cloud and G Suite.</p>
+basically they have two suites for two levels of users/client, Google Cloud and G Suite
+(rebranded as Google Workspace now).</p>
 <p>Google Cloud is a product suite for their Cloud services, few has free tier
 offering, but most are geared for enterprise billing customers.     <br>
 Their product page is <a href="https://cloud.google.com/,">https://cloud.google.com/,</a> and their web based management UI is
 located at <a href="https://console.cloud.google.com/">https://console.cloud.google.com/</a></p>
-<p>On lower tier they have Google Workspace (formerly G Suite), it&rsquo;s a paid product suite
-for small-medium offices, but most are available for free with better limits than Cloud ones.      <br>
+<p>On lower tier they have Google Workspace, it&rsquo;s also a paid product suite targeted for
+small-medium offices, but most are available for free with better limits than Cloud ones.      <br>
 The official page is at <a href="https://workspace.google.com">https://workspace.google.com</a>, with web based UI management in
 <a href="https://admin.google.com">https://admin.google.com</a></p>
 <p>Most of the individual product in G Suite supports API access through their client library,
@@ -108,6 +116,11 @@ a central, codeless admin dashboard to orchestrate or administrate, so these typ
 users have to go through individual documentation for each library.</p>
 <p>Complete list to their products for developers can be found in
 <a href="https://developers.google.com/products/develop">https://developers.google.com/products/develop</a></p>
+<p>Manage projects in the API Console (more accurately in both Google APIs or
+Google Cloud Platform consoles/dashboard, they serve the same API management features
+such as creating credentials, enabling API access, integration with external domain):  <br>
+<a href="https://support.google.com/googleapi#topic=7013279">https://support.google.com/googleapi#topic=7013279</a>  <br>
+<a href="https://support.google.com/googleapi/answer/7015000?hl=en&amp;ref_topic=7014522">https://support.google.com/googleapi/answer/7015000?hl=en&amp;ref_topic=7014522</a></p>
 <p>    </p>
 <p>Below are the relevant Python libraries.</p>
 <hr>
@@ -115,8 +128,8 @@ users have to go through individual documentation for each library.</p>
 <p>I&rsquo;m not a fan of sending out API keys embedded in url requests like from <code>curl</code> or any other
 methods, so OAuth is essential for avoiding that, as well as future proofing identification
 procedure for any API activities inside any apps.</p>
-<p>It turns out that there&rsquo;s somewhat ambiguous URI for developer console related with authentication API at <a href="https://console.developers.google.com/,">https://console.developers.google.com/,</a> I&rsquo;m sure this detail has escaped me entirely before.  <br>
-It&rsquo;s the same dashboard for cloud services administration, only with limited features and different title (<code>Google APIs</code> instead of <code>Google Cloud Platform</code>).</p>
+<p>It turns out that there&rsquo;s somewhat ambiguous URI for developer console related with authentication API at <a href="https://console.developers.google.com/">https://console.developers.google.com/</a>, I&rsquo;m sure this detail has escaped me entirely before.  <br>
+It&rsquo;s the same dashboard for cloud services administration, only with limited features and different title (<em>Google APIs</em> instead of <em>Google Cloud Platform</em>).</p>
 <p><img src="https://oleng.github.io/static/img/googleapis_dashboard.png" alt="Google APIs dashboard"> <img src="https://oleng.github.io/static/img/googlecloudplatform_dashboard.png" alt="Google Cloud Platform dashboard"></p>
 <p>AFAIK there&rsquo;s no attempt to explain the real difference between the two, other than the obvious conclusion that one discerns after the fact of learning that there are two dashboards, and the titled Cloud Platform is for enterprise customers. It&rsquo;s probably clear and normal to some people but I find it not very user friendly to have different entry points without any clear patterns or context, it&rsquo;s a little disorienting. I can access them both as lowly normal user, so why not just consolidate them in one place.</p>
 <p>Packages:</p>
@@ -130,7 +143,8 @@ It&rsquo;s the same dashboard for cloud services administration, only with limit
 <a href="https://github.com/googleapis/google-auth-library-python-oauthlib">https://github.com/googleapis/google-auth-library-python-oauthlib</a>  <br>
 [narrator] : <em>very user friendly, aren&rsquo;t they?</em></p>
 <p><em>Documentation</em>    <br>
-<a href="https://googleapis.dev/python/google-auth/latest">https://googleapis.dev/python/google-auth/latest</a></p>
+<a href="https://googleapis.dev/python/google-auth/latest">https://googleapis.dev/python/google-auth/latest</a> <br>
+<a href="https://googleapis.dev/python/google-auth/latest/user-guide.html">https://googleapis.dev/python/google-auth/latest/user-guide.html</a></p>
 <p>Note:   <br>
 Support async</p>
 <hr>
@@ -238,7 +252,26 @@ BigQuery has free tier quota and rate limit of 10GB active data storage and 1TB 
 <a href="https://googleapis.dev/python/bigquery/latest">https://googleapis.dev/python/bigquery/latest</a></p>
 </li>
 <li>
-<p>TBD</p>
+<p><strong>BigQuery Storage</strong>
+BigQuery Storage API is enabled in all projects in which the BigQuery API is enabled.
+But permission needs to be granted for the project and BigQuery table.</p>
+<p>This library is API library to read BigQuery table using rpc-based protocol instead of REST API,
+that will send structured data in a binary serialization format. The current supported format
+are Apache Avro (preferred) and Arrow.
+This API is not for managing BigQuery resources such as datasets, jobs, or tables, only for
+table queries. It manages a streming read session for query to a single table that can
+be split in multiple streams or filtered subset of columns.</p>
+<p>Storage API reference: <br>
+<a href="https://cloud.google.com/bigquery/docs/reference/storage">https://cloud.google.com/bigquery/docs/reference/storage</a></p>
+<p>Package to install:</p>
+<ul>
+<li><code>google-cloud-bigquery-storage</code></li>
+</ul>
+<p>URLs: <br>
+<em>Repository</em>  <br>
+<a href="https://github.com/googleapis/python-bigquery-storage">https://github.com/googleapis/python-bigquery-storage</a>   <br>
+<em>Documentation</em>  <br>
+<a href="https://googleapis.dev/python/bigquerystorage/latest">https://googleapis.dev/python/bigquerystorage/latest</a></p>
 </li>
 </ol>
 <h5 id="irrelevant-but-potentially-misleading-google-links-for-python-api-developersusers">Irrelevant but potentially misleading Google links for Python API developers/users</h5>
