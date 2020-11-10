@@ -5,11 +5,15 @@ tags: [ 'development','python' ]
 draft: false    
 ---
 
-The purpose of this short explanation is an attempt a brain dump, to maintain 
+The purpose of this short explanation is an attempt for a brain dump, to maintain 
 bookmarks of relevant links that reflects most current state of Google's Python 
 client libraries for their services, as they have somewhat complex to navigate 
 sites for official libraries. Not as unusable as Microsoft or several other 
 dinosaur companies, but enough to waste non trivial amount of time.
+
+Figuring out their ins & out haven't been fun, I found re-learning is even less fun. 
+I immensely dislike having to browse and read pages full of vague lingos just to 
+figure out vague Java method procedures that they're using as backend. Thus this post.
 
 This also serves as a rant post, at time with profanities, since I think they 
 didn't care to actually give developers enjoyable experience in client library matters. 
@@ -29,9 +33,7 @@ they only started to make an effort for streamlined, unified libraries & documen
 in recent few years (at least for Python libraries), as there are still some old 
 tutorials & guides on their pages that are not updated yet, which can mislead users.
 
-Figuring out their ins & out haven't been fun, I found re-learning is even less fun. 
-I immensely dislike having to browse & read pages full of vague lingos just to 
-figure out vague Java method procedures that they're using as backend.
+##### Overview
 
 At the risk of oversimplifying their product line (I'm totally fine with that),
 basically they have two suites for two levels of users/client, Google Cloud and G Suite.
