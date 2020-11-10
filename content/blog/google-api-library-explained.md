@@ -34,7 +34,7 @@ in recent few years (at least for Python libraries), as there are still some old
 tutorials & guides on their pages that are not updated yet, which can mislead users.
 
 _Note 2020/11/11_: Apparently, they do realize they have a problem in providing clear path and
-support for developers to use their client library, I found that they created a page 
+support for developers to use their client libraries. I found that they created a page 
 to explain their situation at https://cloud.google.com/apis/docs/client-libraries-explained.   
 In there, they claim that Google Cloud client libraries are the recommended, idiomatic
 clients for accessing their (Cloud) APIs, which may or may not means that non-Cloud 
@@ -42,7 +42,9 @@ products users are basically somewhat fucked because they won't pay as much atte
 those products client libraries.
 
 
-### Overview
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+## Overview
 
 At the risk of oversimplifying their product line (I'm totally fine with that),
 basically they have two suites for two levels of users/client, Google Cloud and G Suite 
@@ -75,7 +77,7 @@ such as creating credentials, enabling API access, integration with external dom
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-### Python libraries
+## Python libraries
 
 
 ------
@@ -251,7 +253,7 @@ Starting point for all google cloud API libraries:
 ------
 
 
-### Irrelevant but potentially misleading links
+## Irrelevant but potentially misleading links
 
 
 - https://github.com/google/apis-client-generator - No support for Python here.      
