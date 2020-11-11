@@ -129,7 +129,7 @@ Note:
     
     The docs homepage only offered this explanation     
 
-    > The Google API Client Library for Python is designed for Python client-application developers. It offers simple, flexible access to many Google APIs.
+    > _The Google API Client Library for Python is designed for Python client-application developers. It offers simple, flexible access to many Google APIs_.
 
     with these TOC guides     
 
@@ -141,7 +141,7 @@ Note:
     >   * Use Mocks    
     > ...etc
     
-    But if you go to Google APIs organization page in Github and search for
+    Okaay... But if you go to Google APIs organization page in Github and search for
     individual products' Python client library, you won't find it. 
     So it seemed to me that my second guess is what Google wanted from developers,
     and from the surface it looked like my suspicion is confirmed by their [sample code used
@@ -193,8 +193,8 @@ Note:
     Most likely I'll use parts of their codes to build my own.
 
 
-------
 
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 ##### Google Cloud Client libraries
 
@@ -231,11 +231,11 @@ Starting point for all google cloud API libraries:
     But permission needs to be granted for the project and BigQuery table.   
     
     This library is API library to read BigQuery table using rpc-based protocol instead of REST API,
-    that will send structured data in a binary serialization format. The current supported format
-    are Apache Avro (preferred) and Arrow. 
+    it will send structured data in a binary serialization format. The current supported format
+    are Apache Avro (recommended) and Arrow. 
     This API is not for managing BigQuery resources such as datasets, jobs, or tables, only for 
-    table queries. It manages a streming read session for query to a single table that can
-    be split in multiple streams or filtered subset of columns.
+    table queries. It manages a streaming read session for query to a single table that can
+    be split in multiple streams or filtered on subset of columns.
     
     Storage API reference:    
     https://cloud.google.com/bigquery/docs/reference/storage
@@ -249,6 +249,8 @@ Starting point for all google cloud API libraries:
     _Documentation_     
     https://googleapis.dev/python/bigquerystorage/latest     
 
+
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 ------
 
