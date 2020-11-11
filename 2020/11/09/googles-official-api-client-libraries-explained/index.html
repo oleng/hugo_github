@@ -158,7 +158,7 @@ I was guessing it&rsquo;s either to be used in conjuction with the real librarie
 people to directly interacting with API endpoints.</p>
 <p>The docs homepage only offered this explanation</p>
 <blockquote>
-<p>The Google API Client Library for Python is designed for Python client-application developers. It offers simple, flexible access to many Google APIs.</p>
+<p><em>The Google API Client Library for Python is designed for Python client-application developers. It offers simple, flexible access to many Google APIs</em>.</p>
 </blockquote>
 <p>with these TOC guides</p>
 <blockquote>
@@ -175,7 +175,7 @@ people to directly interacting with API endpoints.</p>
 </li>
 </ul>
 </blockquote>
-<p>But if you go to Google APIs organization page in Github and search for
+<p>Okaay&hellip; But if you go to Google APIs organization page in Github and search for
 individual products&rsquo; Python client library, you won&rsquo;t find it.
 So it seemed to me that my second guess is what Google wanted from developers,
 and from the surface it looked like my suspicion is confirmed by their <a href="https://developers.google.com/drive/api/v3/quickstart/python">sample code used
@@ -224,7 +224,7 @@ It was just a big clusterfuck and hard to figure out, everything was all over th
 Most likely I&rsquo;ll use parts of their codes to build my own.</p>
 </li>
 </ol>
-<hr>
+<p>    </p>
 <h5 id="google-cloud-client-libraries">Google Cloud Client libraries</h5>
 <p><strong>Attention</strong>: <strong><em>Any description about product limits or pricing in here are severely oversimplified</em></strong>.</p>
 <blockquote>
@@ -257,11 +257,11 @@ BigQuery has free tier quota and rate limit of 10GB active data storage and 1TB 
 BigQuery Storage API is enabled in all projects in which the BigQuery API is enabled.
 But permission needs to be granted for the project and BigQuery table.</p>
 <p>This library is API library to read BigQuery table using rpc-based protocol instead of REST API,
-that will send structured data in a binary serialization format. The current supported format
-are Apache Avro (preferred) and Arrow.
+it will send structured data in a binary serialization format. The current supported format
+are Apache Avro (recommended) and Arrow.
 This API is not for managing BigQuery resources such as datasets, jobs, or tables, only for
-table queries. It manages a streming read session for query to a single table that can
-be split in multiple streams or filtered subset of columns.</p>
+table queries. It manages a streaming read session for query to a single table that can
+be split in multiple streams or filtered on subset of columns.</p>
 <p>Storage API reference: <br>
 <a href="https://cloud.google.com/bigquery/docs/reference/storage">https://cloud.google.com/bigquery/docs/reference/storage</a></p>
 <p>Package to install:</p>
@@ -275,6 +275,7 @@ be split in multiple streams or filtered subset of columns.</p>
 <a href="https://googleapis.dev/python/bigquerystorage/latest">https://googleapis.dev/python/bigquerystorage/latest</a></p>
 </li>
 </ol>
+<p>    </p>
 <hr>
 <h2 id="irrelevant-but-potentially-misleading-links">Irrelevant but potentially misleading links</h2>
 <ul>
