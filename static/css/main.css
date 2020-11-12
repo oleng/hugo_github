@@ -42,14 +42,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Crimson Text',
+  font-family: /* 'Crimson Text', */
+                'Playfair Display',
                 'Garamond',
                 system-ui-serif,
                 ui-serif,
                 -apple-system-ui-serif,
                 serif;
   font-kerning: normal;
-  line-height: 1.15em;
+  line-height: 1em;
   letter-spacing: normal;
   /* margin: 2em auto 1.3em auto; */
   color: rgba(0,0,0,.76);
@@ -145,17 +146,27 @@ img {
 }
 
 ul {
-  margin: 1em auto 1.5em auto;
-  padding: 0 0 0 1em;
-}
-
-ol {
-  margin: 1em auto 1.5em auto;
+  margin: 0.6em auto;
   padding: 0 0 0 0.8em;
 }
 
+ol {
+  margin: 0em auto 1em auto;
+  padding: 0.5em 0 1em 0.8em;
+}
+
 li {
-  margin: 0 0.6em;
+  margin: 0.25em;
+  padding: 0 0 0 0.3em;
+}
+
+ol > li {
+  margin: 0em 0em 1.5em 0em;
+  padding: 0 0 0 0.3em;
+}
+
+ul > li {
+  margin: 0em;
   padding: 0 0 0 0.3em;
 }
 /*
@@ -165,8 +176,8 @@ li::marker {
 }*/
 
 blockquote {
-  margin: 2em auto;
-  padding: 1em 1.8em;
+  margin: 0em auto;
+  padding: 1.2em 1.8em;
   background-color: rgba(0,0,0,.018);
 }
 
@@ -390,7 +401,8 @@ a.footnote-ref {
 }
 
 .archive-title {
-  font-family: 'Crimson Text',
+  font-family: /* 'Crimson Text', */
+                'Playfair Display',
                 'Garamond',
                 system-ui-serif,
                 ui-serif,
@@ -522,7 +534,8 @@ a.footnote-ref {
     h5,
     .article-title,
     .archive-item-link {
-      font-family: 'Crimson Text',
+      font-family: /* 'Crimson Text', */
+                    'Playfair Display',
                     'Garamond',
                     system-ui-serif,
                     ui-serif,
