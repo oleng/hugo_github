@@ -21,7 +21,7 @@ Key points when considering to build a post-production facility:
 
 - **Finalising based on type of services and amount of people in the entire team**: _What specific parts of post-production the company caters, and how many people work on each of these parts_?
 
-    There are several stages in post-production: story editing, color correction, finishing, and mastering. In visual post-production, audio is still involved in most of the stages but not as much as in audio post-production company, this separation allows the production team to split and worked in parallel if necessary.    
+    There are several stages in post-production: story editing, color correction, finishing, and mastering. In visual post-production, audio is still involved in most of the stages but not as much as in audio post-production company, this separation allows the production team to split so they can work on both visual and audio in parallel if necessary. Traditionally finalizing audio mastering is done after pictures are locked in visual post.    
     
     Story editing stage usually only requires modest hardware requirements compared to later stages because its main purpose is basically just finalising the story from draft to final version. Therefore at this stage there is no real need to work directly with the original footage data, and most of the time the common strategies for selecting & cutting footages involve proxy files or smaller transcoded files.    
     
