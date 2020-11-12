@@ -189,7 +189,8 @@ Note:
     although I have to admit that situation in 2020 is _better_ than before. 
     It was just a big clusterfuck and hard to figure out, everything was all over the place.
     
-    So what should we use? I have no idea at the moment. Same with **Google Sheets**.
+    So what should we use? I have no idea at the moment. Same with **Google Sheets** (although 
+    [`gspread`](https://github.com/burnash/gspread) looks nice & actively maintained).
     Most likely I'll use parts of their codes to build my own.
 
 
@@ -208,6 +209,8 @@ Complete list & API endpoint reference:
   https://cloud.google.com/python/docs/reference       
 Starting point for all google cloud API libraries:       
   https://github.com/googleapis/google-cloud-python
+
+This seems worthy to check: https://github.com/sathishvj/awesome-gcp-certifications
 
 
 1. **BigQuery**     
