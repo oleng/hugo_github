@@ -58,7 +58,7 @@ Case in point is documentations for actual permissions for different type of acc
 by OAuth 2.0 private keys. I received this exception when using `Web server application` account type 
 in `google-auth`, intending to access Google Drive API:
 
-    
+
     import google.auth
     from googleapiclient.discovery import build
     
@@ -72,8 +72,7 @@ in `google-auth`, intending to access Google Drive API:
     
     # EOF. that's it, that's the entire content of the file.
 
-
-DefaultCredentialsError: The file "client_secret_<project-id>.apps.googleusercontent.com.json"
+    DefaultCredentialsError: The file "client_secret_<project-id>.apps.googleusercontent.com.json"
     does not have a valid type. Type is None, expected one of ('authorized_user', 'service_account').
 
 
