@@ -125,6 +125,7 @@ pre, code, pre > code {
 
 pre > code {
   padding: 1em;
+  color: #000;
   background-color: transparent;
 
 .highlight pre {
