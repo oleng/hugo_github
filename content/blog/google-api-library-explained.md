@@ -58,24 +58,24 @@ Case in point is documentations for actual permissions for different type of acc
 by OAuth 2.0 private keys. I received this exception when using `Web server application` account type 
 in `google-auth`, intending to access Google Drive API:
 
-```
-import google.auth
-from googleapiclient.discovery import build
-
-# https://developers.google.com/drive/api/v3/about-auth#OAuth2Scope
-DRIVE_SCOPES = [...]
-https://developers.google.com/sheets/api/guides/authorizing#OAuth2Scope
-SHEET_SCOPES = [...]
-
-# file path saved in environment var `GOOGLE_APPLICATION_CREDENTIALS`
-creds = google.auth.default(scopes=DRIVE_SCOPES+SHEET_SCOPES)
-
-# EOF. that's it, that's the entire content of the file.
+    
+    import google.auth
+    from googleapiclient.discovery import build
+    
+    # https://developers.google.com/drive/api/v3/about-auth#OAuth2Scope
+    DRIVE_SCOPES = [...]
+    https://developers.google.com/sheets/api/guides/authorizing#OAuth2Scope
+    SHEET_SCOPES = [...]
+    
+    # file path saved in environment var `GOOGLE_APPLICATION_CREDENTIALS`
+    creds = google.auth.default(scopes=DRIVE_SCOPES+SHEET_SCOPES)
+    
+    # EOF. that's it, that's the entire content of the file.
 
 
 DefaultCredentialsError: The file "client_secret_<project-id>.apps.googleusercontent.com.json"
     does not have a valid type. Type is None, expected one of ('authorized_user', 'service_account').
-```
+
 
 Granted that their [quickstart sample](https://developers.google.com/drive/api/v3/quickstart/python#step_3_set_up_the_sample) uses [Authorization Code flow](https://oauth.net/2/grant-types/authorization-code/), as `google-auth` is their official supported library, I expected there'd be compatibility _and_ proper documentation for using it to authenticate and authorize access to Google Drive. 
 A universal way to use their OAuth service, and a friendlier guide are not outside of their reach.     
@@ -85,27 +85,26 @@ e.g. they have higher accessability to wider range of Google product line up, I 
 service account. But guess what, turned out I have to give permissions for that service account to 
 access my Google Drive. 
 
-```
-# I created a client object using google.auth.default and got valid credential object
-# from the new service account private key.
 
->>> client.session
-<google.auth.transport.requests.AuthorizedSession at 0x113f086a0>
-
->>> client.session._refresh_status_codes[0]
-<HTTPStatus.UNAUTHORIZED: 401>
-
->>> client.session._refresh_status_codes[0].__dict__
-{'_value_': 401,
- 'phrase': 'Unauthorized',
- 'description': 'No permission -- see authorization schemes',
- '_name_': 'UNAUTHORIZED',
- '__objclass__': <enum 'HTTPStatus'>}
- 
-# What authorization schemes? Where?? 
-# Does it kill you to include documentation page URL?
-
-```
+    # I created a client object using google.auth.default and got valid credential object
+    # from the new service account private key.
+    
+    >>> client.session
+    <google.auth.transport.requests.AuthorizedSession at 0x113f086a0>
+    
+    >>> client.session._refresh_status_codes[0]
+    <HTTPStatus.UNAUTHORIZED: 401>
+    
+    >>> client.session._refresh_status_codes[0].__dict__
+    {'_value_': 401,
+     'phrase': 'Unauthorized',
+     'description': 'No permission -- see authorization schemes',
+     '_name_': 'UNAUTHORIZED',
+     '__objclass__': <enum 'HTTPStatus'>}
+     
+    # What authorization schemes? Where?? 
+    # Does it kill you to include documentation page URL?
+    
 
 Is this documented? Is there a guide to programatically ask the Google Drive account and files owner
 to give a service account their permission? Of course not, I have to spend my limited time on this 
