@@ -86,7 +86,7 @@ service account. But guess what, turned out I have to give permissions for that 
 access my Google Drive. 
 
 
-    # I created a client object using google.auth.default and got valid credential object
+    # I created a client object using google.auth.default and valid credential object
     # from the new service account private key.
     
     >>> client.session
