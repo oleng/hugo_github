@@ -115,12 +115,13 @@ pre {
 code {
   /* margin: 0.2em; */
   /* padding: 0 0.3em; */
-  font-size: 0.875em;
+  font-size: 0.85em;
   background-color: #f9fefe;
 }
 
-pre, code {
+pre, code, pre > code {
   font-family: ui-monospace, system-ui-monospace, monospace;
+  background-color: transparent;
 }
 
 .highlight pre {
