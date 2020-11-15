@@ -124,11 +124,10 @@ SHEET_SCOPES = [...]
 creds = google.auth.default(scopes=DRIVE_SCOPES+SHEET_SCOPES)
 
 # EOF. that's it, that's the entire content of the file.
-
-
-DefaultCredentialsError: The file &quot;client_secret_&lt;project-id&gt;.apps.googleusercontent.com.json&quot;
-    does not have a valid type. Type is None, expected one of ('authorized_user', 'service_account').
-</code></pre><p>Granted that their <a href="https://developers.google.com/drive/api/v3/quickstart/python#step_3_set_up_the_sample">quickstart sample</a> uses <a href="https://oauth.net/2/grant-types/authorization-code/">Authorization Code flow</a>, as <code>google-auth</code> is their official supported library, I expected there&rsquo;d be compatibility <em>and</em> proper documentation for using it to authenticate and authorize access to Google Drive.
+</code></pre>
+<p>DefaultCredentialsError: The file &ldquo;client_secret_<!-- raw HTML omitted -->.apps.googleusercontent.com.json&rdquo;
+does not have a valid type. Type is None, expected one of (&lsquo;authorized_user&rsquo;, &lsquo;service_account&rsquo;).</p>
+<p>Granted that their <a href="https://developers.google.com/drive/api/v3/quickstart/python#step_3_set_up_the_sample">quickstart sample</a> uses <a href="https://oauth.net/2/grant-types/authorization-code/">Authorization Code flow</a>, as <code>google-auth</code> is their official supported library, I expected there&rsquo;d be compatibility <em>and</em> proper documentation for using it to authenticate and authorize access to Google Drive.
 A universal way to use their OAuth service, and a friendlier guide are not outside of their reach.  <br>
 I intent to have this app permission to use BigQuery in the later stage, so with the assumption
 that Cloud&rsquo;s account types should be able to act as an app that interacts with non Cloud product users,
@@ -153,8 +152,8 @@ access my Google Drive.</p>
  
 # What authorization schemes? Where?? 
 # Does it kill you to include documentation page URL?
-
-</code></pre><p>Is this documented? Is there a guide to programatically ask the Google Drive account and files owner
+</code></pre>
+<p>Is this documented? Is there a guide to programatically ask the Google Drive account and files owner
 to give a service account their permission? Of course not, I have to spend my limited time on this
 plane of the living to search the internet to figure those out. Minutes by minutes, hour by hour,
 Google costs people all over the world their most precious resource with their incompetence.  <br>
