@@ -11,4 +11,91 @@
     
     
   </channel>
+</rss>pe="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google&#39;s official API client libraries explained</title>
+      <link>https://oleng.github.io/2020/11/09/googles-official-api-client-libraries-explained/</link>
+      <pubDate>Mon, 09 Nov 2020 16:23:40 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2020/11/09/googles-official-api-client-libraries-explained/</guid>
+      <description>The purpose of this short explanation is an attempt for a brain dump, to maintain a central compilation of relevant links that reflects most current state of Google&amp;rsquo;s Python client libraries for their services, as they have somewhat complex to navigate sites for official libraries. Not as unusable as Microsoft or several other dinosaur companies, but enough to waste non trivial amount of time.
+Figuring out their ins &amp;amp; out haven&amp;rsquo;t been fun, I found re-learning is even less fun.</description>
+    </item>
+    
+    <item>
+      <title>This is my tenet</title>
+      <link>https://oleng.github.io/2020/11/04/this-is-my-tenet/</link>
+      <pubDate>Wed, 04 Nov 2020 11:28:02 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2020/11/04/this-is-my-tenet/</guid>
+      <description>I have only come to realise this in recent years, but it has become one of the biggest enlightment of my life.
+ We are all creature of story. Every single one of us is storyweaver and storyteller, we live in and for stories.
+ All of us need story more than anything else, aside from physical needs like sustenance and protection from natural elements. We fight and live because we have hopes, and hopes are born from stories we tell ourselves.</description>
+    </item>
+    
+    <item>
+      <title>Docker tips</title>
+      <link>https://oleng.github.io/2020/01/04/docker-tips/</link>
+      <pubDate>Sat, 04 Jan 2020 09:05:44 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2020/01/04/docker-tips/</guid>
+      <description>Some useful tips for docker
+  Making shortcuts for useful commands (with flags) to free up space is one time effort compared to remembering which command Docker provides. Use alias on macOS and put them in ~/.bash_profile so they&amp;rsquo;re loaded in your terminal (I use ~/.bashrc for aliases holder, which needs to be sourced unlike .bash_profile, see my .dev/dotfiles repo for more info). Alias is auto completed in bash.</description>
+    </item>
+    
+    <item>
+      <title>User security: short guide</title>
+      <link>https://oleng.github.io/2020/01/01/user-security-short-guide/</link>
+      <pubDate>Wed, 01 Jan 2020 12:02:39 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2020/01/01/user-security-short-guide/</guid>
+      <description>Disclaimers: This is not a comprehensive list. Complete security practice includes everything from user actions, hardwares, network, softwares, attack theories &amp;amp; methods, time frame period &amp;amp;etc, in other word NOT short or simple. I am not a professional security, do not trust my words or anyone easily. AFAIK as of today these are valid, re-evaluation in the future is necessary. Critiques, inputs and questions are welcome.
+ TL;DR &amp;amp; take aways:  If you&amp;rsquo;re need to cover the basics, please read this compilation of basic guidelines 1 first.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t make your kids learn programming</title>
+      <link>https://oleng.github.io/2019/12/28/dont-make-your-kids-learn-programming/</link>
+      <pubDate>Sat, 28 Dec 2019 16:23:40 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2019/12/28/dont-make-your-kids-learn-programming/</guid>
+      <description>Ok, I admit that&amp;rsquo;s click-baity.
+What I meant is, don&amp;rsquo;t push your children to learn programming for your sake, by your way. Especially if you don&amp;rsquo;t know much or even anything about it.
+I too know nothing about guiding or teaching kids. But there are two suggestions that I don&amp;rsquo;t think can&amp;rsquo;t be wrong:
+  If you can, find out if they have interest in computer hardwares, ARM based SBCs are popular, very capable, and affordable, any of these will be suited for beginner hobbyist &amp;amp; prototyping: Raspberry Pi, Arduino and Adafruit.</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>https://oleng.github.io/about/</link>
+      <pubDate>Thu, 26 Dec 2019 19:52:15 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/about/</guid>
+      <description>$ whoami I was a Digital Imaging Technician (DIT) for a motion picture production company, became a Post-Production engineer slash Post-Production supervisor since end of 2009. I&amp;rsquo;ve designed, budgeted, processed purchases, as well as built and maintained a few visual post-production facility companies in Jakarta. Read a brief explanation about it here. Most of the companies I worked with were working on TV commercials on daily basis. I was also directly involved in several Indonesian movie titles, such as:</description>
+    </item>
+    
+    <item>
+      <title>Post-production facility considerations</title>
+      <link>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</link>
+      <pubDate>Thu, 26 Dec 2019 19:52:15 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</guid>
+      <description>Key points when considering to build a post-production facility:
+  Designing system for the entire facility: What is the medium &amp;amp; viewing target of the provided services?
+The answer to this question determines the kind of system a facility needs. As a general rule of thumb if a facility needs to facilitate the top two kinds 1 of the production types, then we will be talking about medium to large facility.</description>
+    </item>
+    
+    <item>
+      <title>Why blogging?</title>
+      <link>https://oleng.github.io/2019/12/24/why-blogging/</link>
+      <pubDate>Tue, 24 Dec 2019 16:28:02 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2019/12/24/why-blogging/</guid>
+      <description>I&amp;rsquo;m blogging again. I don&amp;rsquo;t think geocities still exists today, and the perception of what blogging means has changed a few times over. I&amp;rsquo;m quite certain there&amp;rsquo;s only maybe 1 in 200-500 chance you&amp;rsquo;ll meet someone who knows what blog stands for, or what that meant originally.
+The term blog was short for weblog. It&amp;rsquo;s a log, on the web. Not a marketing page or online diary. Back then blogging was an exclusive domain of nerds; hackers, webmasters &amp;amp; sysadmins.</description>
+    </item>
+    
+  </channel>
 </rss>
