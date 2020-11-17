@@ -124,6 +124,50 @@ is nowhere comparable to normal sized companies, the difference is in magnitudes
 
 That kind of argument, or the "if you don't like it don't use it" kind we frequently found on the internet, is absolute logic trash.
 
+_2020/11/17_: Ok, so I found the explanation on application types that Google defines on their
+Cloud Identity Platform product's guide page. _\*le sigh\*_    
+
+Overview       
+https://developers.google.com/identity/protocols/oauth2         
+
+Application types starts here      
+https://developers.google.com/identity/protocols/oauth2#scenarios
+
+So `web application` client type means web _server_ application, using (common) authorization code flow. Their guide is using the same sample code found in the Drive API guide, so I'm still mystified on how I should make an app that needs authorization for both G Suite & Cloud products.         
+This list of choices: Android, Chrome app, iOS, Universal Windows Platform (UWP), or Desktop app
+is classified as `installed applications` or `native app` (which _was_ grouped as such in previous 
+version of the console dashboard). This is basically the same authorization code flow, only now the
+token verification & access grant isn't going from server to server.      
+The other classes which are not relevant to my interests are [dumb devices](https://developers.google.com/identity/protocols/oauth2#device) like
+printers and [JS (referred as client-side) apps](https://developers.google.com/identity/protocols/oauth2#clientside) (which uses implicit grant flow).       
+[Service accounts](https://developers.google.com/identity/protocols/oauth2#serviceaccount) is defined
+as server-to-server interactions without accesss to user information, so no user consent is necessary. 
+Based on their diagram it's basically OpenID Connect flow with JWT.     
+This note from that page is interesting, though. 
+      
+![Note on Google Service accounts and G Suite domain](https://oleng.github.io/static/img/serviceaccounts-note_googleidentity.png)    
+In my opinion if you don't already know what the terms used here (policies, domain policies, and admin console) actually means in practical sense, access to admin console is exclusive to paying customer for example, this doesn't really help you figure out the complete picture. The last sentence in that note sounds more like a warning that using service accounts without minding proper security implication may 
+caused leaks or something.
+
+I also found a relevant support/knowledge base entry: [OAuth API verification FAQs - 
+Google Cloud Platform Console Help](https://support.google.com/cloud/answer/9110914?hl=en)     
+
+Inside the page they explain why your app might need to to be verified by Google:        
+> If your app requests scopes categorized as sensitive or restricted, you will probably need to complete the verification process (see, however, the exceptions).
+
+Table of three verification types: https://support.google.com/cloud/answer/9110914?hl=en#verification-types
+
+But that's not the most interesting tidbit, here are some examples of the FAQ:      
+
+- In [What are restricted API scopes?](https://support.google.com/cloud/answer/9110914?hl=en#restricted-scope-apis), there is a list of APIs endpoints including Drive API that 
+    _are not yet enforced as `Restricted`_, so I guess it's good to keep in mind that they gave
+    early warning those will be restricted, for future reference at least         
+- This one is might be most relevant to me, not 100% sure yet: [How can I mark my app as internal-only so it doesn't require verification?](https://support.google.com/cloud/answer/9110914?hl=en#mark-internal)
+- [How often will users need to re-grant permission for reporting or monitoring services app types?](https://support.google.com/cloud/answer/9110914?hl=en#how-often)   
+
+I don't think I've seen these details inside the related API documentation pages, or if linked on them. 
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Overview
@@ -346,3 +390,6 @@ This seems worthy to check: https://github.com/sathishvj/awesome-gcp-certificati
 - https://github.com/google/apis-client-generator - No support for Python here.      
 - https://github.com/googleapis/googleapis - Unless you want to be a contributor to one of their repositories, or make a big application using lots of Google APIs, or Java developer, this is most likely irrelevant to you.     
 - https://github.com/googleapis/google-auth-library-python-httplib2 - This library is intended to help existing users of `oauth2client` migrate to `google-auth`.
+
+
+
