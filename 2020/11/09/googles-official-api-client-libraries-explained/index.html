@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">12 min read</span>
+    <span class="article-duration">14 min read</span>
     <h1 class="article-title">Google&#39;s official API client libraries explained</h1>
     <span class="article-date">Nov 09, 2020</span>
     
@@ -172,6 +172,42 @@ is nowhere comparable to normal sized companies, the difference is in magnitudes
 <li>It&rsquo;s been a common public knowledge that AWS has better documentations.</li>
 </ul>
 <p>That kind of argument, or the &ldquo;if you don&rsquo;t like it don&rsquo;t use it&rdquo; kind we frequently found on the internet, is absolute logic trash.</p>
+<p><em>2020/11/17</em>: Ok, so I found the explanation on application types that Google defines on their
+Cloud Identity Platform product&rsquo;s guide page. <em>*le sigh*</em></p>
+<p>Overview    <br>
+<a href="https://developers.google.com/identity/protocols/oauth2">https://developers.google.com/identity/protocols/oauth2</a></p>
+<p>Application types starts here   <br>
+<a href="https://developers.google.com/identity/protocols/oauth2#scenarios">https://developers.google.com/identity/protocols/oauth2#scenarios</a></p>
+<p>So <code>web application</code> client type means web <em>server</em> application, using (common) authorization code flow. Their guide is using the same sample code found in the Drive API guide, so I&rsquo;m still mystified on how I should make an app that needs authorization for both G Suite &amp; Cloud products.      <br>
+This list of choices: Android, Chrome app, iOS, Universal Windows Platform (UWP), or Desktop app
+is classified as <code>installed applications</code> or <code>native app</code> (which <em>was</em> grouped as such in previous
+version of the console dashboard). This is basically the same authorization code flow, only now the
+token verification &amp; access grant isn&rsquo;t going from server to server.   <br>
+The other classes which are not relevant to my interests are <a href="https://developers.google.com/identity/protocols/oauth2#device">dumb devices</a> like
+printers and <a href="https://developers.google.com/identity/protocols/oauth2#clientside">JS (referred as client-side) apps</a> (which uses implicit grant flow).    <br>
+<a href="https://developers.google.com/identity/protocols/oauth2#serviceaccount">Service accounts</a> is defined
+as server-to-server interactions without accesss to user information, so no user consent is necessary.
+Based on their diagram it&rsquo;s basically OpenID Connect flow with JWT.  <br>
+This note from that page is interesting, though.</p>
+<p><img src="https://oleng.github.io/static/img/serviceaccounts-note_googleidentity.png" alt="Note on Google Service accounts and G Suite domain"> <br>
+In my opinion if you don&rsquo;t already know what the terms used here (policies, domain policies, and admin console) actually means in practical sense, access to admin console is exclusive to paying customer for example, this doesn&rsquo;t really help you figure out the complete picture. The last sentence in that note sounds more like a warning that using service accounts without minding proper security implication may
+caused leaks or something.</p>
+<p>I also found a relevant support/knowledge base entry: <a href="https://support.google.com/cloud/answer/9110914?hl=en">OAuth API verification FAQs -
+Google Cloud Platform Console Help</a></p>
+<p>Inside the page they explain why your app might need to to be verified by Google:</p>
+<blockquote>
+<p>If your app requests scopes categorized as sensitive or restricted, you will probably need to complete the verification process (see, however, the exceptions).</p>
+</blockquote>
+<p>Table of three verification types: <a href="https://support.google.com/cloud/answer/9110914?hl=en#verification-types">https://support.google.com/cloud/answer/9110914?hl=en#verification-types</a></p>
+<p>But that&rsquo;s not the most interesting tidbit, here are some examples of the FAQ:</p>
+<ul>
+<li>In <a href="https://support.google.com/cloud/answer/9110914?hl=en#restricted-scope-apis">What are restricted API scopes?</a>, there is a list of APIs endpoints including Drive API that
+<em>are not yet enforced as <code>Restricted</code></em>, so I guess it&rsquo;s good to keep in mind that they gave
+early warning those will be restricted, for future reference at least</li>
+<li>This one is might be most relevant to me, not 100% sure yet: <a href="https://support.google.com/cloud/answer/9110914?hl=en#mark-internal">How can I mark my app as internal-only so it doesn&rsquo;t require verification?</a></li>
+<li><a href="https://support.google.com/cloud/answer/9110914?hl=en#how-often">How often will users need to re-grant permission for reporting or monitoring services app types?</a></li>
+</ul>
+<p>I don&rsquo;t think I&rsquo;ve seen these details inside the related API documentation pages, or if linked on them.</p>
 <p>    </p>
 <h2 id="overview">Overview</h2>
 <p>At the risk of oversimplifying their product line (I&rsquo;m totally fine with that),
