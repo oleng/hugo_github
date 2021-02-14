@@ -13,7 +13,7 @@ I have only came to realise this in recent years, but it has become one of the b
 
 All of us need story more than anything else; aside from physical needs, like sustenance and protection from natural elements. We fight, and we live _because_ we have hopes, and _hopes_ are born from stories we tell ourselves. The opposite is true, we _don't survive_ without hope.
 
-Most of us just don't really grasp that because we are so wrapped up in it. Like air, we don't pay much attention to it until we find ourselves in a situation lack of it. That's why it's often devastating for people with mental health disorder lives when they found themselves without any hope.
+Most of us just don't really grasp that because we are so wrapped up in it. Like air, we don't pay much attention to it until we find ourselves in a situation lack of it. That's why it's often devastating to the lives of people with mental health disorder when they found themselves without any hope.
 
 Our lives have always been shaped by stories. Politics, history, religions, future plans, our dreams. _Love_. Parents tell stories to their babies, their hope and dreams of their baby's future, despite babies inability to fully understand their parents words. When we no longer love it's because we don't want any story from some one or some thing anymore.
 
