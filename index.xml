@@ -6,10 +6,20 @@
     <description>Recent content on oleng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2020 16:23:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 19:52:15 +0000</lastBuildDate>
     
 	<atom:link href="https://oleng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Netflix webinar: Intro to Post-production for Indonesia</title>
+      <link>https://oleng.github.io/2021/01/03/netflix-webinar-intro-to-post-production-for-indonesia/</link>
+      <pubDate>Sun, 03 Jan 2021 19:52:15 +0000</pubDate>
+      
+      <guid>https://oleng.github.io/2021/01/03/netflix-webinar-intro-to-post-production-for-indonesia/</guid>
+      <description>I have written some notes on my experience with Netflix&amp;rsquo;s webinar on introduction to Netflix&amp;rsquo;s Post Production for Indonesia&amp;rsquo;s audience back in August 2020, but I haven&amp;rsquo;t really have a chance to properly expand and write it down as a blog entry, so this entry will be fully ready when I feel I have given it justice.
+The event was titled &amp;ldquo;INDONESIA INTRO TO NETFLIX POST&amp;rdquo;, and it was reported to have attendance of 300 people from various capacities in Indonesia&amp;rsquo;s film industry: Visual and Audio services, Post Production supervisors, Digital Imaging Technician (DIT), cinematographers, colourists, editors, editor assistants, producers, VFX supervisors, and production school mentors.</description>
+    </item>
     
     <item>
       <title>Google&#39;s official API client libraries explained</title>
