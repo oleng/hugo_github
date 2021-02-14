@@ -26,7 +26,7 @@ Okay, so here it is...
 
 Rule of thumbs on improving online security (authentication, more security than privacy) for common users:
 
-1. ###### [ Web service/developers' side ] Insecure practices:
+1. **[ Web service/developers' side ] Insecure practices**     
     - require password only for authentication, no 2FA.
     - sending password in plain text over email/non-encrypted channels.
     - plain HTTP or invalid certificate for HTTPS
@@ -35,14 +35,16 @@ Rule of thumbs on improving online security (authentication, more security than 
     - storing user name & passwords in database instead of salted hashes, as well as salt reuse/recycle.
     - using weak cryptographic algorithm.
     - failed to patch system vulnerabilities.
-2. ###### [ User side ] Insecure practices:
+
+2. **[ User side ] Insecure practices**     
     - using same password for multiple service logins
     - using public information for password (birth day, name)
     - writing passwords into unsecured list (sticky note on desktop file/monitor/desk)
     - using dubious (especially mobile) apps
     - clicking links without examinations
     - _too many others_
-3. ###### Do's & don'ts:
+
+3. **Do's & don'ts**     
     - **Do** use password manager with strong cryptography (encryption) default (at least sha256) to generate different password for every online services.
     - Mnemonic paraphrase/sentence like `Stranger sophisticated hobos institution taichi Master aerobic novices` is much harder to crack than `m%y$p^a*s?s#W0rD`. See related [explain xkcd wiki](https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength). Longer is better.
     - **Don't** use LastPass password manager, it has been bought recently by distrusted company, LogMeIn.
