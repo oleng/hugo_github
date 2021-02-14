@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">5 min read</span>
+    <span class="article-duration">6 min read</span>
     <h1 class="article-title">User security: short guide</h1>
     <span class="article-date">Jan 01, 2020</span>
     
@@ -87,7 +87,8 @@ Critiques, inputs and questions are welcome.</p>
 <p>Okay, so here it is&hellip;</p>
 <p>Rule of thumbs on improving online security (authentication, more security than privacy) for common users:</p>
 <ol>
-<li>Insecure practices from web service side:
+<li>
+<h4 id="-web-servicedevelopers-side--insecure-practices">[ Web service/developers&rsquo; side ] Insecure practices:</h4>
 <ul>
 <li>require password only for authentication, no 2FA.</li>
 <li>sending password in plain text over email/non-encrypted channels.</li>
@@ -99,17 +100,19 @@ Critiques, inputs and questions are welcome.</p>
 <li>failed to patch system vulnerabilities.</li>
 </ul>
 </li>
-<li>Insecure user practices:
+<li>
+<h4 id="-user-side--insecure-practices">[ User side ] Insecure practices:</h4>
 <ul>
 <li>using same password for multiple service logins</li>
 <li>using public information for password (birth day, name)</li>
 <li>writing passwords into unsecured list (sticky note on desktop file/monitor/desk)</li>
 <li>using dubious (especially mobile) apps</li>
 <li>clicking links without examinations</li>
-<li>too many others</li>
+<li><em>too many others</em></li>
 </ul>
 </li>
-<li>Do&rsquo;s &amp; don&rsquo;ts:
+<li>
+<h4 id="dos--donts">Do&rsquo;s &amp; don&rsquo;ts:</h4>
 <ul>
 <li><strong>Do</strong> use password manager with strong cryptography (encryption) default (at least sha256) to generate different password for every online services.</li>
 <li>Mnemonic paraphrase/sentence like <code>Stranger sophisticated hobos institution taichi Master aerobic novices</code> is much harder to crack than <code>m%y$p^a*s?s#W0rD</code>. See related <a href="https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength">explain xkcd wiki</a>. Longer is better.</li>
@@ -117,11 +120,12 @@ Critiques, inputs and questions are welcome.</p>
 <li>On that note: pick open source if possible, <a href="https://help.bitwarden.com/">BitWarden</a> is recommended for willingness to be externally audited (which means outsiders can expose vulnerabilities and can lead to faster fix time period), also option on self-hosting server installation.</li>
 <li><strong>Do</strong> understand what Multi-Factor Authentication (MFA) is <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</li>
 <li><strong>Do</strong> enable Two-Factor Authentication (2FA or U2F<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>) for everything, including your password manager.</li>
-<li><strong>Don&rsquo;t</strong> make SMS or phone number as main 2FA factor, SMS is insecure <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, SIM card is clone-able. They&rsquo;re less secure compared to 2FA Time-based One-time Password (TOTP<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>) due to lack of time constraint &amp; flexibility. With 2FA you&rsquo;re not tied to a phone number or even mobile device, attacker must regain both access and generate the code in short time. TOTP is still vulnerable to social engineering attack. Another plus is giving away phone number on the internet isn&rsquo;t needed anymore.</li>
-<li><strong>Do</strong> use 2FA application at least, U2F hardware<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> (usually in the form of USB dongle) is preferable because of additional protection measures to harden embedded cryptoprocessor&rsquo;s security<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, such as against physical tampering. U2F hardwares also don&rsquo;t store account details, which means if someone steals it they can&rsquo;t gain access to any online accounts that device had used to authenticate with, unlike 2FA apps.</li>
-<li><a href="https://authy.com/">Authy</a> is better than Google Authenticator app because with the latter you&rsquo;re locked to a single device.</li>
-<li>Make sure you find out beforehand what to do (preventing exploit &amp; regaining access) if you lose your device that contains your 2FA app.</li>
-<li>Eventually password as authentication method on the web will be replaced and made obsolete.</li>
+<li><strong>Do</strong> use 2FA device or application, I cannot emphasise this enough. U2F hardwares<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> (usually in the form of USB dongle) is your best option, it&rsquo;s preferable because by design it has additional measures to harden its embedded cryptoprocessor&rsquo;s security<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, such as protection against physical tampering. U2F hardwares also don&rsquo;t store account details, which means if someone steals it they can&rsquo;t gain access to any online accounts that device had used to authenticate with, unlike 2FA apps.
+But for most people a U2F key is not feasible or realistic, so I suggest use an application to manage 2FA. 2FA application at least is better than not having any additional authentication factor. <a href="https://authy.com/">Authy</a> is better than Google Authenticator app because with the latter you&rsquo;re locked to a single device, it&rsquo;s also available for desktops or laptops.
+Important to note: Make sure you find out beforehand what to do if you lose your device that contains your 2FA app, you will minimize the time window and hopefully prevent giving bad actors a chance to exploit when they gain your physical device(s), and regaining access to your accounts.</li>
+<li><strong>Don&rsquo;t</strong> make SMS or phone number as main 2FA factor, SMS is insecure <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>, SIM card is clone-able. They&rsquo;re less secure compared to 2FA Time-based One-time Password (TOTP<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>) due to lack of time constraint &amp; flexibility. With 2FA you&rsquo;re not tied to a phone number or even mobile device, attacker must regain both access and generate the code in short time. TOTP is still vulnerable to social engineering attack.
+Another plus is you don&rsquo;t need to give away phone number on the internet anymore, and that&rsquo;s another vector threatening your privacy removed.</li>
+<li><strong>Do</strong> realise, eventually username password pair as authentication method on the web <em>will</em> be replaced and made obsolete.</li>
 <li><strong>Do</strong> use ad blocking software or its browser add-on. Currently the best you can use is uBlock Origin and I also personally use uMatrix add-on to have further fine-grained control on which addresses to block or temporarily unblock. uBlock Origin is available for Chrome, Safari, Firefox and Opera browsers. Read more about uBlock Origin in their open source <a href="https://github.com/gorhill/uBlock/wiki">code repository&rsquo;s wiki</a></li>
 <li><strong>Do</strong> develop security best practices, also periodically re-evaluate and re-assess your devices &amp; services. Research is key.</li>
 </ul>
@@ -156,16 +160,16 @@ Critiques, inputs and questions are welcome.</p>
 <p>FIDO (<a href="https://fidoalliance.org/overview/"><em>F</em>ast <em>ID</em>entity <em>O</em>nline Alliance</a>) is a consortium that develops authentication standards. FIDO Universal 2nd Factor (U2F) standard, client protocol that currently is widely supported, has been renamed to CTAP1 (Client-to-Authenticator version 1), while the next standard is called <a href="https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html">CTAP2</a>. Together with W3C&rsquo;s <a href="https://www.w3.org/TR/webauthn-1/">WebAuthn specification</a> support, they&rsquo;re known as FIDO2 Project. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p><a href="https://pages.nist.gov/800-63-3/sp800-63b.html#81-authenticator-threats">https://pages.nist.gov/800-63-3/sp800-63b.html#81-authenticator-threats</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.yubico.com/why-yubico/for-individuals/#account_protec">Yubikey</a> is a trusted, most widely used key device by tech companies. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p><a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm#Weaknesses_and_vulnerabilities">https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm#Weaknesses_and_vulnerabilities</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Secure_cryptoprocessor">https://en.wikipedia.org/wiki/Secure_cryptoprocessor</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p><a href="https://www.yubico.com/why-yubico/for-individuals/#account_protec">Yubikey</a> is a trusted, most widely used key device by tech companies. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://pages.nist.gov/800-63-3/sp800-63b.html#81-authenticator-threats">https://pages.nist.gov/800-63-3/sp800-63b.html#81-authenticator-threats</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p><a href="https://en.wikipedia.org/wiki/Secure_cryptoprocessor">https://en.wikipedia.org/wiki/Secure_cryptoprocessor</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm#Weaknesses_and_vulnerabilities">https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm#Weaknesses_and_vulnerabilities</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
 <p><a href="https://security.stackexchange.com/questions/11493/how-hard-is-it-to-intercept-sms-two-factor-authentication/11512#11512">https://security.stackexchange.com/questions/11493/how-hard-is-it-to-intercept-sms-two-factor-authentication/11512#11512</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
