@@ -10,9 +10,9 @@ draft: false
 > I am not a professional security, do not trust my words or anyone easily. AFAIK as of today these are valid, re-evaluation in the future is necessary.
 > Critiques, inputs and questions are welcome.
 
-##### TL;DR & take aways:   
+##### TL;DR & take aways:
 - If you're need to cover the basics, please read this compilation of basic guidelines [^1] first.
-- Use password manager, active popular open source softwares with strong enncryption methods are better. My recommendation: Bitwarden, 1Password, avoid LastPass! 
+- Use password manager, active popular open source softwares with strong enncryption methods are better. My recommendation: Bitwarden, 1Password, avoid LastPass!
 - Activate MFA **everywhere**, use Yubikey if possible, otherwise use Authy to avoid getting locked in by a single device.
 - SMS is not secure!
 - Avoid giving away sensitive informations.
@@ -26,7 +26,7 @@ Okay, so here it is...
 
 Rule of thumbs on improving online security (authentication, more security than privacy) for common users:
 
-1. Insecure practices from web service side:
+1. #### [ Web service/developers' side ] Insecure practices:
     - require password only for authentication, no 2FA.
     - sending password in plain text over email/non-encrypted channels.
     - plain HTTP or invalid certificate for HTTPS
@@ -35,25 +35,26 @@ Rule of thumbs on improving online security (authentication, more security than 
     - storing user name & passwords in database instead of salted hashes, as well as salt reuse/recycle.
     - using weak cryptographic algorithm.
     - failed to patch system vulnerabilities.
-2. Insecure user practices:
+2. #### [ User side ] Insecure practices:
     - using same password for multiple service logins
     - using public information for password (birth day, name)
     - writing passwords into unsecured list (sticky note on desktop file/monitor/desk)
     - using dubious (especially mobile) apps
     - clicking links without examinations
-    - too many others
-3. Do's & don'ts:
+    - _too many others_
+3. #### Do's & don'ts:
     - **Do** use password manager with strong cryptography (encryption) default (at least sha256) to generate different password for every online services.
     - Mnemonic paraphrase/sentence like `Stranger sophisticated hobos institution taichi Master aerobic novices` is much harder to crack than `m%y$p^a*s?s#W0rD`. See related [explain xkcd wiki](https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength). Longer is better.
     - **Don't** use LastPass password manager, it has been bought recently by distrusted company, LogMeIn.
     - On that note: pick open source if possible, [BitWarden](https://help.bitwarden.com/) is recommended for willingness to be externally audited (which means outsiders can expose vulnerabilities and can lead to faster fix time period), also option on self-hosting server installation.
     - **Do** understand what Multi-Factor Authentication (MFA) is [^1].
     - **Do** enable Two-Factor Authentication (2FA or U2F[^2]) for everything, including your password manager.
-    - **Don't** make SMS or phone number as main 2FA factor, SMS is insecure [^3], SIM card is clone-able. They're less secure compared to 2FA Time-based One-time Password (TOTP[^4]) due to lack of time constraint & flexibility. With 2FA you're not tied to a phone number or even mobile device, attacker must regain both access and generate the code in short time. TOTP is still vulnerable to social engineering attack. Another plus is giving away phone number on the internet isn't needed anymore.
-    - **Do** use 2FA application at least, U2F hardware[^5] (usually in the form of USB dongle) is preferable because of additional protection measures to harden embedded cryptoprocessor's security[^6], such as against physical tampering. U2F hardwares also don't store account details, which means if someone steals it they can't gain access to any online accounts that device had used to authenticate with, unlike 2FA apps.
-    - [Authy](https://authy.com/) is better than Google Authenticator app because with the latter you're locked to a single device.
-    - Make sure you find out beforehand what to do (preventing exploit & regaining access) if you lose your device that contains your 2FA app.
-    - Eventually password as authentication method on the web will be replaced and made obsolete.
+    - **Do** use 2FA device or application, I cannot emphasise this enough. U2F hardwares[^5] (usually in the form of USB dongle) is your best option, it's preferable because by design it has additional measures to harden its embedded cryptoprocessor's security[^6], such as protection against physical tampering. U2F hardwares also don't store account details, which means if someone steals it they can't gain access to any online accounts that device had used to authenticate with, unlike 2FA apps.
+    But for most people a U2F key is not feasible or realistic, so I suggest use an application to manage 2FA. 2FA application at least is better than not having any additional authentication factor. [Authy](https://authy.com/) is better than Google Authenticator app because with the latter you're locked to a single device, it's also available for desktops or laptops.
+    Important to note: Make sure you find out beforehand what to do if you lose your device that contains your 2FA app, you will minimize the time window and hopefully prevent giving bad actors a chance to exploit when they gain your physical device(s), and regaining access to your accounts.
+    - **Don't** make SMS or phone number as main 2FA factor, SMS is insecure [^3], SIM card is clone-able. They're less secure compared to 2FA Time-based One-time Password (TOTP[^4]) due to lack of time constraint & flexibility. With 2FA you're not tied to a phone number or even mobile device, attacker must regain both access and generate the code in short time. TOTP is still vulnerable to social engineering attack.
+    Another plus is you don't need to give away phone number on the internet anymore, and that's another vector threatening your privacy removed.
+    - **Do** realise, eventually username password pair as authentication method on the web _will_ be replaced and made obsolete.
     - **Do** use ad blocking software or its browser add-on. Currently the best you can use is uBlock Origin and I also personally use uMatrix add-on to have further fine-grained control on which addresses to block or temporarily unblock. uBlock Origin is available for Chrome, Safari, Firefox and Opera browsers. Read more about uBlock Origin in their open source [code repository's wiki](https://github.com/gorhill/uBlock/wiki)
     - **Do** develop security best practices, also periodically re-evaluate and re-assess your devices & services. Research is key.
 
