@@ -1,5 +1,5 @@
 ---
-title: 'Netflix webinar: Intro to Post-production for Indonesia'
+title: 'Netflix webinar: Intro to Netflix Post-production for Indonesia'
 date: 2021-01-03T19:52:15Z
 tags: [ 'post-production' ]
 draft: false
