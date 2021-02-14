@@ -9,5 +9,5 @@ I have written some notes on my experience with Netflix's webinar on introductio
 
 The event was titled "INDONESIA INTRO TO NETFLIX POST", and it was reported to have attendance of 300 people from various capacities in Indonesia's film industry: Visual and Audio services, Post Production supervisors, Digital Imaging Technician (DIT), cinematographers, colourists, editors, editor assistants, producers, VFX supervisors, and production school mentors.
 
-For now, here's the link to the slide from the event](https://drive.google.com/file/d/1SSoZYnJqXoZcb5TNpHHA0HPq0KoHnvKV/view?usp=sharing).
+For now, here's the [link to the slide from the event](https://drive.google.com/file/d/1SSoZYnJqXoZcb5TNpHHA0HPq0KoHnvKV/view?usp=sharing).
 
