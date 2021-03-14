@@ -112,49 +112,51 @@ hunting them inside each product pages.</p>
 <p>Case in point is documentations for actual permissions for different type of accounts assigned
 by OAuth 2.0 private keys. I received this exception when using <code>Web server application</code> account type
 in <code>google-auth</code>, intending to access Google Drive API:</p>
-<pre><code>import google.auth
-from googleapiclient.discovery import build
-
-# https://developers.google.com/drive/api/v3/about-auth#OAuth2Scope
-DRIVE_SCOPES = [...]
-https://developers.google.com/sheets/api/guides/authorizing#OAuth2Scope
-SHEET_SCOPES = [...]
-
-# file path saved in environment var `GOOGLE_APPLICATION_CREDENTIALS`
-creds = google.auth.default(scopes=DRIVE_SCOPES+SHEET_SCOPES)
-
-# EOF. that's it, that's the entire content of the file.
-
-DefaultCredentialsError: The file &quot;client_secret_&lt;project-id&gt;.apps.googleusercontent.com.json&quot;
-does not have a valid type. Type is None, expected one of ('authorized_user', 'service_account').
-</code></pre>
-<p>Granted that their <a href="https://developers.google.com/drive/api/v3/quickstart/python#step_3_set_up_the_sample">quickstart sample</a> uses <a href="https://oauth.net/2/grant-types/authorization-code/">Authorization Code flow</a>, as <code>google-auth</code> is their official supported library, I expected there&rsquo;d be compatibility <em>and</em> proper documentation for using it to authenticate and authorize access to Google Drive.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+    <span style="color:#f92672">import</span> <span style="color:#111">google.auth</span>
+    <span style="color:#f92672">from</span> <span style="color:#111">googleapiclient.discovery</span> <span style="color:#f92672">import</span> <span style="color:#111">build</span>
+    
+    <span style="color:#75715e"># https://developers.google.com/drive/api/v3/about-auth#OAuth2Scope</span>
+    <span style="color:#111">DRIVE_SCOPES</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#f92672">...</span><span style="color:#111">]</span>
+    <span style="color:#111">https</span><span style="color:#111">:</span><span style="color:#f92672">//</span><span style="color:#111">developers</span><span style="color:#f92672">.</span><span style="color:#111">google</span><span style="color:#f92672">.</span><span style="color:#111">com</span><span style="color:#f92672">/</span><span style="color:#111">sheets</span><span style="color:#f92672">/</span><span style="color:#111">api</span><span style="color:#f92672">/</span><span style="color:#111">guides</span><span style="color:#f92672">/</span><span style="color:#111">authorizing</span><span style="color:#75715e">#OAuth2Scope</span>
+    <span style="color:#111">SHEET_SCOPES</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#f92672">...</span><span style="color:#111">]</span>
+    
+    <span style="color:#75715e"># file path saved in environment var `GOOGLE_APPLICATION_CREDENTIALS`</span>
+    <span style="color:#111">creds</span> <span style="color:#f92672">=</span> <span style="color:#111">google</span><span style="color:#f92672">.</span><span style="color:#111">auth</span><span style="color:#f92672">.</span><span style="color:#111">default</span><span style="color:#111">(</span><span style="color:#111">scopes</span><span style="color:#f92672">=</span><span style="color:#111">DRIVE_SCOPES</span><span style="color:#f92672">+</span><span style="color:#111">SHEET_SCOPES</span><span style="color:#111">)</span>
+    
+    <span style="color:#75715e"># EOF. that&#39;s it, that&#39;s the entire content of the file.</span>
+	
+    <span style="color:#111">DefaultCredentialsError</span><span style="color:#111">:</span> <span style="color:#111">The</span> <span style="color:#111">file</span> <span style="color:#d88200">&#34;client_secret_&lt;project-id&gt;.apps.googleusercontent.com.json&#34;</span>
+    <span style="color:#111">does</span> <span style="color:#f92672">not</span> <span style="color:#111">have</span> <span style="color:#111">a</span> <span style="color:#111">valid</span> <span style="color:#111">type</span><span style="color:#f92672">.</span> <span style="color:#111">Type</span> <span style="color:#f92672">is</span> <span style="color:#111">None</span><span style="color:#111">,</span> <span style="color:#111">expected</span> <span style="color:#111">one</span> <span style="color:#111">of</span> <span style="color:#111">(</span><span style="color:#d88200">&#39;authorized_user&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;service_account&#39;</span><span style="color:#111">)</span><span style="color:#f92672">.</span>
+	
+</code></pre></div><p>Granted that their <a href="https://developers.google.com/drive/api/v3/quickstart/python#step_3_set_up_the_sample">quickstart sample</a> uses <a href="https://oauth.net/2/grant-types/authorization-code/">Authorization Code flow</a>, as <code>google-auth</code> is their official supported library, I expected there&rsquo;d be compatibility <em>and</em> proper documentation for using it to authenticate and authorize access to Google Drive.
 A universal way to use their OAuth service, and a friendlier guide are not outside of their reach.  <br>
 I intent to have this app permission to use BigQuery in the later stage, so with the assumption
 that Cloud&rsquo;s account types should be able to act as an app that interacts with non Cloud product users,
 e.g. they have higher accessability to wider range of Google product line up, I created a
 service account. But guess what, turned out I have to give permissions for that service account to
 access my Google Drive.</p>
-<pre><code># I created a client object using google.auth.default and valid credential object
-# from the new service account private key.
-
-&gt;&gt;&gt; client.session
-&lt;google.auth.transport.requests.AuthorizedSession at 0x113f086a0&gt;
-
-&gt;&gt;&gt; client.session._refresh_status_codes[0]
-&lt;HTTPStatus.UNAUTHORIZED: 401&gt;
-
-&gt;&gt;&gt; client.session._refresh_status_codes[0].__dict__
-{'_value_': 401,
- 'phrase': 'Unauthorized',
- 'description': 'No permission -- see authorization schemes',
- '_name_': 'UNAUTHORIZED',
- '__objclass__': &lt;enum 'HTTPStatus'&gt;}
- 
-# What authorization schemes? Where?? 
-# Does it kill you to include documentation page URL?
-</code></pre>
-<p>Is this documented? Is there a guide to programatically ask the Google Drive account and files owner
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+    <span style="color:#75715e"># I created a client object using google.auth.default and valid credential object</span>
+    <span style="color:#75715e"># from the new service account private key.</span>
+    
+    <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#111">client</span><span style="color:#f92672">.</span><span style="color:#111">session</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#111">google</span><span style="color:#f92672">.</span><span style="color:#111">auth</span><span style="color:#f92672">.</span><span style="color:#111">transport</span><span style="color:#f92672">.</span><span style="color:#111">requests</span><span style="color:#f92672">.</span><span style="color:#111">AuthorizedSession</span> <span style="color:#111">at</span> <span style="color:#ae81ff">0x113f086a0</span><span style="color:#f92672">&gt;</span>
+    
+    <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#111">client</span><span style="color:#f92672">.</span><span style="color:#111">session</span><span style="color:#f92672">.</span><span style="color:#111">_refresh_status_codes</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#111">HTTPStatus</span><span style="color:#f92672">.</span><span style="color:#111">UNAUTHORIZED</span><span style="color:#111">:</span> <span style="color:#ae81ff">401</span><span style="color:#f92672">&gt;</span>
+    
+    <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#111">client</span><span style="color:#f92672">.</span><span style="color:#111">session</span><span style="color:#f92672">.</span><span style="color:#111">_refresh_status_codes</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span><span style="color:#f92672">.</span><span style="color:#111">__dict__</span>
+    <span style="color:#111">{</span><span style="color:#d88200">&#39;_value_&#39;</span><span style="color:#111">:</span> <span style="color:#ae81ff">401</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#39;phrase&#39;</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;Unauthorized&#39;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#39;description&#39;</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;No permission -- see authorization schemes&#39;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#39;_name_&#39;</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;UNAUTHORIZED&#39;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#39;__objclass__&#39;</span><span style="color:#111">:</span> <span style="color:#f92672">&lt;</span><span style="color:#111">enum</span> <span style="color:#d88200">&#39;HTTPStatus&#39;</span><span style="color:#f92672">&gt;</span><span style="color:#111">}</span>
+     
+    <span style="color:#75715e"># What authorization schemes? Where?? </span>
+    <span style="color:#75715e"># Does it kill you to include documentation page URL?</span>
+    
+</code></pre></div><p>Is this documented? Is there a guide to programatically ask the Google Drive account and files owner
 to give a service account their permission? Of course not, I have to spend my limited time on this
 plane of the living to search the internet to figure those out. Minutes by minutes, hour by hour,
 Google costs people all over the world their most precious resource with their incompetence.  <br>
