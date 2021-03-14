@@ -23,7 +23,7 @@ Contact me if you're interested in reaching me for work opportunities :
 
 > ```Tools : Python, CLI/bash, Jupyter notebook, HTML/CSS, SQLite, Redis, PostgreSQL, Docker, macOS, Ubuntu```      
 >          
-> ```Todo :   Go, Rust, Graph databases, Kubernetes, Kafka, Hashi Vault, Prefetch, Argo```  
+> ```Todo :   Go, Rust, Kafka, Hashicorp Vault, Prefetch```  
 
 -----
 

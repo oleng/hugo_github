@@ -58,6 +58,7 @@ Case in point is documentations for actual permissions for different type of acc
 by OAuth 2.0 private keys. I received this exception when using `Web server application` account type 
 in `google-auth`, intending to access Google Drive API:
 
+```python
 
     import google.auth
     from googleapiclient.discovery import build
@@ -71,10 +72,11 @@ in `google-auth`, intending to access Google Drive API:
     creds = google.auth.default(scopes=DRIVE_SCOPES+SHEET_SCOPES)
     
     # EOF. that's it, that's the entire content of the file.
-
+	
     DefaultCredentialsError: The file "client_secret_<project-id>.apps.googleusercontent.com.json"
     does not have a valid type. Type is None, expected one of ('authorized_user', 'service_account').
-
+	
+```
 
 Granted that their [quickstart sample](https://developers.google.com/drive/api/v3/quickstart/python#step_3_set_up_the_sample) uses [Authorization Code flow](https://oauth.net/2/grant-types/authorization-code/), as `google-auth` is their official supported library, I expected there'd be compatibility _and_ proper documentation for using it to authenticate and authorize access to Google Drive. 
 A universal way to use their OAuth service, and a friendlier guide are not outside of their reach.     
@@ -84,6 +86,7 @@ e.g. they have higher accessability to wider range of Google product line up, I 
 service account. But guess what, turned out I have to give permissions for that service account to 
 access my Google Drive. 
 
+```python
 
     # I created a client object using google.auth.default and valid credential object
     # from the new service account private key.
@@ -104,6 +107,7 @@ access my Google Drive.
     # What authorization schemes? Where?? 
     # Does it kill you to include documentation page URL?
     
+```
 
 Is this documented? Is there a guide to programatically ask the Google Drive account and files owner
 to give a service account their permission? Of course not, I have to spend my limited time on this 

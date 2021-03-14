@@ -49,7 +49,7 @@ Some useful tips for docker
     - use `$$` (double-dollar sign) when using an existing environment variable to escape/prevent docker-compose interpolating a value.
     Example for path defined with `$PGDATA` environment variable in official postgresql image:
 
-    ```
+    ```yaml
     db:
         image: postgres:9.6
         volumes:
