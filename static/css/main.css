@@ -43,6 +43,7 @@ h4,
 h5,
 h6 {
   font-family: /* 'Crimson Text', */
+                'Helvetica Neue',
                 'Playfair Display',
                 'Garamond',
                 system-ui-serif,
@@ -91,6 +92,10 @@ h5 {
 
 a {
   outline: none;
+}
+
+a:hover {
+  background-color: #fff100;
 }
 
 b, strong {
@@ -186,7 +191,7 @@ li::marker {
 blockquote {
   margin: 0em auto;
   padding: 1.2em 1.8em;
-  background-color: rgba(0,0,0,.018);
+  background-color: #fff999;
 }
 
 .wrapper {
@@ -366,7 +371,7 @@ ul.nav-links {
 
 .article-content a:hover,
 .article-content a:focus {
-  background: #fffbb9;
+  background-color: #fff100;
 }
 
 .article-content li::marker {
@@ -410,6 +415,7 @@ a.footnote-ref {
 
 .archive-title {
   font-family: /* 'Crimson Text', */
+                'Helvetica Neue',
                 'Playfair Display',
                 'Garamond',
                 system-ui-serif,
@@ -543,6 +549,7 @@ a.footnote-ref {
     .article-title,
     .archive-item-link {
       font-family: /* 'Crimson Text', */
+                    'Helvetica Neue',
                     'Playfair Display',
                     'Garamond',
                     system-ui-serif,
