@@ -80,7 +80,8 @@ I too know nothing about guiding or teaching kids. But there are two suggestions
       <pubDate>Thu, 26 Dec 2019 19:52:15 +0000</pubDate>
       
       <guid>https://oleng.github.io/about/</guid>
-      <description>$ whoami I was a Digital Imaging Technician (DIT) for a motion picture production company, became a Post-Production engineer slash Post-Production supervisor since end of 2009. I&amp;rsquo;ve designed, budgeted, processed purchases, as well as built and maintained a few visual post-production facility companies in Jakarta. Read a brief explanation about it here. Most of the companies I worked with were working on TV commercials on daily basis. I was also directly involved in several Indonesian movie titles, such as:</description>
+      <description>$ whoami Hi there, my friends call me Oleng, I live in Jakarta and I&amp;rsquo;ve been a Post Production supervisor since 2009. I&amp;rsquo;m currently looking for opportunities in Data Engineering.
+Back in 2008 I started as Digital Imaging Technician (DIT) for a production company, and became a Post-Production engineer since 2009. Since I&amp;rsquo;ve designed, built, managed, and maintained a few visual post-production facility companies in Jakarta. Read a brief explanation about it here.</description>
     </item>
     
     <item>
@@ -89,9 +90,7 @@ I too know nothing about guiding or teaching kids. But there are two suggestions
       <pubDate>Thu, 26 Dec 2019 19:52:15 +0000</pubDate>
       
       <guid>https://oleng.github.io/2019/12/26/post-production-facility-considerations/</guid>
-      <description>Key points when considering to build a post-production facility:
-  Designing system for the entire facility: What is the medium &amp;amp; viewing target of the provided services?
-The answer to this question determines the kind of system a facility needs. As a general rule of thumb if a facility needs to facilitate the top two kinds 1 of the production types, then we will be talking about medium to large facility.</description>
+      <description>In this post I&amp;rsquo;d like to provide a few key points as guide to determine the technical aspects of a post-production facility based on my past experience in building a small boutique facility, but should be applicable to medium size as well. Most of the companies I worked with were working on TV commercials on daily basis, with the majority of them shot on digital cinematography cameras such as RED, ARRI Alexa, or high speed cameras like Phantom.</description>
     </item>
     
     <item>
