@@ -1,6 +1,12 @@
 {{ partial "header.html" . }}
 
 <main class="content" role="main">
+    <!--
+    Custom content
+    <section id="shortseo">
+    Hi, I'm looking for opportunities in data engineering. Or if you're from Netflix, hire me!
+    </section>
+    -->
 
     <div class="archive">
     {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" }}
