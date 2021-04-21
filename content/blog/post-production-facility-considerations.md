@@ -5,12 +5,12 @@ tags: [ 'post-production' ]
 draft: false
 ---
 
-In this post I'd like to provide a few key points as guide to determine the technical aspects of a post-production facility based on my past experience in building a small boutique facility, but should be applicable to medium size as well. Most of the companies I worked with were working on TV commercials on daily basis, with the majority of them shot on digital cinematography cameras such as RED, ARRI Alexa, or high speed cameras like Phantom. I was also directly involved in several movie titles, such as [Bebek Belur](https://www.imdb.com/title/tt1631681/) 2010, [Garuda di Dadaku 2](https://www.imdb.com/title/tt1987569/) 2011 (shot on celluloid)) , [Langit Ke-7](https://www.imdb.com/title/tt7601390/) 2012, and [The Raid 2: Berandal](https://www.imdb.com/title/tt2265171/) 2014.      
+In this post I'd like to provide a few key points as guide to determine the technical aspects of a post-production facility based on my past experience in building a small boutique facility, but should be applicable to medium size as well. Most of the companies I worked with were working on TV commercials on daily basis, with the majority of them shot on digital cinematography cameras such as RED, ARRI Alexa, or high speed cameras like Phantom. I was also directly involved in several movie titles, such as [Bebek Belur](https://www.imdb.com/title/tt1631681/) _2010_, [Garuda di Dadaku 2](https://www.imdb.com/title/tt1987569/) _2011_ (shot on celluloid) , [Langit Ke-7](https://www.imdb.com/title/tt7601390/) _2012_, and [The Raid 2: Berandal](https://www.imdb.com/title/tt2265171/) _2014_.      
 
 Here are some initial questions that help you determine the kind of system and tech stack that a facility needs.
 
 ## Designing system for the entire facility
-#### _What is the medium & viewing target of the provided services?_
+##### _What is the medium & viewing target of the provided services?_
 
 As a general rule of thumb if a facility needs to facilitate the top two kinds [^note] of the production types, then we will be talking about medium to large facility. Technical specifications includes but not limited to:
 - The maximum requirement to meet, for instance if the facility is to provide service for processing 8K 3D/stereoscopic IMAX footages, the amount of data traffic that you need to consider greatly differs to a facility that only needs to deal with 1080p footages.
@@ -23,7 +23,7 @@ A few examples are electrical, lighting, and even color management detail like n
 
 
 ## Finalising based on type of services and amount of people in the entire team
-#### _What specific parts of post-production the company caters, and how many people work on each of these parts?_
+##### _What specific parts of post-production the company caters, and how many people work on each of these parts?_
 
 There are several stages in post-production: story editing, color correction, finishing, and mastering. In visual post-production, audio is still involved in most of the stages but not as much as in audio post-production company, this separation allows the production team to split so they can work on both visual and audio in parallel if necessary. Traditionally finalizing audio mastering is done after pictures are locked in visual post.    
 
