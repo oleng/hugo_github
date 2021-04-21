@@ -6,16 +6,19 @@ draft: false
 ---
 
 ## `$ whoami`    
-I was a Digital Imaging Technician (DIT) for a motion picture production company, became a Post-Production engineer slash Post-Production supervisor since end of 2009.     
-I've **designed**, **budgeted**, **processed purchases**, as well as **built** and **maintained** a few visual post-production facility companies in Jakarta. [Read a brief explanation about it here](/2019/12/26/post-production-facility-considerations).      
-Most of the companies I worked with were working on TV commercials on daily basis. 
-I was also directly involved in several Indonesian movie titles, such as:    
-- [Bebek Belur](https://www.imdb.com/title/tt1631681/) (2010)    
-- [Garuda di Dadaku 2](https://www.imdb.com/title/tt1987569/) (2011)    
-- [Langit Ke-7](https://www.imdb.com/title/tt7601390/) (2012)     
-- [The Raid 2: Berandal](https://www.imdb.com/title/tt2265171/) (2014)
+Hi there, my friends call me Oleng, I live in Jakarta and I've been a Post Production supervisor since 2009. I'm currently looking for opportunities in  Data Engineering.    
 
-Now I'm looking for work opportunities in software engineering fields, particularly in **DataOps** and **Data Engineering**.    
+Back in 2008 I started as Digital Imaging Technician (DIT) for a production company, and became a Post-Production engineer since 2009. Since I've designed, built, managed, and maintained a few visual post-production facility companies in Jakarta. [Read a brief explanation about it here](/2019/12/26/post-production-facility-considerations).      
+
+My current interests:       
+- Open Source Softwares 
+- Workflow orchestration 
+- CI/CD 
+- Containers
+- Secrets management
+- Observability
+- Automated data processing, provenance/lineage, and discovery as data platform
+
 
 Contact me if you're interested in reaching me for work opportunities :    
 {{< contacts >}}
