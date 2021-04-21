@@ -24,7 +24,7 @@ Contact me if you're interested in reaching me for work opportunities :
 {{< contacts >}}
 
 
-> ```Tools : Python, CLI/bash, Jupyter notebook, HTML/CSS, SQLite, Redis, PostgreSQL, Docker, macOS, Ubuntu```      
+> ```Tools : Python, CLI/bash, Jupyter notebook, HTML/CSS, SQLite, Redis, PostgreSQL, Docker, macOS, Ubuntu, FreeBSD```      
 >          
 > ```Todo :   Go, Rust, Kafka, Hashicorp Vault, Prefetch```  
 
