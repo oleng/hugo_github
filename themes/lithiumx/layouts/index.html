@@ -1,12 +1,6 @@
 {{ partial "header.html" . }}
 
 <main class="content" role="main">
-    <section id="slug-about">
-    Hi, welcome to my blog. I'm interested in building data platform and open source softwares.
-    I'm looking for opportunities in data engineering. Or if you're from Netflix, hire me!
-    You can reach me by email or LinkedIn: {{< contacts >}}
-    </section>
-
 
     <div class="archive">
     {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" }}
