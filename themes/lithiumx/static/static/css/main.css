@@ -57,6 +57,10 @@ h6 {
   color: rgba(0,0,0,.76);
 }
 
+h2 {
+  margin-top: 1.5rem;
+}
+
 h4 {
   position: relative;
   font-size: 1.55em;
@@ -201,7 +205,7 @@ blockquote {
 
 .content {
   max-width: 680px;
-  margin: 3.6em auto 5em auto;
+  margin: 3em auto 4.8em auto;
   padding: 0 2em;
   color: rgba(0,0,0,.72);
 }
@@ -357,10 +361,13 @@ ul.nav-links {
 }
 
 
+.article-content {
+  margin: 1.5em 0 0 0;
+}
+
 .article-content p {
   margin: 0 0 1.5em 0;
 }
-
 
 .article-content a {
   text-decoration: underline;
