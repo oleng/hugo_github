@@ -10,7 +10,7 @@ In this post I'd like to provide a few key points as guide to determine the tech
 Here are some initial questions that help you determine the kind of system and tech stack that a facility needs.
 
 ## Designing system for the entire facility
-##### _What is the medium & viewing target of the provided services?_
+### _What is the medium & viewing target of the provided services?_
 
 As a general rule of thumb if a facility needs to facilitate the top two kinds [^note] of the production types, then we will be talking about medium to large facility. Technical specifications includes but not limited to:
 - The maximum requirement to meet, for instance if the facility is to provide service for processing 8K 3D/stereoscopic IMAX footages, the amount of data traffic that you need to consider greatly differs to a facility that only needs to deal with 1080p footages.
@@ -23,7 +23,7 @@ A few examples are electrical, lighting, and even color management detail like n
 
 
 ## Finalising based on type of services and amount of people in the entire team
-##### _What specific parts of post-production the company caters, and how many people work on each of these parts?_
+### _What specific parts of post-production the company caters, and how many people work on each of these parts?_
 
 There are several stages in post-production: story editing, color correction, finishing, and mastering. In visual post-production, audio is still involved in most of the stages but not as much as in audio post-production company, this separation allows the production team to split so they can work on both visual and audio in parallel if necessary. Traditionally finalizing audio mastering is done after pictures are locked in visual post.    
 
@@ -35,11 +35,9 @@ Finishing consists of many components like motion graphic, compositing, VFX, 3D 
 
 Mastering, depending on what kind of formats, can be an independent system on its own. In celluloid era mastering often means an entire separate facility.
 
-&nbsp;
 
-> The answers to these questions will serve as guide to design workflows, structures, pipelines, and specifications you need to build. Centralised storage server(s) will most likely be needed when dealing with more than 3 workstations.
-
-> Please note that _data lineage_ and _integrity_ are **crucial** in every stages. From the time the shoot started, every relevant data and metadata _should be present, preserved, and backed up_ in order to have an optimised, high performing teams and workflows. Coordination with DITs or post production supervisor is very important to avoid problems further along the production pipeline.    
+> The answers to these questions will serve as guide to design workflows, structures, pipelines, and specifications you need to build. Centralised storage server(s) will most likely be needed when dealing with more than 3 workstations.    
+Please note that _data lineage_ and _integrity_ are **crucial** in every stages. From the time the shoot started, every relevant data and metadata _should be present, preserved, and backed up_ in order to have an optimised, high performing teams and workflows. Coordination with DITs or post production supervisor is very important to avoid problems further along the production pipeline.    
 
 
 
