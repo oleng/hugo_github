@@ -356,10 +356,10 @@ ul.nav-links {
   color: #000;
 }
 
-/*
+
 .article-content p {
-  margin: 1em 0;
-}*/
+  margin: 0 0 1.5em 0;
+}
 
 
 .article-content a {
@@ -653,3 +653,4 @@ a.footnote-ref {
     .content {
       margin: 1.6em 0 3em 0;
     }
+}
