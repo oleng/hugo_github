@@ -6,10 +6,10 @@ draft: false
 ---
 
 ## `$ whoami`    
-Hi there, my friends call me Oleng, I live in Jakarta and I've been a Post Production supervisor since 2009. I'm currently looking for opportunities in  Data Engineering.    
+Hi there, my friends call me Oleng, I live in Jakarta and I've been a Post Production supervisor since 2009. I'm currently looking for opportunities in Data Engineering.    
 
 Back in 2008 I started as Digital Imaging Technician (DIT) for a production company, graduated to Post-Production Supervisor role in 2009. 
-Since then as sole technical staff I've designed, built, managed, and maintained a few SOHO sized visual post-production facilities in Jakarta, with deep involvements in most movie projects for those companies.
+Since then as sole technical and first employee, I've designed, built, managed, and maintained a few SOHO sized visual post-production facilities in Jakarta, with deep involvements in most movie projects for those companies.
 [Read a brief explanation about it here](/2019/12/26/post-production-facility-considerations).      
 
 My current interests:       
