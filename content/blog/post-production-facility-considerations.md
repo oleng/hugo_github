@@ -7,7 +7,7 @@ draft: false
 
 In this post I'd like to provide a few key points as guide to determine the technical aspects of a post-production facility based on my past experience in building a small boutique facility, but should be applicable to medium size as well. Most of the companies I worked with were working on TV commercials on daily basis, with the majority of them shot on digital cinematography cameras such as RED, ARRI Alexa, or high speed cameras like Phantom. I was also directly involved in several movie titles, such as [Bebek Belur](https://www.imdb.com/title/tt1631681/) _2010_, [Garuda di Dadaku 2](https://www.imdb.com/title/tt1987569/) _2011_ (shot on celluloid) , [Langit Ke-7](https://www.imdb.com/title/tt7601390/) _2012_, and [The Raid 2: Berandal](https://www.imdb.com/title/tt2265171/) _2014_.      
 
-Here are some initial questions that help you determine the kind of system and tech stack that a facility needs.
+Here are some initial questions that I think will help you determine the kind of system and tech stack that a facility needs.
 
 ## Designing system for the entire facility
 ### _What is the medium & viewing target of the provided services?_
