@@ -5,7 +5,7 @@ tags: [ "development", "containers" ]
 draft: false
 ---
 
-Some useful tips for docker
+Some useful tips for docker:
 
 1. Making shortcuts for useful commands (with flags) to free up space is one time effort compared to remembering which command Docker provides. Use `alias` on macOS and put them in `~/.bash_profile` so they're loaded in your terminal (I use `~/.bashrc` for aliases holder, which needs to be sourced unlike `.bash_profile`, see my [.dev/dotfiles](https://github.com/oleng/.dev/tree/master/dotfiles) repo for more info). Alias is auto completed in bash.
 
@@ -47,7 +47,7 @@ echo never > /sys/kernel/mm/transparent_hugepage/defrag
 3. Docker build (or docker-compose build) tips:
 
 - Use multi stage build for faster build
-- Clean up build artifacts & caches on the same command line layer, each `RUN` line adds an immutable layer.
+- Clean up build artifacts & caches on the same command line layer, each `RUN` line adds an immutable layer which affects final image file size.
 
 4. Docker-compose:
 
