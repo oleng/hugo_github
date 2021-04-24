@@ -172,8 +172,6 @@ But that's not the most interesting tidbit, here are some examples of the FAQ:
 I don't think I've seen these details inside the related API documentation pages, or if linked on them. 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;
-
 ## Overview
 
 At the risk of oversimplifying their product line (I'm totally fine with that),
@@ -205,7 +203,6 @@ such as creating credentials, enabling API access, integration with external dom
   https://support.google.com/googleapi/answer/7015000?hl=en&ref_topic=7014522     
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Python libraries
 
@@ -325,7 +322,6 @@ Note:
     it's **Google Sheets API PyDoc documentation** from https://developers.google.com/sheets/api/quickstart/python#further_reading 🤦🏻‍♂️
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;
 
 ##### Google Cloud Client libraries
 
@@ -383,7 +379,6 @@ This seems worthy to check: https://github.com/sathishvj/awesome-gcp-certificati
     https://googleapis.dev/python/bigquerystorage/latest     
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;
 
 ------
 
