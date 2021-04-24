@@ -67,7 +67,7 @@
     </ul>
     
     <div class="article-content">
-      <p>Some useful tips for docker</p>
+      <p>Some useful tips for docker:</p>
 <ol>
 <li>Making shortcuts for useful commands (with flags) to free up space is one time effort compared to remembering which command Docker provides. Use <code>alias</code> on macOS and put them in <code>~/.bash_profile</code> so they&rsquo;re loaded in your terminal (I use <code>~/.bashrc</code> for aliases holder, which needs to be sourced unlike <code>.bash_profile</code>, see my <a href="https://github.com/oleng/.dev/tree/master/dotfiles">.dev/dotfiles</a> repo for more info). Alias is auto completed in bash.</li>
 </ol>
@@ -108,7 +108,7 @@ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
 </ol>
 <ul>
 <li>Use multi stage build for faster build</li>
-<li>Clean up build artifacts &amp; caches on the same command line layer, each <code>RUN</code> line adds an immutable layer.</li>
+<li>Clean up build artifacts &amp; caches on the same command line layer, each <code>RUN</code> line adds an immutable layer which affects final image file size.</li>
 </ul>
 <ol start="4">
 <li>Docker-compose:</li>
