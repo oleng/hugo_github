@@ -209,17 +209,15 @@ blockquote {
 }
 
 .header {
-  padding: 1em 0em 0.3em 0em;
+  padding: auto 0em 0.3em 0em;
   position: relative;
 }
 
 .nav {
   min-width: 320px;
-  padding: 0 1em;
-  margin: 1em auto 0 auto;
+  padding: 1em 1em auto 1em;
   font-family: ui-monospace, system-ui-monospace, monospace;
   text-align: center;
-  /*border: 1px solid #eaeaea;*/
 }
 
 .nav-logo {
