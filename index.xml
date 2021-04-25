@@ -81,7 +81,8 @@ I too know nothing about guiding or teaching kids. But there are two suggestions
       
       <guid>https://oleng.github.io/about/</guid>
       <description>$ whoami Hi there, my friends call me Oleng, I live in Jakarta and I&amp;rsquo;m currently looking for opportunities in Data Engineering.
-I&amp;rsquo;ve long been interested if not mildly obsessed with workflows and metadata, their relationships, and automated pipelines. Along with DataOps, I believe they form the core principles, components, and practices for modern data stacks to achieve near ideal data platform. A platform that supports repeatability, data quality assurance, data provenance/lineage, self-serve data discoverability, and perhaps most importantly, enables people to gain insights to failure modes in the system.</description>
+I&amp;rsquo;ve long been interested if not mildly obsessed with workflows, metadata, their relationships, and automated pipelines. Along with DataOps, I believe they form the core principles, components, and practices for modern data stacks to achieve near ideal data platform:
+ supports reproduceability data quality assurance data provenance/lineage self-serve data discoverability perhaps most importantly, enables people to gain insights to failure modes in the system.</description>
     </item>
     
     <item>
