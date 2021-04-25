@@ -8,8 +8,13 @@ draft: false
 ## `$ whoami`    
 Hi there, my friends call me Oleng, I live in Jakarta and I'm currently looking for opportunities in Data Engineering.     
 
-I've long been interested if not mildly obsessed with workflows and metadata, their relationships, and automated pipelines. 
-Along with DataOps, I believe they form the core principles, components, and practices for modern data stacks to achieve near ideal data platform. A platform that supports repeatability, data quality assurance, data provenance/lineage, self-serve data discoverability, and perhaps most importantly, enables people to gain insights to failure modes in the system.   
+I've long been interested if not mildly obsessed with workflows, metadata, their relationships, and automated pipelines. 
+Along with DataOps, I believe they form the core principles, components, and practices for modern data stacks to achieve near ideal data platform:
+- supports reproduceability
+- data quality assurance
+- data provenance/lineage
+- self-serve data discoverability
+- perhaps most importantly, enables people to gain insights to failure modes in the system.   
 
 At least that is what I'm aiming for currently, to be a part of the team that builds and work at such system.
 
