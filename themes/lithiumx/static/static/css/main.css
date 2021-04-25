@@ -319,6 +319,11 @@ ul.nav-links {
   display: inline-block;
 }
 
+#short-about {
+  margin: 2em;
+  border: 1px #000;
+}
+
 .article-tags li {
   display: inline-block;
   margin: 0;

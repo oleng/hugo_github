@@ -89,7 +89,7 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Environment variable files
 .env
 .venv
 env/
@@ -117,6 +117,16 @@ venv.bak/
 # IntelliJ IDEA IDE
 .idea
 
+# VisualStudioCode IDE
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# VisualStudioCode: Ignore all local history of files
+.history
+.ionide
+
 # Windows artifacts
 Desktop.ini
 Thumbs.db
@@ -138,7 +148,7 @@ logs/
 
 # temporary files
 *.tmp
-tmp
+tmp/
 
 # Packages #
 ############
@@ -153,7 +163,3 @@ tmp
 *.tar
 *.zip
 
-# hugo
-resources
-drafts
-public
