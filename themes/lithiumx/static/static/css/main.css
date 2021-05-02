@@ -121,8 +121,6 @@ pre {
 }
 
 code {
-  /* margin: 0.2em; */
-  /* padding: 0 0.3em; */
   font-size: 0.85em;
   background-color: #f9fefe;
 }
@@ -134,14 +132,13 @@ pre, code, pre > code {
 
 pre > code {
   display: block;
-  margin: 1em;
-  padding: 1.5em;
+  padding: .5em 1.5em;
   color: #000;
   background-color: transparent;
 }
 
 .highlight pre {
-  padding: 1.2em;
+  margin: 1.2em;
   border-radius: 3px;
 }
 
